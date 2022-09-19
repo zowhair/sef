@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/alumni',function(){
     return view('frontend.pages.scholarship.alumni');
 });
+Route::get('/notification',function(){
+    return view('frontend.pages.notification');
+});
