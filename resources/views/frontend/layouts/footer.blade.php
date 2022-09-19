@@ -321,13 +321,13 @@
                                                                                                        <li><div style="display: flex;justify-content: flex-start;
                                                                                                         align-items: center;
                                                                                                         align-content: flex-start;
-                                                                                                        gap: 5px;padding-bottom: 25px;margin-top: 10px;">
+                                                                                                        gap: 5px;margin-top: 10px;">
                                                                                                         <i class="fa fa-mobile"></i><h4 style="color: white;font-size: 20px;">Phone</h4>
                                                                                                        </div><p>021-99333244-8</p></li>
                                                                                                        <li><div style="display: flex;justify-content: flex-start;
                                                                                                         align-items: center;
                                                                                                         align-content: flex-start;
-                                                                                                        gap: 5px;padding-bottom: 25px;margin-top: 10px;">
+                                                                                                        gap: 5px;margin-top: 10px;">
                                                                                                         <i class="fa fa-envelope"></i><h4 style="color: white;font-size: 20px;">Email</h4>
                                                                                                        </div>
                                                                                                           <p>info@sef.org.pk</p></li></ul><hr>

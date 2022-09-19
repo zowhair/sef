@@ -15403,7 +15403,8 @@ span.tranding {
     border-radius: 50%;
     margin: auto;
     top: 25%;
-    font-size: 25px
+    font-size: 30px;
+    padding: 39px;
 }
 
 .post_type6 .single_post_text {

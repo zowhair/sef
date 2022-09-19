@@ -131,6 +131,7 @@
             font-style: normal;
         }
     </style>
+    
     <link data-minify="1" rel='stylesheet' id='elementor-icons-css'
         href="{{asset('wp-content/cache/min/1/newsprk/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css')}}"
         type='text/css' media='all' />
@@ -1047,7 +1048,6 @@
             document.body.className = c;
         })();
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <link data-minify="1" rel='stylesheet' id='elementor-post-7094-css'
         href="{{asset('wp-content/cache/min/1/newsprk/wp-content/uploads/elementor/css/post-7094.css')}}" type='text/css'
@@ -1137,29 +1137,11 @@
         id='wc-add-to-cart-js' defer></script>
     <script type='text/javascript' src="{{asset('wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js')}}"
         id='js-cookie-js' defer></script>
-    <script type='text/javascript' id='woocommerce-js-extra'>
-        /* <![CDATA[ */
-        var woocommerce_params = {
-            "ajax_url": "\/newsprk\/wp-admin\/admin-ajax.php",
-            "wc_ajax_url": "\/newsprk\/?wc-ajax=%%endpoint%%"
-        };
-    /* ]]> */
-    </script>
+    
     <script type='text/javascript' src="{{asset('wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js')}}"
         id='woocommerce-js' defer></script>
-    <script type='text/javascript' id='wc-cart-fragments-js-extra'>
-        /* <![CDATA[ */
-        var wc_cart_fragments_params = {
-            "ajax_url": "\/newsprk\/wp-admin\/admin-ajax.php",
-            "wc_ajax_url": "\/newsprk\/?wc-ajax=%%endpoint%%",
-            "cart_hash_key": "wc_cart_hash_0e019a70049af4d3842e49c3ab247568",
-            "fragment_name": "wc_fragments_0e019a70049af4d3842e49c3ab247568",
-            "request_timeout": "5000"
-        };
-    /* ]]> */
-    </script>
-    <script type='text/javascript' src="{{asset('wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js')}}"
-        id='wc-cart-fragments-js' defer></script>
+    
+    
     <script type='text/javascript' id='rocket-browser-checker-js-after'>
         "use strict";
         var _createClass = function () {
@@ -1388,6 +1370,7 @@
     <script data-minify="1" type='text/javascript'
         src="{{asset('wp-content/cache/min/1/newsprk/wp-content/themes/newsprk/assets/js/skip-link-focus-fix.js')}}"
         id='newsprk-skip-link-focus-fix-js' defer></script>
+        
     <script type='text/javascript' src="{{asset('wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js')}}"
         id='smush-lazy-load-js' defer></script>
     <script type='text/javascript' src="{{asset('wp-includes/js/wp-embed.min.js')}}" id='wp-embed-js' defer></script>
