@@ -59,7 +59,7 @@
             }
         }
     </style>
-    <script defer="defer" src="{{asset('wp-content/assets/datatable.js')}}"></script>
+    <script defer="defer" src="{{asset('wp-content/datatable.js')}}"></script>
     <meta name="robots" content="noindex, nofollow">
     <script nonce="d00fce35-ec55-4f73-9064-d4e6016b0114">
         (function(w, d) {

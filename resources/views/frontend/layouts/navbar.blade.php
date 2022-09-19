@@ -67,7 +67,7 @@
                 <div class="row logo_sec">
                     <div class="col-md-2 col-sm-6 col-6 align-self-center ">
                         <div class="logo">
-                            <a href="#">
+                            <a href="/">
                                 <img data-src="{{asset('img/sef_logo.svg')}}" class="logo lazyload" src="{{asset('img/sef_logo.svg')}}">
                             </a>
                         </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-md-2 col-sm-6 col-6 sef_logo">
                         <div class="logo2">
-                            <a href="#">
+                            <a href="/">
                                 <img data-src="{{asset('img/sef_logo2.svg')}}" class="lazyload" src="{{asset('img/sef_logo2.svg')}}">
                             </a>
                         </div>
@@ -112,7 +112,7 @@
                                         <ul id="menu-main-menu" class="nav navbar-nav">
                                             <li id="menu-item-3222"
                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-3222 nav-item dropdown">
-                                                <a href="" class="nav-link has-child dropdown-toggle"
+                                                <a href="/" class="nav-link has-child dropdown-toggle"
                                                     data-toggle="dropdown">Home</a>
                                             </li>
                                             <li id="menu-item-3152"
@@ -403,7 +403,7 @@
                     <ul>
                         <li
                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-3222">
-                            <a href="#">Home</a>
+                            <a href="/">Home</a>
                            
                         </li>
                         <li
@@ -675,7 +675,7 @@
                 </nav>
                 <div class="offcanvas__mobile__menu__about">
                     <div class="logo">
-                        <a href="#" target="_blank">
+                        <a href="/" target="_blank">
                             <img data-src="../sef_logo.svg" class="logo lazyload" src="../sef_logo.svg">
                         </a>
                     </div>
