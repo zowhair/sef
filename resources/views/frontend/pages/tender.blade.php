@@ -138,21 +138,21 @@
         <main class="main-content bgc-grey-100">
             <div id="mainContent">
                 <div class="container-fluid">
-                    <h4 class="c-grey-900 mB-30">Scholarship / Alumni</h4>
+                    <h4 class="c-grey-900 mB-30">Advertisement / Tender</h4>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="bgc-white bd bdrs-3 p-20 mB-20">
                                 <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>TENDER NO	</th>
-                                            <th>DESCRIPTION</th>
-                                            <th>OPENING DATE	</th>
-                                            <th>ADVERTISEMENT/BIDING DOCUMENT</th>
+                                            <th>SR. NO.   </th>
+                                            <th>TITLE	</th>
+                                            <th>TENDER OPENING DATE</th>
+                                            
+                                            <th>ADVERTISEMENT/BIDING DOCUMENTS & CORRGENDUMS</th>
                                             <th>BID EVALUATION REPORT</th>
                                             <th>CONTRACT EVALUATION REPORT	</th>
-                                            <th>CONTRACT COMPLETION REPORT </th>
-                                            <th>Address/Contact</th>
+                                           <th>CONTRACT</th>
                                         </tr>
                                     </thead>
                                     <!-- <tfoot>
@@ -186,7 +186,6 @@
                                             </td>
                                             <td>contract evaluatiopn report</td>
                                             <td>contract completion report</td>
-                                            <td>sd</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -208,7 +207,7 @@
                                             </td>
                                             <td>this is report col</td>
                                             <td>completion report</td>
-                                            <td>saf</td>
+                                            
                                         </tr>
                                         
                                     </tbody>
