@@ -20,4 +20,7 @@ class TenderController extends Controller
         $tender = 'tender';
         return view('frontend.pages.tender');
     }
+    public function tender_test(Request $request) {
+        return view('frontend.pages.tender_test');
+    }
 }

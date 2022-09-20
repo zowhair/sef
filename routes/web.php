@@ -23,4 +23,6 @@ Route::get('/notification',function(){
     return view('frontend.pages.notification');
 });
 
+Route::get('/tender_test', [TenderController::class, 'tender_test'])->name('tender_test');
+
 Route::get('/tender', [TenderController::class, 'tender_home'])->name('tender');
