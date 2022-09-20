@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TenderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +22,5 @@ Route::get('/alumni',function(){
 Route::get('/notification',function(){
     return view('frontend.pages.notification');
 });
+
+Route::get('/tender', [TenderController::class, 'tender_home'])->name('tender');

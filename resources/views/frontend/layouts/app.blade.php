@@ -1,3 +1,5 @@
+<!DOCTYPE HTM>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1525,3 +1527,4 @@
     <script type='text/javascript' src="{{asset('wp-includes/js/wp-util.min.js')}}" id='wp-util-js' defer></script>
     <script type='text/javascript' src="{{asset('wp-content/plugins/element-ready-lite/assets/js/globalwidget.min.js')}}"
         id='element-ready-global-widget-js' defer></script>
+<body>
