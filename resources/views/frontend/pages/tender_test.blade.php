@@ -1,11 +1,15 @@
+@include('frontend.layouts.app')
+
+
+
 <link rel='stylesheet' 
-        href="{{asset('new_datatable/bootstrap.min.css')}}" type='text/css'  />
-        <link rel='stylesheet' 
-        href="{{asset('new_datatable/dataTables.bootstrap.min.css')}}" type='text/css'  />
-        <link rel='stylesheet'
-        href="{{asset('new_datatable/fixedHeader.bootstrap.min.css')}}" type='text/css'  />
-        <link rel='stylesheet' 
-        href="{{asset('new_datatable/responsive.bootstrap.min.css')}}" type='text/css' />
+href="{{asset('new_datatable/bootstrap.min.css')}}" type='text/css'  />
+<link rel='stylesheet' 
+href="{{asset('new_datatable/dataTables.bootstrap.min.css')}}" type='text/css'  />
+<link rel='stylesheet'
+href="{{asset('new_datatable/fixedHeader.bootstrap.min.css')}}" type='text/css'  />
+<link rel='stylesheet' 
+href="{{asset('new_datatable/responsive.bootstrap.min.css')}}" type='text/css' />
 
 
 <table id="example" class="table table-striped table-bordered nowrap" style="width:100%">
@@ -428,3 +432,4 @@
         new $.fn.dataTable.FixedHeader( table );
     } );
 </script>
+        @include("frontend.layouts.footer");
