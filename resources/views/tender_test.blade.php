@@ -11,6 +11,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>new site</title>
+    <style>
+        .header1 li{
+    list-style: none;
+}
+.header1 ul{
+    padding-left: 0px;
+}
+.header1{
+    background-color: #e9ede9;
+}
+.cantainer{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.header2 .class1{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+.header2 li{
+    padding: 25px 20px;
+}
+.header2 a{
+    text-decoration: none;
+    color: black;
+    font-family: arial;
+    font-size: 16px;
+}
+.hea-menu1{
+    display: none;
+}
+.header2 ul li:hover .hea-menu1{
+    margin-top: 25px;
+    margin-left: -15px;
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+}
+.header2 ul li:hover .hea-menu1 ul{
+    display: block;
+}
+.header2 ul li:hover .hea-menu1 ul li{
+    width: 230px;
+    border-bottom: 1px solid;
+    color: black;
+    padding: 10px 0px 10px 15px;
+}
+
+.hea-in1{
+    display: none;
+}
+.hover-me:hover .hea-in1{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 230px;
+    margin-top: -30px;
+}
+.hea-in2{
+    display: none;
+}
+.hover-me1:hover .hea-in2{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 230px;
+    margin-top: -30px;
+}
+.hea-in3{
+    display: none;
+}
+.hover-me2:hover .hea-in3{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 230px;
+    margin-top: -30px;
+}
+.hea-in4{
+    display: none;
+}
+.hover-me3:hover .hea-in4{
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 230px;
+    margin-top: -30px;
+}
+    </style>
 </head>
 <body>
     <main>
@@ -112,49 +202,71 @@
                     
                 </div>
                 <!-- navigation bar -->
-                <div class="header-navigation">
-                    <div class="container">
-                        <div class="row">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar scroll</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
-                          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Link
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-                            </li>
-                          </ul>
-                          <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form>
-                        </div>
-                      </div>
-                    </nav>
-                        </div>
-                    </div>
-                    
-                </div>
+                <div class="header1">
+        <div class="cantainer">
+            <div class="header2">
+                    <ul class="class1">
+                        <li><a href="">Home</a></li>
+                        
+                        <li><a href="">About Us</a>
+                            <div class="hea-menu1">
+                                <ul>
+                                    <li><a href="">Intorduction</a></li>
+                                    <li><a href="">Educational FrameWork</a></li>
+                                    <li><a href="">Organogram</a></li>
+                                    <li class="hover-me"><a href="">Department</a>
+                                        <div class="hea-in1">
+                                            <ul>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li class="hover-me1"><a href="">Comunication and Research</a>
+                                                    <div class="hea-in2">
+                                                        <ul>
+                                                            <li><a href="">Comunication and Research</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="hover-me2"><a href="">Comunication and Research</a>
+                                        <div class="hea-in3">
+                                            <ul>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Comunication and Research</a>
+                                    <li><a href="">Comunication and Research</a>
+                                    <li class="hover-me3"><a href="">Comunication and Research</a>
+                                        <div class="hea-in4">
+                                            <ul>
+                                                <li><a href="">Comunication and Research</a></li>
+                                                <li><a href="">Comunication and Research</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Programs</a></li>
+                        <li><a href="">Advertisement</a></li>
+                        <li><a href="">Soholarship</a></li>
+                        <li><a href="">Resource</a></li>
+                        <li><a href="">News & Updates</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
 
                 <!-- programs -->
                 <div class="programs-section">
