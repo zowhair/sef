@@ -405,3 +405,94 @@
 .b-rra-addresss-icon {
     margin-right: 10px;
 }
+
+
+/* Navigation styles */
+
+.top-navbar-section .nav-items {
+    display: flex;
+    align-items: center;
+}
+.top-navbar-section  .nav-item:last-child {
+    margin-right: 0;
+}
+.top-navbar-section {
+    background-color: #e9ede9;
+}
+.top-navbar-section .nav-item {
+    margin-right: 15px;
+    padding: 25px 10px;
+    position: relative;
+}
+.top-navbar-section .nav-items-wrap {
+    position: absolute;
+    z-index: 9999999;
+    background: white;
+    box-shadow: 0px 0px 4px -1px;
+    width: 100%;
+    display: none;
+    left: 0px;
+    padding: 0;
+    top: 68px;
+    min-width: fit-content;
+}
+
+.top-navbar-section .nav-item-wrap {
+    white-space: nowrap;
+}
+.top-navbar-section .nav-item-wrap {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+}
+.top-navbar-section .nav-items-innerwrap {
+    position: absolute;
+    right: -146%;
+    top: 0;
+    min-width: 311px;
+    background: #e9ede9;
+    display: none;
+}
+.top-navbar-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-navbar-section .nav-item:hover > .nav-items-wrap{
+    display: block;
+}
+.top-navbar-section .nav-item:hover {
+    background-color: 	rgb(255,255,255,0.5);
+    transition: all ease-in-out 0.3s;
+}
+.top-navbar-section .nav-item-wrap:hover > .nav-items-innerwrap{
+    display: block;
+}
+.top-navbar-section .nav-item span {
+    font-family: Inter, sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    color: #454b50;
+}
+.top-navbar-section .nav-item-wrap:hover{
+    background-color: #1091ff;
+    transition: all ease-in-out 0.3s;
+}
+.top-navbar-section .ner-wrap {
+    right: -100%;
+}
+.top-navbar-section .nav-items-innerwrap {
+    background: white;
+    box-shadow: 0px 0px 4px -1px;
+}
+.top-navbar-section .program .nav-items-innerwrap {
+    right: -126%;
+}
+.top-navbar-section .resources .nav-items-innerwrap {
+    right: -112%;
+}
+
+

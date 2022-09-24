@@ -11,96 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>new site</title>
-    <style>
-        .header1 li{
-    list-style: none;
-}
-.header1 ul{
-    padding-left: 0px;
-}
-.header1{
-    background-color: #e9ede9;
-}
-.cantainer{
-    max-width: 90%;
-    margin: 0 auto;
-}
-.header2 .class1{
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding-left: 0px;
-}
-.header2 li{
-    padding: 25px 20px;
-}
-.header2 a{
-    text-decoration: none;
-    color: black;
-    font-family: arial;
-    font-size: 16px;
-}
-.hea-menu1{
-    display: none;
-}
-.header2 ul li:hover .hea-menu1{
-    margin-top: 25px;
-    margin-left: -15px;
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-}
-.header2 ul li:hover .hea-menu1 ul{
-    display: block;
-}
-.header2 ul li:hover .hea-menu1 ul li{
-    width: 230px;
-    border-bottom: 1px solid;
-    color: black;
-    padding: 10px 0px 10px 15px;
-}
-
-.hea-in1{
-    display: none;
-}
-.hover-me:hover .hea-in1{
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-    margin-left: 230px;
-    margin-top: -30px;
-}
-.hea-in2{
-    display: none;
-}
-.hover-me1:hover .hea-in2{
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-    margin-left: 230px;
-    margin-top: -30px;
-}
-.hea-in3{
-    display: none;
-}
-.hover-me2:hover .hea-in3{
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-    margin-left: 230px;
-    margin-top: -30px;
-}
-.hea-in4{
-    display: none;
-}
-.hover-me3:hover .hea-in4{
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-    margin-left: 230px;
-    margin-top: -30px;
-}
-    </style>
+   
 </head>
 <body>
     <main>
@@ -202,71 +113,381 @@
                     
                 </div>
                 <!-- navigation bar -->
-                <div class="header1">
-        <div class="cantainer">
-            <div class="header2">
-                    <ul class="class1">
-                        <li><a href="">Home</a></li>
-                        
-                        <li><a href="">About Us</a>
-                            <div class="hea-menu1">
-                                <ul>
-                                    <li><a href="">Intorduction</a></li>
-                                    <li><a href="">Educational FrameWork</a></li>
-                                    <li><a href="">Organogram</a></li>
-                                    <li class="hover-me"><a href="">Department</a>
-                                        <div class="hea-in1">
-                                            <ul>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li class="hover-me1"><a href="">Comunication and Research</a>
-                                                    <div class="hea-in2">
-                                                        <ul>
-                                                            <li><a href="">Comunication and Research</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="hover-me2"><a href="">Comunication and Research</a>
-                                        <div class="hea-in3">
-                                            <ul>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="">Comunication and Research</a>
-                                    <li><a href="">Comunication and Research</a>
-                                    <li class="hover-me3"><a href="">Comunication and Research</a>
-                                        <div class="hea-in4">
-                                            <ul>
-                                                <li><a href="">Comunication and Research</a></li>
-                                                <li><a href="">Comunication and Research</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                <nav>
+        <div class="top-navbar-section">
+           <div class="container">
+            <div class="nav-items">
+                <div class="nav-item">
+                    <span>home</span>
+                    
+                </div>
+                <div class="nav-item">
+                    <span>about us</span>
+                    <div class="nav-items-wrap">
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>introduction</span>
+                                <span></span>
                             </div>
-                        </li>
-                        <li><a href="">Programs</a></li>
-                        <li><a href="">Advertisement</a></li>
-                        <li><a href="">Soholarship</a></li>
-                        <li><a href="">Resource</a></li>
-                        <li><a href="">News & Updates</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>educational frameWork</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>organogram</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>department</span>
+                                    <span>></span>
+                                </div>
+                                <div class="nav-items-innerwrap">
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>communication and research</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>finance and audit</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>general administration</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>human resource</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>information technology</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>planning and programs</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>training and assessment</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>unit and cells</span>
+                                            <span>></span>
+                                        </div>
+                                        <div class="nav-items-innerwrap ner-wrap">
+                                            <div class="nav-item-wrap innerwrap">
+                                                <div class="content">
+                                                    <span>monitoring and evaluation cell</span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>management team</span>
+                                    <span>></span>
+                                </div>
+                                <div class="nav-items-innerwrap">
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>head office</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>regional office</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>district office</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>BOG</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>finance committe</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>message</span>
+                                    <span>></span>
+                                </div>
+                                <div class="nav-items-innerwrap">
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>message of honable minister sindh</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>message of managing director sindth</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="nav-item program">
+                    <span>programs</span>
+                    <div class="nav-items-wrap">
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>AALTP</span>
+                                <span></span>
+                            </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>AASP</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>initiative</span>
+                                    <span>></span>
+                                </div>
+                                <div class="nav-items-innerwrap">
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>INSTALL</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrap innerwrap">
+                                        <div class="content">
+                                            <span>teach for change</span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>foundation assisted schools</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="nav-item-wrap">
+                                <div class="content">
+                                    <span>people's school program</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+                <div class="nav-item">
+                   <span>advertisement</span>
+                   <div class="nav-items-wrap">
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>tender</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                   <span>scholarship</span>
+                   <div class="nav-items-wrap">
+                    <div class="nav-item-wrap">
+                        <div class="content">
+                            <span>introduction</span>
+                            <span></span>
+                        </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>partner institutions</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>announcements</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>alumni</span>
+                                <span></span>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="nav-item resources">
+                   <span>resources</span>
+                   <div class="nav-items-wrap">
+                    <div class="nav-item-wrap">
+                        <div class="content">
+                            <span>act and rules</span>
+                            <span></span>
+                        </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>publications</span>
+                                <span>></span>
+                            </div>
+                            <div class="nav-items-innerwrap">
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>annual report</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>newsletter</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>research studies</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>sujaag</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>assesment materials</span>
+                                <span>></span>
+                            </div>
+                            <div class="nav-items-innerwrap">
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>assesment guidelines</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>assesment reports</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="nav-item-wrap innerwrap">
+                                    <div class="content">
+                                        <span>modal paper</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>acution notices</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>notification</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>policies</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>request for proposal</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>school data</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>SoPs microsoft 360</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>SOS part II january to april 2021</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="nav-item-wrap">
+                            <div class="content">
+                                <span>health insurance formats</span>
+                                <span></span>
+                            </div>
+                        </div>
+                        
+                </div>
+                </div>
+                <div class="nav-item">
+                   <span>news & updates</span>
+                </div>
+                <div class="nav-item">
+                   <span>careers</span>
+                </div>
+                <div class="nav-item">
+                   <span>contact us</span>
+                </div>
             </div>
+           </div>
         </div>
-    </div>
+    </nav>
+
 
                 <!-- programs -->
                 <div class="programs-section">
