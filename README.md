@@ -13,9 +13,9 @@
 
  
 </div>
-    <a href="http://lamstan.org/">Copyright Company</a>
-    <a href="mailto:info@lamstan.org">Report Bug</a>
-    <a href="mailto:info@lamstan.org">Request Feature</a>
+    <a href="http://lamstan.org/">Copyright Company</a><br/>
+    <a href="mailto:info@lamstan.org">Report Bug</a><br />
+    <a href="mailto:info@lamstan.org">Request Feature</a><br/>
 
 we have used bootstrap 5 but the site is using only .container class from bootstrap
 rest of styling are custom.
