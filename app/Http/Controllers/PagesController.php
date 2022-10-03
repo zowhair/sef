@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TenderController extends Controller
+class PagesController extends Controller
 {
     /**
      * Handle the incoming request.
@@ -16,4 +16,10 @@ class TenderController extends Controller
     {
         // return view('sef');
     }
+    public function home(Request $request) {
+        return view('pages.home');
+    }
+    public function contactPage(Request $request) {
+        return view('pages.contact');
+    }   
 }

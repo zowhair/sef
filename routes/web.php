@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TenderController;
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,17 +13,5 @@ use App\Http\Controllers\TenderController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.layouts.home');
-});
-Route::get('/alumni',function(){
-    return view('frontend.pages.scholarship.alumni');
-});
-Route::get('/notification',function(){
-    return view('frontend.pages.notification');
-});
-
-Route::get('/tender_test', [TenderController::class, 'tender_test'])->name('tender_test');
-Route::get('/test_page', [TenderController::class, 'test_page'])->name('test_page');
-
-Route::get('/tender', [TenderController::class, 'tender_home'])->name('tender');
+Route::get('/', [PagesController::class, 'home']);
+Route::get('/contact', [PagesController::class, 'contactPage']);
