@@ -10,11 +10,11 @@
     This website is for an educational organization which belongs to sindh government
     <br />
     
-    <a href="http://lamstan.org/">Copyright Company</a>
+    [Copyright Company](http://lamstan.org/)
     ·
-    <a href="mailto:info@lamstan.org">Report Bug</a>
+    [Report Bug](mailto:info@lamstan.org)
     ·
-    <a href="mailto:info@lamstan.org">Request Feature</a>
+    [Request Feature](mailto:info@lamstan.org)
   </p>
 </div>
 
