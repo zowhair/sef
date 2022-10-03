@@ -10,11 +10,12 @@
     <p>This website is for an educational organization which belongs to sindh government</p>
     <br />
     
+
+ 
+</div>
     <a href="http://lamstan.org/">Copyright Company</a>
     <a href="mailto:info@lamstan.org">Report Bug</a>
     <a href="mailto:info@lamstan.org">Request Feature</a>
- 
-</div>
 
 we have used bootstrap 5 but the site is using only .container class from bootstrap
 rest of styling are custom.
