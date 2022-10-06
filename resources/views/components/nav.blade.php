@@ -6,5 +6,5 @@
         @include('components.mid-nav')
         <!-- navigation bar -->
     <nav>
-        @include('components.bottom-nav')
+        @include('components.new-bottom-nav')
     </nav>
