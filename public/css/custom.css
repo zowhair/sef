@@ -699,10 +699,11 @@ img {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.main-carousel .title {
+.main-carousel .contents-wrap .title {
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    color: #fff;
 }
 .main-carousel .text {
     font-size: 15px;
