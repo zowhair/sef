@@ -6,6 +6,7 @@
         <!-- programs -->
         @component('components.programs')@endcomponent
         <!-- footer along with script tags -->
+        @component('components.bottom-map')@endcomponent
     </main>
     @include('includes.footer')
 @stop
