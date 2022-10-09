@@ -9617,7 +9617,7 @@ input.cbt3:hover {
 
 .theme-3 .trancarousel_area .nav_style1 .owl-nav {
     position: absolute;
-    right: -20%;
+    right: -7%;
     top: 50%;
     margin-top: -11.5px
 }
@@ -9637,11 +9637,11 @@ input.cbt3:hover {
     float: left;
     margin-right: 10px;
     padding: 12px 20px;
-    background: #ffe5e5;
+    background: #f55;
     font-size: 14px;
     font-weight: 500;
-    color: #f55;
-    line-height: 17px
+    color: #fff;
+    line-height: 17px;
 }
 
 .theme-3 .trancarousel_area .trancarousel_item {
@@ -9654,7 +9654,9 @@ input.cbt3:hover {
 .theme-3 .trancarousel_area .trancarousel_item a {
     color: #17222b;
     opacity: .85;
-    word-break: break-word
+    word-break: break-word;    
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .theme-3 .trancarousel_area .trancarousel_item p {

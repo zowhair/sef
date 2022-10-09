@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-8">
+    <div class="col-8 left-pills-col">
       <div class="main-carousel">
         <div class="slider slider-for">
           @for($i=1; $i<=5; $i++)
@@ -30,7 +30,7 @@
         </div> -->
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 right-pills-col">
       @component('components.main-carousel-sidebar')@endcomponent
     </div>
   </div>

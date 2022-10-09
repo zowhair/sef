@@ -5,16 +5,20 @@
             <div class="header-top-strip">
             <div class="header-top-left">
                 <div class="header-top-button">
-                    <span>Announcement</span>
+                  <span>Announcement</span>
                 </div>
-                <div class="header-top-left-text">
-                    <marquee>This is announcement and we are announcing right now</marquee>
-                </div>
-                <div class="header-top-left-nav-icons">
-                    <div class="navigation">
-                        <span> < </span>
-                        <span> > </span>
-                    </div>
+                <div class="trancarousel owl-carousel nav_style1">
+                  <div class="trancarousel_item">
+                    <a href="#">Contract signing Ceremony People’s School Program</a>
+                  </div>
+                  <div class="trancarousel_item">
+                    <a href=""> SSESP (Sindh School Education Scholarship Program) instituted for promoting
+                          post-primary education</a>
+                  </div>
+                  <div class="trancarousel_item">
+                    <a href="">The five-day CFL (Caring for Life) training program of 100 teachers at the
+                          Regional office</a>
+                  </div>
                 </div>
                 <div class="header-top-right">
                     <div class="header-top-right-row">

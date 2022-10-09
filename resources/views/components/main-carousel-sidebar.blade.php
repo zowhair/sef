@@ -1,12 +1,17 @@
+    <?php 
+      $latestNews = 'Latest News';
+      $stories = 'Success Story';
+      $epublication = 'E-Publication';
+    ?>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          <button class="nav-link nav-link-custom active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{$latestNews}}</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          <button class="nav-link nav-link-custom" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ $stories }}</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+          <button class="nav-link nav-link-custom" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">{{$epublication}}</button>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -21,12 +26,12 @@
               <div class="beta">
                 <a href="#" class="title-link">
                   <h5 class="title">
-                    This is title  lkjh ljh tjh
+                    This is title  lkjh ljh tjh this is anoter
                   </h5>
                 </a>
                 <div class="lower-content">
                   <a href="#" class="lower-content-left">
-                    News
+                    {{$latestNews}}
                   </a>
 
                   <div class="lower-content-date">
@@ -53,7 +58,7 @@
                 </a>
                 <div class="lower-content">
                   <a href="#" class="lower-content-left">
-                    News
+                    {{$stories}}
                   </a>
                   <div class="lower-content-date">
                     June 20, 2022
@@ -79,7 +84,7 @@
                 </a>
                 <div class="lower-content">
                   <a href="#" class="lower-content-left">
-                    News
+                    {{$epublication}}
                   </a>
                   <div class="lower-content-date">
                     June 20, 2022

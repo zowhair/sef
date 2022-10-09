@@ -1,3 +1,6 @@
+body {
+    font-family: Inter, sans-serif;
+}
 /* Header Styling started */
 .header-top {
 	margin-bottom: 30px;
@@ -63,7 +66,8 @@
 
  /* Mid row styling */
  .center-logo h4 {
- 	    margin-top: 1px;
+    font-family: Inter, sans-serif;
+ 	margin-top: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -81,7 +85,7 @@
     color: #2d2e2d;
  }
 .header-mid-row {
-	margin-bottom: 20px;
+	padding: 28px;
 } 
 .header-mid-logo-left .left-logo img{
 	width: 160px;
@@ -305,8 +309,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}.header-mid-logos {
-    margin-bottom: 30px;
 }
 .first-right-button{
     background-color: #DCDEDF;
@@ -337,9 +339,7 @@
 .footer-row {
     padding: 75px 0 60px;
 }
-.header-mid-logos {
-    margin-bottom: 30px;
-}
+
 .upper-second-right {
     color: #FFF6;
     max-width: 424px;
@@ -392,6 +392,7 @@
 .footer-bottom-row {
     padding: 65px 10px 0;
     display: flex;
+    flex-direction: row;
 }
 .footer-bottom-row-right {
     color: white;
@@ -425,7 +426,7 @@
     margin-bottom: 25px;
 }
 .row-left-first {
-    flex: 1;
+/*  */
 }
 .alpha {
     color: #FFF6;
@@ -526,9 +527,7 @@
     display: block;
     max-width: 105px;
 }
-.header-mid-logos {
-    margin-bottom: 30px;
-}
+
 .b-rra-addresss-icon {
     margin-right: 10px;
 }
@@ -607,15 +606,24 @@
 }
 .nav-pills .nav-item {
     background-color: #ffffff;
-    box-shadow: 1px 1px 13px 2px rgb(122 121 121 / 75%);
-    -webkit-box-shadow: 1px 1px 5px 1px rgb(122 121 121 / 75%);
-    -moz-box-shadow: 1px 1px 13px 2px rgba(122,121,121,0.75);
+    box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
     width: 100%;
     max-width: 110px;
 }
 .nav-pills .nav-link {
+    font-family: Inter, sans-serif;
     width: 100%;
     border-radius: 0;
+    background: #fff;
+    font-size: 9px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+.nav-link-custom {
+    padding: 4px;
 }
 img {
     width: 100%;
@@ -647,20 +655,30 @@ img {
 .tab-content .beta .title-link {
     text-decoration: none;
 }
+.panel-wrapper .beta .title-link .title {
+    font-weight: 500;
+}
 .tab-content  .beta .lower-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 170px;
+    max-width: 200px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 2;
 }
 .tab-content .beta .lower-content-left {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #2095F3;
+    line-height: 21px;
 }
 .tab-content .beta  .lower-content-date {
-    color: gray;
-    font-size: 15px;
+    color: #515A60;
+    font-size: 13px;
+    text-transform: capitalize;
 }
 .top-navbar-section {
     margin-bottom: 50px;
@@ -686,6 +704,11 @@ img {
     bottom: 0;
     z-index: 99;
     color: #fff;
+
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    opacity: .8;
+
 }
 .main-carousel .pre-title {
     font-size: 14px;
@@ -794,3 +817,49 @@ img {
         }
     }
 /* bottom map styles end */
+
+
+
+/* responsivness start */
+@media (max-width: 1100.98px) {
+    .right-pills-col {
+        display: none;
+    }
+    .left-pills-col {
+        width: 100%;
+    }
+    .footer-bottom-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-bottom-row-right {
+        border:0;
+    }
+    .footer-bottom-wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-bottom-wrapp .alpha {
+        text-align: center;
+    }
+}
+
+@media (max-width: 870.98px) {
+    
+    .footer-bottom-row-left {
+        display: flex;
+        flex-direction: column;   
+    }
+    .footer-bottom-row-right {
+        border:0;
+    }
+    .footer-bottom-wrapp {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-bottom-wrapp .alpha {
+        text-align: center;
+    }
+}
+/* responsivness end */

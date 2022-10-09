@@ -1,6 +1,6 @@
 <header class="header">
     <!-- header top announcement content -->
-        @include('components.top-nav')
+        @include('components.top-bar-nav')
 
         <!-- mid top logos -->
         @include('components.mid-nav')
