@@ -691,11 +691,14 @@ img {
     right: 0;
 }
 .main-carousel .slick-arrow {
-    background: #fff !important;
-    width: 40px;
+    background: #fff  !important;
+    width: 35px;
     height: 101%;
     position: absolute;
     z-index: 999;
+}
+.main-carousel .slick-arrow:hover {
+    background: #0d6efd  !important;
 }
 .main-carousel .contents-wrap {
     position: absolute;
@@ -729,12 +732,16 @@ img {
 }
 
 .programs-section .slick-arrow {
-    border: 1px solid #eee;
+    border: 1px solid #c1c4c6;
+    border-radius: 3px;
     padding: 10px;
     width: 35px;
     height: 35px;
     position: absolute;
     top: -40px;
+}
+.programs-section .slick-arrow:hover {
+    background: #0d6efd ;
 }
 .programs-section .slick-prev {
     right: 50px;
