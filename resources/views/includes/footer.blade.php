@@ -18,6 +18,11 @@
     </script>
 <script>
 
+  // tender datatables
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
+
     // programs =- bottom card slider 
     $('.bottom-programs-slider').slick({
       speed: 500,
