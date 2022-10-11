@@ -642,6 +642,10 @@ img {
     border-radius: 5px;
     overflow: hidden;
 }
+.tab-content  .alpha .image:hover img{
+    transform: scale(1.2);
+    transition: all .3s
+}
 .tab-content .beta {
     width: 62%;
     padding: 5px 0;
@@ -704,27 +708,35 @@ img {
     position: absolute;
     width: 100%;
     padding: 40px;
+    padding-top: 45%;
     bottom: 0;
     z-index: 99;
     color: #fff;
 
     background-color: transparent;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-    opacity: .8;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 135%);
+    
 
 }
+
 .main-carousel .pre-title {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: white;
+    font-family: Inter, sans-serif;
 }
 .main-carousel .contents-wrap .title {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 10px; 
     color: #fff;
+    font-family: "Heebo", Sans-serif;
 }
+.main-carousel .contents-wrap .title:hover{
+    color: #1091ff;
+} 
 .main-carousel .text {
     font-size: 15px;
     font-weight: 400;
