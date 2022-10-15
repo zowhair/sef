@@ -14637,14 +14637,14 @@ input.cbt3:hover {
 }
 
 .trancarousel_area .trancarousel_item {
-    padding: 12px;
+    /* padding: 12px;
     font-size: 14px;
     line-height: 17px;
     opacity: .85;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis */
 }
 
 .trancarousel_area .trancarousel_item a {

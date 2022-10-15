@@ -98,7 +98,7 @@
 }
 
 .owl-carousel .owl-item {
-    position: relative;
+    /* position: relative; */
     min-height: 1px;
     float: left;
     -webkit-backface-visibility: hidden;
@@ -107,7 +107,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 .owl-carousel .owl-item img {

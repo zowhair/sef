@@ -1,6 +1,10 @@
 body {
     font-family: Inter, sans-serif;
 }
+.far.fa, .far, .fas { 
+    font-weight: 600 !important;
+    font-size: 20px;
+}
 /* Header Styling started */
 .header-top {
 	margin-bottom: 30px;
@@ -574,7 +578,7 @@ body {
 }
 
 .slick-prev:before, .slick-next:before {
-    color: black !important;
+    /*  */
 }
 
 .slick-slide img {
@@ -593,12 +597,12 @@ body {
 .slider-nav  .slick-slide{
     width: 75px;
 }
-.slick-prev:before {
+/* .slick-prev:before {
     content: '<' !important;
 }
 .slick-next:before {
     content: '>' !important;
-}
+} */
 
 #pills-tab {
     justify-content: space-between;
@@ -687,6 +691,10 @@ img {
     left: 0;
     box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
     font-weight: 900;
+    color:black;
+    font-weight: 300;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 10px;
 }
 .main-carousel .slick-next.slick-arrow {
     box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
@@ -740,15 +748,34 @@ img {
     position: absolute;
     top: -40px;
 }
-.programs-section .slick-prev:before, .programs-section .slick-next:before {
-    color: #c1c4c6 !important;
+/* .programs-section .slick-prev:before, .programs-section .slick-next:before {
+    
+    content: 'f105';
+} */
+.slick-prev:before {
+    content: none !important;
+}
+.slick-next:before {
+    content: none !important;
+}
+.programs-section .slick-prev , .programs-section  .slick-next {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-left-12345:before {
+    color: #87878742;
+}
+.arrow-right-12345:before {
+    color:#87878742;
 }
 .programs-section .slick-prev {
     right: 50px;
     left: unset;
     width: 30px;
     height: 30px;
-    text-align: center;
+    text-align: center; 
     line-height: 30px;
     border: 1px solid #c1c4c6;
     color: #c1c4c6;
