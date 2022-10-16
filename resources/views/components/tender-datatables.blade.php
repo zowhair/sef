@@ -480,5 +480,6 @@
                 </tr>
             </tfoot>
         </table>
+        <br>
     </div>
 </div>

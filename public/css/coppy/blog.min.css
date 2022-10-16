@@ -482,7 +482,7 @@ ol.breadcrumb li:last-child {
 
 .pagination li a,
 .pagination li span {
-    width: 40px;
+    padding-top: 0px;
     height: 40px;
     line-height: normal;
     text-align: center;
