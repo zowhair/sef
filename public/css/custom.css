@@ -709,6 +709,24 @@ img {
     z-index: 999;
     margin-top: 0.1px;
 }
+.slick-arrow:hover{
+    background-color: #0d6efd !important;
+}
+
+.slick-arrow:hover .fa-angle-left:before {
+    color: white ;
+}
+.slick-arrow:hover .fa-angle-right:before {
+    color:white;
+}
+.slick-arrow:hover .arrow-right-12345:before {
+    color:white;
+}
+.slick-arrow:hover .arrow-left-12345:before{
+    color: white ;
+}
+
+
 .main-carousel .contents-wrap {
     position: absolute;
     width: 100%;
@@ -764,12 +782,13 @@ img {
     align-items: center;
 }
 
-.arrow-left-12345:before {
-    color: #87878742;
+.arrow-left-12345:before{
+    color: #87878742 ;
 }
 .arrow-right-12345:before {
     color:#87878742;
 }
+
 .programs-section .slick-prev {
     right: 50px;
     left: unset;
