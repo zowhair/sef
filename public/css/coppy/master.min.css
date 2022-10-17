@@ -9615,6 +9615,14 @@ input.cbt3:hover {
     opacity: .6
 }
 
+.theme-3 .dropdown-submenu>a:after {
+    display: block;
+    content: "";
+    font-family: "Font Awesome 5 pro";
+    float: right;
+    margin-top: 3px;
+    margin-right: -5px;
+}
 .theme-3 .trancarousel_area .nav_style1 .owl-nav {
     position: absolute;
     right: -7%;
@@ -14629,14 +14637,14 @@ input.cbt3:hover {
 }
 
 .trancarousel_area .trancarousel_item {
-    padding: 12px;
+    /* padding: 12px;
     font-size: 14px;
     line-height: 17px;
     opacity: .85;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis */
 }
 
 .trancarousel_area .trancarousel_item a {

@@ -21,5 +21,8 @@ class PagesController extends Controller
     }
     public function contactPage(Request $request) {
         return view('pages.contact');
-    }   
+    }
+    public function tenderPage(Request $request) {
+        return view('pages.tender');
+    }
 }

@@ -18,6 +18,11 @@
     </script>
 <script>
 
+  // tender datatables
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
+
     // programs =- bottom card slider 
     $('.bottom-programs-slider').slick({
       speed: 500,
@@ -27,6 +32,10 @@
       arrows:true,
       slidesToShow: 3,
       slidesToScroll: 3,
+      prevArrow: `<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="far fa-angle-left"></i></button>`,
+      nextArrow: `<button class="slick-next slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="far fa-angle-right"></i></button>`,
+      
+       
       // centerMode: true,
       responsive: [{
         breakpoint: 1024,
@@ -65,14 +74,19 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav',
+        
+        
     });
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        prevArrow: `<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="far fa-angle-left arrow-left-12345"></i></button>`,
+        nextArrow: `<button class="slick-next slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="far fa-angle-right arrow-right-12345"></i></button>`,
+       
     });
 
     $('a[data-slide]').click(function(e) {

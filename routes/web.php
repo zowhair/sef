@@ -15,3 +15,4 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/contact', [PagesController::class, 'contactPage']);
+Route::get('/tender', [PagesController::class, 'tenderPage']);
