@@ -1,13 +1,11 @@
-    @component('layout.app')
-    @endcomponent
-    @component('components.nav')
-    @endcomponent
+    @extends('layout.app')
+  
+    <x-nav />
 
 
     <main>
         <!-- programs -->
-      @component('components.programs')
-      @endcomponent
-      @component('components.footer')
-      @endcomponent
+      
+      <x-programs />
+      <x-footer />
 

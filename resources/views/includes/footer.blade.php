@@ -1,5 +1,4 @@
         @include('components.footer-content')
-    </header>
 
     @include('components.scripts-links')
 

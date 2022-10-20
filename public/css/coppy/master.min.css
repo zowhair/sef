@@ -2602,7 +2602,8 @@ input.cbt3:hover {
     font-family: "Font Awesome 5 pro";
     float: right;
     margin-top: 3px;
-    margin-right: -5px
+    color: black;
+    margin-right: -5px;
 }
 
 .theme-1 .dropdown-submenu:hover>a:after {
@@ -3265,6 +3266,12 @@ input.cbt3:hover {
         color: #000
     }
     .theme-1 .dropdown-submenu>a:after {
+        display: block;
+        content: "";
+        font-family: "Font Awesome 5 pro";
+        float: right;
+        margin-top: 3px;
+        margin-right: -5px;
         margin-right: 0
     }
     .theme-1 .featured-post-area .pad-r {
