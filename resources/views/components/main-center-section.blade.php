@@ -1,10 +1,13 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-8 main-center-section-left">
         <div class="main-center-title">
             <h4>Programs</h4>
         </div>
         <div class="widget-title"></div>
-    </div>
+        <div>
+
+        </div>
+    </div> -->
     <div class="col-4 main-center-section-right">
         <div class="main-center-section-right-top">
             <div class="main-center-right-title">
@@ -42,4 +45,4 @@
             
         </div>
     </div>
-</div>
+<!-- </div> -->

@@ -948,7 +948,18 @@ img {
 .main-center-right-list ul li a{
     text-decoration: none;
 }
+.main-center-right-list ul li a:hover{
+    color: #2095f3;
+}
 .main-center-right-list {
     padding-bottom: 10px;
 }
 /* page component end */
+/* page aaltp start */
+.text-container {
+    padding: 35px 0;
+    margin-bottom: 2rem;
+    font-family: Roboto;
+}
+
+/*  page aaltp start  */
