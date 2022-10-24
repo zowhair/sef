@@ -4,16 +4,16 @@
     <main>
         <div class="container">
         <div class="row">
-                <x-main-center-left name="Contact Us" >
+                <x-main-center.main-center-left name="Contact Us" >
                     <x-slot name="banner">
                         <h1>banner image</h1>
                     </x-slot>
                     <x-slot name="maincontent">
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis saepe illum dolore sint nemo incidunt doloremque delectus assumenda quaerat aliquid, voluptatem culpa magnam facere laudantium nihil voluptate repellat architecto minima?</p>
                     </x-slot>
-                </x-main-center-left>
+                </x-main-center.main-center-left>
                 <div class="col-4 main-center-section-right">
-                    <x-main-center-right-top name="programs">
+                    <x-main-center.main-center-right-top name="programs">
                         <x-slot name="links">
                             <ul>
                                 @for($i=0;$i<4;$i++) 
@@ -24,8 +24,8 @@
                                 @endfor
                             </ul>
                         </x-slot>
-                    </x-main-center-right-top>
-                    <x-main-center-right-bottom name="recent news">
+                    </x-main-center.main-center-right-top>
+                    <x-main-center.main-center-right-bottom name="recent news">
                             <x-slot name="links1">
                                 <ul>
                                     <p>
@@ -37,7 +37,7 @@
                                     </p>
                                 </ul>
                             </x-slot>
-                    </x-main-center-right-bottom>
+                    </x-main-center.main-center-right-bottom>
                 </div>
             </div>
         </div>
