@@ -25,4 +25,7 @@ class PagesController extends Controller
     public function tenderPage(Request $request) {
         return view('pages.tender');
     }
+    public function altpPage(Request $request) {
+        return view('pages.aaltp');
+    }
 }

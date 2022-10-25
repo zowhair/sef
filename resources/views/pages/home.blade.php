@@ -1,12 +1,12 @@
 @extends('layout.app')
 @section('content')
-    @component('components.nav')@endcomponent
+    <x-nav />
     <main>
-        @component('components.main-carousel')@endcomponent
+        <x-main-carousel />
         <!-- programs -->
-        @component('components.programs')@endcomponent
+        <x-programs />
         <!-- footer along with script tags -->
-        @component('components.bottom-map')@endcomponent
+        <x-bottom-map />
     </main>
     @include('includes.footer')
 @stop

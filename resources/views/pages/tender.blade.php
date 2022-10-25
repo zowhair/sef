@@ -4,9 +4,9 @@
     @endpush
 @stop
 @section('content')
-    @component('components.nav')@endcomponent
+    <x-nav />
     <main>
-        @component('components.tender-datatables')@endcomponent
+        <x-tender-datatables />
     </main>
     @include('includes.datatable-footer')
     

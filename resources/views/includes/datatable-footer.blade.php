@@ -1,5 +1,5 @@
 @include('components.footer-content')
-    </header>
+
 
     @include('includes.datatable-scripts')
      <script type='text/javascript' id='newsprk-main-js-extra'>

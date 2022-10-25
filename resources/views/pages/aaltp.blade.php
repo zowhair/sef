@@ -1,10 +1,12 @@
 @extends('layout.app')
+@extends('layout.page-inner-section')
+
 @section('content')
     <x-nav />
     <main>
         <div class="container">
-        <div class="row">
-                <x-main-center.main-center-left name="Contact Us" >
+            <div class="row">
+                <x-main-center.main-center-left name="ALTP" >
                     <x-slot name="banner">
                         <h1>banner image</h1>
                     </x-slot>

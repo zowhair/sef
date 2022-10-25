@@ -6,5 +6,6 @@
         @include('components.mid-nav')
         <!-- navigation bar -->
     <nav>
-        @include('components.navbar-copied')
+        @include('components.navbar')
     </nav>
+</header>
