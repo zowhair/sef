@@ -15,7 +15,7 @@
                   <ul id="menu-main-menu" class="nav navbar-nav">
                     <li id="menu-item-3222"
                       class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-3222 nav-item dropdown">
-                      <a href="" class="nav-link has-child dropdown-toggle" data-toggle="dropdown">Home</a>
+                      <a href="/" class="nav-link has-child dropdown-toggle" data-toggle="dropdown">Home</a>
                     </li>
                     <li id="menu-item-3152"
                       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3152 nav-item dropdown">
@@ -39,29 +39,29 @@
                           <ul class="dropdown-menu">
                             <li id="menu-item-5294"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                              <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
+                              <a href="/communication-and-research" class=" dropdown-item">Communication and Research</a>
                             <li id="menu-item-7367"
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                              <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
+                              <a href="/finance-and-audit" class=" dropdown-item">Finance and Audit</a>
                             <li id="menu-item-7420"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                              <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
+                              <a href="/general-administrator" class=" dropdown-item">General Administration</a>
                             </li>
                             <li id="menu-item-7421"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
-                              <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
+                              <a href="/human-resource" class=" dropdown-item">Human Resource</a>
                             </li>
                             <li id="menu-item-5296"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                              <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
+                              <a href="/information-tech" class=" dropdown-item">Informaton Technology</a>
                             </li>
                             <li id="menu-item-5296"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                              <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
+                              <a href="/planing-and-program" class=" dropdown-item">Planning And Programs</a>
                             </li>
                             <li id="menu-item-5296"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                              <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
+                              <a href="/training-and-assessment" class=" dropdown-item">Training and Assessment</a>
                             </li>
                             <li id="menu-item-5277"
                               class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
@@ -69,7 +69,7 @@
                               <ul class="dropdown-menu">
                                 <li id="menu-item-5289"
                                   class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                  <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                                  <a href="/monitoring-and-evaluation-cell"
                                     class=" dropdown-item">Monitoring and Evaluation Cell</a>
                                 </li>
                               </ul>
@@ -128,7 +128,7 @@
                           <a href="/altp" class=" dropdown-item">AALTP</a>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                          <a href="../category/finance/" class=" dropdown-item">AASP</a>
+                          <a href="/aasp" class=" dropdown-item">AASP</a>
                         </li>
                         <li id="menu-item-5277"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
@@ -136,22 +136,22 @@
                           <ul class="dropdown-menu">
                             <li id="menu-item-5289"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                              <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                              <a href="/initiative-install"
                                 class=" dropdown-item">INSTAL</a>
                             </li>
                             <li id="menu-item-5274"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                              <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                              <a href="/teach-for-change"
                                 class=" dropdown-item">Teach For Change</a>
                             </li>
                           </ul>
                         </li>
                         <li id="menu-item-5268"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5268 nav-item">
-                          <a href="../category/sports/" class=" dropdown-item"> Foundation Assisted Schools</a>
+                          <a href="/fas" class=" dropdown-item"> Foundation Assisted Schools</a>
                         <li id="menu-item-5269"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5269 nav-item">
-                          <a href="../category/travel/" class=" dropdown-item">People's School Program</a>
+                          <a href="/comprehensive-school" class=" dropdown-item">Comprehensive School</a>
                       </ul>
                     </li>
                     <li id="menu-item-3151"
@@ -312,7 +312,7 @@
       <nav class="offcanvas__navigation">
         <ul>
           <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-3222">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
 
           </li>
           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3152">
@@ -336,29 +336,29 @@
                 <ul class="sub-menu">
                   <li id="menu-item-5294"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                    <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
+                    <a href="/communication-and-research" class=" dropdown-item">Communication and Research</a>
                   <li id="menu-item-7367"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                    <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
+                    <a href="/finance-and-audit" class=" dropdown-item">Finance and Audit</a>
                   <li id="menu-item-7420"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                    <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
+                    <a href="/general-administrator" class=" dropdown-item">General Administration</a>
                   </li>
                   <li id="menu-item-7421"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
-                    <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
+                    <a href="/human-resource" class=" dropdown-item">Human Resource</a>
                   </li>
                   <li id="menu-item-5296"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                    <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
+                    <a href="/information-tech" class=" dropdown-item">Informaton Technology</a>
                   </li>
                   <li id="menu-item-5296"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                    <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
+                    <a href="/planing-and-program" class=" dropdown-item">Planning And Programs</a>
                   </li>
                   <li id="menu-item-5296"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                    <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
+                    <a href="/training-and-assessment" class=" dropdown-item">Training and Assessment</a>
                   </li>
                   <li id="menu-item-5277"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
@@ -366,7 +366,7 @@
                     <ul class="sub-menu">
                       <li id="menu-item-5289"
                         class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                        <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                        <a href="/monitoring-and-evaluation-cell"
                           class=" dropdown-item">Monitoring and Evaluation Cell</a>
                       </li>
                     </ul>
@@ -414,28 +414,31 @@
             <a href="#">Programs</a>
             <ul class="sub-menu">
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264">
-                <a href="../category/business/">AALTP</a>
+                <a href="/altp">AALTP</a>
               </li>
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265">
-                <a href="../category/finance/">AASP</a>
+                <a href="/aasp">AASP</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
                 <a href="#">Initiatives</a>
                 <ul class="sub-menu">
                   <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
-                    <a href="">INSTAL</a>
+                    <a href="/initiative-install">INSTAL</a>
                   </li>
                   <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
-                    <a href="">Teach For Change</a>
+                    <a href="/teach-for-change">Teach For Change</a>
                   </li>
 
                 </ul>
               </li>
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5268">
-                <a href="../category/sports/">Foundation Assisted Schools</a>
+                <a href="/fas">Foundation Assisted Schools</a>
               </li>
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5269">
-                <a href="../category/travel/">GOVT School Buidlings</a>
+                <a href="/functionalization-govt-school-building">GOVT School Buidlings</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5269">
+                <a href="/comprehensive-school">Comprehensive School</a>
               </li>
             </ul>
           </li>

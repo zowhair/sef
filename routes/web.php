@@ -25,6 +25,20 @@ Route::get('/functionalization-govt-school-building', [PagesController::class, '
 Route::get('/comprehensive-school', [PagesController::class, 'comprehensiveSchoolPage']);
 Route::get('/initiative-install', [PagesController::class, 'installPage']);
 // program pages end
+Route::get('/communication-and-research', [PagesController::class, 'CommunicationAndResearchPage']);
+Route::get('/finance-and-audit', [PagesController::class, 'financeAuditPage']);
+Route::get('/general-administrator', [PagesController::class, 'generalAdministratorPage']);
+Route::get('/human-resource', [PagesController::class, 'humanResourcePage']);
+Route::get('/information-tech', [PagesController::class, 'informationTechPage']);
+Route::get('/planing-and-program', [PagesController::class, 'planingPage']);
+Route::get('/training-and-assessment', [PagesController::class, 'trainingPage']);
+Route::get('/monitoring-and-evaluation-cell', [PagesController::class, 'monotoringEvaluationPage']);
+
+
+
+
+
+
 
 
 

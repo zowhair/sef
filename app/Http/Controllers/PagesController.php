@@ -25,6 +25,7 @@ class PagesController extends Controller
     public function tenderPage(Request $request) {
         return view('pages.tender');
     }
+    // program pages start
     public function altpPage(Request $request) {
         return view('pages.program.aaltp');
     }
@@ -46,4 +47,31 @@ class PagesController extends Controller
     public function installPage(Request $request) {
         return view('pages.program.install');
     }
+    // program pages end
+    // department pages start
+    public function CommunicationAndResearchPage(Request $request) {
+        return view('pages.about.department.communication-and-research');
+    }
+    public function financeAuditPage(Request $request) {
+        return view('pages.about.department.finance-and-audit');
+    }
+    public function generalAdministratorPage(Request $request) {
+        return view('pages.about.department.general-administrator');
+    }
+    public function humanResourcePage(Request $request) {
+        return view('pages.about.department.human-resource');
+    }
+    public function informationTechPage(Request $request) {
+        return view('pages.about.department.information-tech');
+    }
+    public function planingPage(Request $request) {
+        return view('pages.about.department.planing-and-program');
+    }
+    public function trainingPage(Request $request) {
+        return view('pages.about.department.training-and-assessment');
+    }
+    public function monotoringEvaluationPage(Request $request) {
+        return view('pages.about.department.monitoring-and-evaluation-cell');
+    }
+    // department pages end
 }
