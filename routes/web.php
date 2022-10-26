@@ -16,4 +16,16 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/contact', [PagesController::class, 'contactPage']);
 Route::get('/tender', [PagesController::class, 'tenderPage']);
+// program pages start
 Route::get('/altp', [PagesController::class, 'altpPage']);
+Route::get('/aasp', [PagesController::class, 'aaspPage']);
+Route::get('/teach-for-change', [PagesController::class, 'teach_for_changePage']);
+Route::get('/fas', [PagesController::class, 'fasPage']);
+Route::get('/functionalization-govt-school-building', [PagesController::class, 'functionalizationGovtSchoolBuildingPage']);
+Route::get('/comprehensive-school', [PagesController::class, 'comprehensiveSchoolPage']);
+Route::get('/initiative-install', [PagesController::class, 'installPage']);
+// program pages end
+
+
+
+
