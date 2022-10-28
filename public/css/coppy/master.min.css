@@ -5314,8 +5314,8 @@ li.page_category {
 
 .video_img_icon {
     position: absolute;
-    top: 85%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     background: #f55;
     width: 80px;
     height: 80px;
@@ -9082,9 +9082,6 @@ input.cbt3:hover {
     }
 }
 
-.theme-3 .container {
-    max-width: 1230px
-}
 
 .theme-3 .signup_form form {
     background: #ecedee;
