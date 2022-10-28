@@ -5314,8 +5314,8 @@ li.page_category {
 
 .video_img_icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 85%;
+    left: 35%;
     background: #f55;
     width: 80px;
     height: 80px;
@@ -15055,7 +15055,7 @@ a.social_medium {
 .single_post_text h4 {
     font-size: 16px;
     color: #17222b;
-    line-height: 21px
+    line-height: 35px
 }
 
 .post_img {

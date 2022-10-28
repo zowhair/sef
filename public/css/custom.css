@@ -956,3 +956,20 @@ img {
     
 }
 /* page component end */
+/* partner pages start */
+.single_post_text>h4>a,.single_post_text>p>a{
+    text-decoration: none;
+}
+.widgets_small .post_img{
+    padding: 5px 0;
+}
+.post__meta a:after{
+    content:"" !important ;
+}
+/* partner pages end */
+/* datatable */
+tr {
+    font-size: 15px;
+}
+/* datatable */
+

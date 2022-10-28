@@ -1100,7 +1100,7 @@ figure {
 .meta4 a:after,
 .meta5 a:after,
 .post__meta a:after {
-    content: "/";
+    /* content: "/"; */
     display: inline-block;
     margin-left: 10px;
     transform: rotate(20deg);

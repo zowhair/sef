@@ -74,4 +74,18 @@ class PagesController extends Controller
         return view('pages.about.department.monitoring-and-evaluation-cell');
     }
     // department pages end
+    // scholarship pages start
+    public function scholarshipPage(Request $request) {
+        return view('pages.scholarship.scholarship-introduction');
+    }
+    public function partnerPage(Request $request) {
+        return view('pages.scholarship.partner-institution');
+    }
+    public function annoncementsPage(Request $request) {
+        return view('pages.scholarship.annoncement');
+    }
+    public function alumniPage(Request $request) {
+        return view('pages.scholarship.alumni');
+    }
+    // scholarship pages end
 }
