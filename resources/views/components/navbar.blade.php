@@ -275,7 +275,7 @@
                     </li>
                     <li id="menu-item-5292"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5292 nav-item">
-                      <a href="../contact/" class="nav-link">News & Updates</a>
+                      <a href="/news_and_updates" class="nav-link">News & Updates</a>
                     </li>
                     <li id="menu-item-5292"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5292 nav-item">
@@ -561,7 +561,7 @@
             </ul>
           </li>
           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7431">
-            <a href="../">News & Updates</a>
+            <a href="/news_and_updates">News & Updates</a>
           </li>
           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7431">
             <a href="../">Careers</a>

@@ -49,6 +49,7 @@ Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
 
 // e-publications end
 Route::get('/notification', [PagesController::class, 'notificationPage']);
+Route::get('/news_and_updates', [PagesController::class, 'newsUpdatesPage']);
 
 
 
