@@ -998,11 +998,7 @@ font-size: small;
         margin-bottom: 5px !important;
     }
 }
-@media screen and (max-width: 1000px) {
-    .inner-content-main{
-        flex-direction: column;
-    }
-}
+
 
 /* side bar  */
 .signup_form form input.cbtn, .theme-3 .signup_form form input.cbtn, a.cbtn1, button.cbtn1, input.cbtn1{
@@ -1011,4 +1007,10 @@ font-size: small;
 }
 .social_shares a{
     text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+
+.main-center-section-right{
+    display: none;
+}
 }

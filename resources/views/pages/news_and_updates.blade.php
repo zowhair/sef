@@ -10,7 +10,7 @@
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
                             <div class="inner-content-main  row">
-                                <div class="post_img col-md-6 ">
+                                <div class="post_img col-md-6  ">
                                     <div class="img_wrap">
                                         <img width="1200" height="800" alt=""
                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyloaded"
@@ -95,7 +95,7 @@
                        
                     </x-slot>
                 </x-main-center.main-center-left>
-                <div class="col-4 main-center-section-right">
+                <div class="col-md-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Search">
                         <x-slot name="links">
                             <div id="search-1" class="widget widget_search">
