@@ -41,6 +41,13 @@ Route::get('/partner-institution', [PagesController::class, 'partnerPage']);
 Route::get('/annoncements', [PagesController::class, 'annoncementsPage']);
 Route::get('/alumni', [PagesController::class, 'alumniPage']);
 // scholarship pages end
+// e-publications start
+Route::get('/anunal_report', [PagesController::class, 'anunalPage']);
+Route::get('/news_letters', [PagesController::class, 'newsPage']);
+Route::get('/research_studies', [PagesController::class, 'researchPage']);
+Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
+
+// e-publications end
 
 
 

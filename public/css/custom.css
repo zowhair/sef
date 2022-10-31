@@ -972,4 +972,9 @@ tr {
     font-size: 15px;
 }
 /* datatable */
-
+/* e-publication */
+.inner-content-text{
+font-size: small;
+    line-height: 1.4rem;
+}
+/* e-publication */

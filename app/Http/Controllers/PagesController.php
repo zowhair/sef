@@ -88,4 +88,18 @@ class PagesController extends Controller
         return view('pages.scholarship.alumni');
     }
     // scholarship pages end
+    // e-publication pages start
+    public function anunalPage(Request $request) {
+        return view('pages.resource.e-publications.anunal_report');
+    }
+    public function newsPage(Request $request) {
+        return view('pages.resource.e-publications.news_letters');
+    }
+    public function researchPage(Request $request) {
+        return view('pages.resource.e-publications.research_studies');
+    }
+    public function sujaagPage(Request $request) {
+        return view('pages.resource.e-publications.sujaag');
+    }
+    // e-publication pages end
 }

@@ -170,14 +170,14 @@
                       <ul class="dropdown-menu">
                         <li id="menu-item-5264"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
-                          <a href="../category/business/" class=" dropdown-item">Introduction</a>
+                          <a href="/scholarship" class=" dropdown-item">Introduction</a>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                          <a href="../category/finance/" class=" dropdown-item">Partner Institutions</a>
+                          <a href="/partner-institution" class=" dropdown-item">Partner Institutions</a>
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                          <a href="../category/finance/" class=" dropdown-item">Announcemnets</a>
+                          <a href="/annoncements" class=" dropdown-item">Announcemnets</a>
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -198,22 +198,22 @@
                           <ul class="dropdown-menu">
                             <li id="menu-item-5289"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                              <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                              <a href="/anunal_report"
                                 class=" dropdown-item">Anunnal Report</a>
                             </li>
                             <li id="menu-item-5274"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                              <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                              <a href="/news_letters"
                                 class=" dropdown-item">Newsletter</a>
                             </li>
                             <li id="menu-item-5274"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                              <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                              <a href="/research_studies"
                                 class=" dropdown-item">Research Studies</a>
                             </li>
                             <li id="menu-item-5274"
                               class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                              <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                              <a href="/sujaag"
                                 class=" dropdown-item">Sujaag</a>
                             </li>
                           </ul>
@@ -458,14 +458,14 @@
             <ul class="sub-menu">
               <li id="menu-item-5264"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
-                <a href="../category/business/" class=" dropdown-item">Introduction</a>
+                <a href="/scholarship" class=" dropdown-item">Introduction</a>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                <a href="../category/finance/" class=" dropdown-item">Partner Institutions</a>
+                <a href="/partner-institution" class=" dropdown-item">Partner Institutions</a>
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                <a href="../category/finance/" class=" dropdown-item">Announcemnets</a>
+                <a href="/annoncements" class=" dropdown-item">Announcemnets</a>
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -485,22 +485,22 @@
                 <ul class="sub-menu">
                   <li id="menu-item-5289"
                     class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                    <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                    <a href="/anunal_report"
                       class=" dropdown-item">Anunnal Report</a>
                   </li>
                   <li id="menu-item-5274"
                     class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                    <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                    <a href="news_letters"
                       class=" dropdown-item">Newsletter</a>
                   </li>
                   <li id="menu-item-5274"
                     class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                    <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                    <a href="/research_studies"
                       class=" dropdown-item">Research Studies</a>
                   </li>
                   <li id="menu-item-5274"
                     class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                    <a href="../asda-is-set-to-launch-its-first-ever-loyalty-card-scheme-giving-shoppers-money-off-groceries-2/"
+                    <a href="/sujaag"
                       class=" dropdown-item">Sujaag</a>
                   </li>
                 </ul>
