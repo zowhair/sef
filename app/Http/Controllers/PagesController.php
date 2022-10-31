@@ -102,4 +102,7 @@ class PagesController extends Controller
         return view('pages.resource.e-publications.sujaag');
     }
     // e-publication pages end
+    public function notificationPage(Request $request) {
+        return view('pages.resource.notifications');
+    }
 }

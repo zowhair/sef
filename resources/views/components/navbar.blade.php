@@ -245,7 +245,7 @@
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                          <a href="../category/finance/" class=" dropdown-item">Notification</a>
+                          <a href="/notification" class=" dropdown-item">Notification</a>
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -532,7 +532,7 @@
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                <a href="../category/finance/" class=" dropdown-item">Notification</a>
+                <a href="/notification" class=" dropdown-item">Notification</a>
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
