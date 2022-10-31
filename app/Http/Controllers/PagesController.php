@@ -105,6 +105,9 @@ class PagesController extends Controller
     public function notificationPage(Request $request) {
         return view('pages.resource.notifications');
     }
+    public function carePage(Request $request) {
+        return view('pages.resource.care-for-life-education');
+    }
     public function newsUpdatesPage(Request $request) {
         return view('pages.news_and_updates');
     }

@@ -32,7 +32,7 @@
                     </x-slot>
                 </x-main-center.main-center-left>
                 <div class="col-4 main-center-section-right">
-                    <x-main-center.main-center-right-top name="Programs">
+                    <x-main-center.main-center-right-top name="E-Publication">
                         <x-slot name="links">
                             <ul>
                                     <li>
