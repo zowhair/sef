@@ -23,15 +23,15 @@
                       <ul class="dropdown-menu">
                         <li id="menu-item-5275"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5276 nav-item  ">
-                          <a href="#" class=" dropdown-item">Introduction</a>
+                          <a href="/introduction" class=" dropdown-item">Introduction</a>
                         </li>
                         <li id="menu-item-5276"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5276 nav-item  ">
-                          <a href="#" class=" dropdown-item">Educational FrameWork</a>
+                          <a href="/education_framework" class=" dropdown-item">Educational FrameWork</a>
                         </li>
                         <li id="menu-item-5276"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5276 nav-item  ">
-                          <a href="#" class=" dropdown-item">Organogram</a>
+                          <a href="/organogram" class=" dropdown-item">Organogram</a>
                         </li>
                         <li id="menu-item-5277"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
@@ -322,15 +322,15 @@
             <a href="#">About Us</a>
             <ul class="sub-menu">
               <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                <a href="#">Introduction</a>
+                <a href="/introduction">Introduction</a>
 
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                <a href="#">Education FrameWork</a>
+                <a href="/educational_framework">Education FrameWork</a>
 
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                <a href="#">Organogram</a>
+                <a href="/organogram">Organogram</a>
 
               </li>
               <li id="menu-item-5293"
