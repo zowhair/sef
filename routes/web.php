@@ -13,6 +13,21 @@ use App\Http\Controllers\PagesController;
 |
 */
 
+//sef website admin panel
+
+Route::get('/dashboard', function () {
+    return view('/dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
+Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
+
+//sef website front end site
+
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/contact', [PagesController::class, 'contactPage']);
 Route::get('/tender', [PagesController::class, 'tenderPage']);
@@ -51,12 +66,3 @@ Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
 Route::get('/notification', [PagesController::class, 'notificationPage']);
 Route::get('/news_and_updates', [PagesController::class, 'newsUpdatesPage']);
 Route::get('/care-for-life', [PagesController::class, 'carePage']);
-
-
-
-
-
-
-
-
-
