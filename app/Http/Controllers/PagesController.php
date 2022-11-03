@@ -111,6 +111,9 @@ class PagesController extends Controller
     public function newsUpdatesPage(Request $request) {
         return view('pages.news_and_updates');
     }
+    public function schoolDataPage(Request $request) {
+        return view('pages.school_data');
+    }
     // about start
     public function aboutIntroPage(Request $request) {
         return view('pages.about.introduction');

@@ -260,7 +260,7 @@
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                          <a href="../category/finance/" class=" dropdown-item">School Data</a>
+                          <a href="/school-data" class=" dropdown-item">School Data</a>
                         </li>
                         <li id="menu-item-5265"
                           class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -550,7 +550,7 @@
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-                <a href="../category/finance/" class=" dropdown-item">School Data</a>
+                <a href="/school-data" class=" dropdown-item">School Data</a>
               </li>
               <li id="menu-item-5265"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
