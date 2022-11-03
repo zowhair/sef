@@ -20,11 +20,11 @@
     </li>
     <!-- Sidebar Toggler (Sidebar) -->
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('tenders')}}">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tender</span></a>
-    </li>
+{{--    <li class="nav-item">--}}
+{{--        <a class="nav-link" href="{{ route('tenders')}}">--}}
+{{--            <i class="fas fa-fw fa-table"></i>--}}
+{{--            <span>Tender</span></a>--}}
+{{--    </li>--}}
 
 
 </ul>
