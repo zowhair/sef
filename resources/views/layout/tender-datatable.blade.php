@@ -5,8 +5,8 @@
     </head>
     <body>
         @yield('content')
-        
-        @include('includes.datatable-footer')
+
+{{--        @include('includes.datatable-footer')--}}
         @include('includes.datatable-scripts')
     </body>
 </html>

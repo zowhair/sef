@@ -23,7 +23,7 @@
 
                 <!-- Footer -->
             </div>
-            @include('admin.layouts.footer')
+{{--            @include('admin.layouts.footer')--}}
             <!-- End of Footer -->
 
             <!-- End of Content Wrapper -->

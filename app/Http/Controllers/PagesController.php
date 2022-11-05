@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\TenderController;
+use App\Models\Tender;
+use App\Models\Alumni;
 
 class PagesController extends Controller
 {
@@ -23,7 +26,8 @@ class PagesController extends Controller
         return view('pages.contact');
     }
     public function tenderPage(Request $request) {
-        return view('pages.tender');
+        $data=Tender::all();
+        return view('pages.tender',compact('data'));
     }
     // program pages start
     public function altpPage(Request $request) {
@@ -85,7 +89,8 @@ class PagesController extends Controller
         return view('pages.scholarship.annoncement');
     }
     public function alumniPage(Request $request) {
-        return view('pages.scholarship.alumni');
+        $data=Alumni::all();
+        return view('pages.scholarship.alumni',compact('data'));
     }
     // scholarship pages end
     // e-publication pages start

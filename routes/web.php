@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\TenderController;
+use App\Http\Controllers\AlumniController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +27,11 @@ Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
 Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
 Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
+//tender
+Route::resource('/tenders', TenderController::class);
+Route::get('/files/{id}', [App\Http\Controllers\TenderController::class, 'download'])->name('files');
+//alumni
+Route::resource('/alumnis', AlumniController::class);
 
 //sef website front end site
 

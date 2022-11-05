@@ -20,8 +20,9 @@
         href="{{ asset('assets\vendor\fontawesome-free\css\fontawesome.css') }}"
         rel="stylesheet" type='text/css'>
 
+   @include('includes.datatable-styles')
 
-    <!-- Custom styles for this page -->
+<!-- Custom styles for this page -->
     <link href="{{ asset('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
           integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="

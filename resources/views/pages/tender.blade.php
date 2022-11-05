@@ -4,14 +4,15 @@
     @endpush
 @stop
 @section('content')
-    <x-nav />
+    <x-nav/>
     <main>
-        <x-tender-datatables />
+        {{--        <x-tender-datatables />--}}
+        @include('includes.tender_datatables');
     </main>
-    @include('includes.datatable-footer')
-    
-    @section('scripts')
-        @push('includes.datatable-scripts')
-        @endpush
-    @stop
+        @include('includes.datatable-footer')
+
+@section('scripts')
+    @push('includes.datatable-scripts')
+    @endpush
+@stop
 @stop
