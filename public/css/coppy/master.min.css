@@ -9082,9 +9082,6 @@ input.cbt3:hover {
     }
 }
 
-.theme-3 .container {
-    max-width: 1230px
-}
 
 .theme-3 .signup_form form {
     background: #ecedee;
@@ -10170,7 +10167,7 @@ input.cbt3:hover {
 
 .theme-3 .sociai_style3.inner_socail4 a.single_social {
     width: 46%;
-    padding-left: 45px
+    padding-left: 35px
 }
 
 @media screen and (max-width:1024px) and (max-width:1300px) {
@@ -15055,7 +15052,7 @@ a.social_medium {
 .single_post_text h4 {
     font-size: 16px;
     color: #17222b;
-    line-height: 21px
+    line-height: 35px
 }
 
 .post_img {
