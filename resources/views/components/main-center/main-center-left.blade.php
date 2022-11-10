@@ -5,10 +5,30 @@
         @endisset
     </div>
     <div class="widget-title"></div>
-    @if(isset($banner))
-        {{ $banner }}
-    @endisset
-    @if(isset($maincontent))
-        {{ $maincontent }}
-    @endisset
+    
+        <div >
+            <div>
+                <!-- introduction section -->
+                @if(isset($banner))
+                    {{ $banner }}
+                @endisset
+                @if(isset($maincontent))
+                    {{ $maincontent }}
+                @endisset
+            </div>
+            <div>
+                <!-- Gallary section -->
+
+                @if(isset($gallary))
+                    {{ $gallary }}
+                @endisset
+            </div>
+            <div>
+                <!-- Faqs section -->
+                @if(isset($faq))
+                    {{ $faq }}
+                @endisset
+            </div>
+        </div>
+        
 </div>

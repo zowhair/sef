@@ -1,7 +1,7 @@
 <section class="section bg-transparent position-relative map-container"  data-preset='{"title":"Intro","category":"intro","reload":true,"id":"intro-5"}'>
     <div class="container">
         <div class="heading">
-            <h2 class="widget-title"> District-wise Summary </h2>
+            <h2 class="widget-title pb-3"> District-wise Summary </h2>
         </div>
         <div class="row">
             <div class="col-md-3 col-sm-4 col-4 card_district block rounded-lg shadow bg-white max-w-sm " id="card_dist">
