@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\TenderController;
+use App\Http\Controllers\AlumniController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +14,26 @@ use App\Http\Controllers\PagesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//sef website admin panel
+
+Route::get('/dashboard', function () {
+    return view('/dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
+Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
+//tender
+Route::resource('/tenders', TenderController::class);
+Route::get('/files/{id}', [App\Http\Controllers\TenderController::class, 'download'])->name('files');
+//alumni
+Route::resource('/alumnis', AlumniController::class);
+
+//sef website front end site
 
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/contact', [PagesController::class, 'contactPage']);
@@ -51,17 +73,12 @@ Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
 Route::get('/notification', [PagesController::class, 'notificationPage']);
 Route::get('/news_and_updates', [PagesController::class, 'newsUpdatesPage']);
 Route::get('/care-for-life', [PagesController::class, 'carePage']);
+
 Route::get('/school-data', [PagesController::class, 'schoolDataPage']);
 
 // about
 Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
-
-
-
-
-
-
 
 

@@ -6,10 +6,13 @@
 @section('content')
     <x-nav />
     <main>
-        <x-alumni-datatables />
+{{--        <x-alumni-datatables />--}}
+
+        @include('includes.alumni_datatables');
+
     </main>
     @include('includes.datatable-footer')
-    
+
     @section('scripts')
         @push('includes.datatable-scripts')
         @endpush
