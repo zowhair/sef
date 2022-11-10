@@ -73,12 +73,3 @@ Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
 Route::get('/notification', [PagesController::class, 'notificationPage']);
 Route::get('/news_and_updates', [PagesController::class, 'newsUpdatesPage']);
 Route::get('/care-for-life', [PagesController::class, 'carePage']);
-
-Route::get('/school-data', [PagesController::class, 'schoolDataPage']);
-
-// about
-Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
-Route::get('/educational_framework', [PagesController::class, 'educationPage']);
-Route::get('/organogram', [PagesController::class, 'organogramPage']);
-
-
