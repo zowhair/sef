@@ -14,6 +14,9 @@
                 <th>Passing<br> Year</th>
                 <th>Contact</th>
                 <th>Current <br>Status</th>
+                @auth
+                <th>action</th>
+                @endauth
             </tr>
             </thead>
             <tbody>
@@ -35,6 +38,12 @@
                     <td>{{Carbon\Carbon::parse($row->passing_year)->format('d-m-Y')}}</td>
                     <td>{{$row->contact}}</td>
                     <td>{{$row->current_status}}</td>
+                    @auth
+                    <td>
+                        <a href="/alumnis/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
+                        <a href="/alumnis/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                    </td>
+                    @endauth
                 </tr>
                 <?php
                 $count++;

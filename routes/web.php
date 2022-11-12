@@ -32,6 +32,10 @@ Route::resource('/tenders', TenderController::class);
 Route::get('/files/{id}', [App\Http\Controllers\TenderController::class, 'download'])->name('files');
 //alumni
 Route::resource('/alumnis', AlumniController::class);
+Route::get('/alumnis/delete/{id}', [AlumniController::class, 'destroy']);
+Route::get('/alumnis/edit/{id}', [AlumniController::class, 'edit']);
+Route::post('/alumnis/update', [AlumniController::class, 'update']);
+
 
 //sef website front end site
 

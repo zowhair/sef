@@ -15,7 +15,7 @@
                     </div>
                 </div>
 {{--                @include('layout.tender-datatable')--}}
-                @include('includes.alumni_datatables');
+                @include('includes.alumni_datatables')
 
 
             </div>
