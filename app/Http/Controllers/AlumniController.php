@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Alumni;
 use Illuminate\Http\Request;
+use DB;
 
 class AlumniController extends Controller
 {
@@ -59,9 +60,10 @@ class AlumniController extends Controller
      * @param  \App\Models\Alumni  $alumni
      * @return \Illuminate\Http\Response
      */
-    public function edit(Alumni $alumni)
+    public function edit($alumni_id)
     {
-        //
+        $alumni_Data=DB::table('alumnis')->find($alumni_id);
+        return view('admin.alumni.edit',compact('alumni_Data','alumni_id'));
     }
 
     /**
@@ -71,9 +73,23 @@ class AlumniController extends Controller
      * @param  \App\Models\Alumni  $alumni
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Alumni $alumni)
+    public function update(Request $request)
     {
-        //
+        $input = $request->all();
+        $id=$request->id;
+        $alumni=Alumni::find($id);
+        $alumni->name=$request->name;
+        $alumni->father_name=$request->father_name;
+        $alumni->domsile_dirtrict=$request->domsile_dirtrict;
+        $alumni->school_category=$request->school_category;
+        $alumni->class_adm_in=$request->class_adm_in;
+        $alumni->institution_studied=$request->institution_studied;
+        $alumni->passing_year=$request->passing_year;
+        $alumni->contact=$request->contact;
+        $alumni->current_status=$request->current_status;
+        $alumni->update();
+
+        return redirect('/alumnis/');
     }
 
     /**
@@ -82,8 +98,9 @@ class AlumniController extends Controller
      * @param  \App\Models\Alumni  $alumni
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Alumni $alumni)
+    public function destroy($alumni_id)
     {
-        //
+        DB::table('alumnis')->where('id', $alumni_id)->delete();
+        return redirect()->back();
     }
 }
