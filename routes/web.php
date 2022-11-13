@@ -30,6 +30,10 @@ Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logo
 //tender
 Route::resource('/tenders', TenderController::class);
 Route::get('/files/{id}', [App\Http\Controllers\TenderController::class, 'download'])->name('files');
+Route::get('/tenders/edit/{id}', [TenderController::class, 'edit']);
+Route::get('/tenders/delete/{id}', [TenderController::class, 'destroy']);
+Route::post('/tenders/update', [TenderController::class, 'update']);
+
 //alumni
 Route::resource('/alumnis', AlumniController::class);
 Route::get('/alumnis/delete/{id}', [AlumniController::class, 'destroy']);
