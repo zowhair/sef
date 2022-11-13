@@ -10,6 +10,9 @@
                 <th>Bid Report</th>
                 <th>Contract Report</th>
                 <th>Contract</th>
+                @auth
+                <th>Action</th>
+                @endauth
             </tr>
             </thead>
             <tbody>
@@ -30,6 +33,12 @@
                     <td class="td_cont"><a href="{{$row->contract}}">
                             <?php if($row->contract != null){?><i class="fas fa-file"><?php } ?></i></a>
                     </td>
+                    @auth
+                    <td>
+                        <a href="/tenders/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
+                        <a href="/tenders/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                    </td>
+                    @endauth
 
                 </tr>
             @endforeach
