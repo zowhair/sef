@@ -2,7 +2,8 @@
 @section('content')
     <x-nav />
     <main>
-        <x-main-carousel />
+        
+        <x-main-carousel :data="$data"/>
         <!-- programs -->
         <x-programs />
         <!-- footer along with script tags -->

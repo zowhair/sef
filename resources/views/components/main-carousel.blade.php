@@ -31,7 +31,8 @@
       </div>
     </div>
     <div class="col-4 right-pills-col">
-      @component('components.main-carousel-sidebar')@endcomponent
+      
+      @component('components.main-carousel-sidebar',["data"=>$data])@endcomponent
     </div>
   </div>
 </div>

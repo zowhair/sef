@@ -16,31 +16,31 @@
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-          @for($i=0; $i<5; $i++)
+        @foreach($data as $row)
             <div class="panel-wrapper">
               <div class="alpha">
-                <div class="image">
-                  <img src="{{ asset('img/dd.jpg') }}" />
+                <div class="image news_image">
+                  <img src="{{$row->img_url}}" />
                 </div>
               </div>
               <div class="beta">
                 <a href="#" class="title-link">
                   <h5 class="title">
-                    This is title  lkjh ljh tjh this is anoter
+                  {{$row->title}}
                   </h5>
                 </a>
                 <div class="lower-content">
                   <a href="#" class="lower-content-left">
-                    {{$latestNews}}
+                    {{$latestNews}} 
                   </a>
 
                   <div class="lower-content-date">
-                    June 20, 2022
+                  {{$row->date}}
                   </div>
                 </div>
               </div>
             </div>
-          @endfor
+          @endforeach
         </div>
     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         @for($i=0; $i<5; $i++)

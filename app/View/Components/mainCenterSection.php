@@ -12,9 +12,11 @@ class mainCenterSection extends Component
      * @return void
      */
     public $name = '';
-    public function __construct($name)
+    public $data;
+    public function __construct($name,$data)
     {
         $this->$name = $name;
+        $this->$data = $data;
     }
 
     /**
