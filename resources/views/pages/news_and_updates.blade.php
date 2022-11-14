@@ -6,7 +6,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Alumni" >
+                <x-main-center.main-center-left name="News and Updates" >
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
                             <div class="inner-content-main  row">
@@ -19,13 +19,12 @@
                                 </div>
                                 <div class="single_post_text news-text col-md-6  ">
                                     <div class="meta3">
-                                        <a class="post__author" href="#"> Admin</a> <a class="date" href="#">March
-                                            31, 2021</a>
+                                        <a class="post__author" href="#"> Admin</a> 
+                                        <a class="date" href="#">March 31, 2021</a>
                                     </div>
                                     <h6>
                                         JICA met with SEF higher management
                                     </h6>
-
                                     <div class="desc" style="font-size: 14px;line-height: 1.5rem;">
                                         The Managing Director SEF along with Deputy Managing Director (Operations) held
                                         a meeting on 3rd Oct 2022, with Dr. Akiko Hanaya (Senior Education Advisor)

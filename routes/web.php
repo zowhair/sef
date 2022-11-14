@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\TenderController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\NewsUpdatesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +41,11 @@ Route::resource('/alumnis', AlumniController::class);
 Route::get('/alumnis/delete/{id}', [AlumniController::class, 'destroy']);
 Route::get('/alumnis/edit/{id}', [AlumniController::class, 'edit']);
 Route::post('/alumnis/update', [AlumniController::class, 'update']);
+
+// news and updates
+Route::resource('/news-update', NewsUpdatesController::class);
+Route::get('/news-update/delete/{id}', [NewsUpdatesController::class, 'destroy']);
+
 
 
 //sef website front end site
