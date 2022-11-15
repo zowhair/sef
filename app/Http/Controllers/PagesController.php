@@ -7,6 +7,8 @@ use App\Http\Controllers\TenderController;
 use App\Models\Tender;
 use App\Models\Alumni;
 use App\Models\NewsUpdate;
+use App\Models\Notification;
+
 
 
 class PagesController extends Controller
@@ -111,7 +113,8 @@ class PagesController extends Controller
     }
     // e-publication pages end
     public function notificationPage(Request $request) {
-        return view('pages.resource.notifications');
+        $data=Notification::all();
+        return view('pages.resource.notifications',compact('data'));
     }
     public function carePage(Request $request) {
         return view('pages.resource.care-for-life-education');

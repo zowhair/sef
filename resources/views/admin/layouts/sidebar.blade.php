@@ -36,6 +36,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>News Updates</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/notifications">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Notification</span></a>
+    </li>
 
 
 </ul>

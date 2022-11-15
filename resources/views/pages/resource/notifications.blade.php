@@ -6,7 +6,9 @@
 @section('content')
     <x-nav />
     <main>
-        <x-notification-datatables />
+        <!-- <x-notification-datatables /> -->
+        @include('includes.notification_datatable')
+
     </main>
     @include('includes.datatable-footer')
     
@@ -14,4 +16,4 @@
         @push('includes.datatable-scripts')
         @endpush
     @stop
-@stop
+@stop 
