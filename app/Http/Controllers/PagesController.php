@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\TenderController;
 use App\Models\Tender;
 use App\Models\Alumni;
+use App\Models\NewsUpdate;
+
 
 class PagesController extends Controller
 {
@@ -20,7 +22,8 @@ class PagesController extends Controller
         // return view('sef');
     }
     public function home(Request $request) {
-        return view('pages.home');
+        $data=NewsUpdate::all();
+        return view('pages.home',compact('data'));
     }
     public function contactPage(Request $request) {
         return view('pages.contact');
@@ -114,7 +117,8 @@ class PagesController extends Controller
         return view('pages.resource.care-for-life-education');
     }
     public function newsUpdatesPage(Request $request) {
-        return view('pages.news_and_updates');
+        $data=NewsUpdate::all();
+        return view('pages.news_and_updates',compact('data'));
     }
     public function schoolDataPage(Request $request) {
         return view('pages.school_data');

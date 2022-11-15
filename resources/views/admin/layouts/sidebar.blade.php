@@ -31,6 +31,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Alumni</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/news-update">
+            <i class="fas fa-fw fa-table"></i>
+            <span>News Updates</span></a>
+    </li>
 
 
 </ul>

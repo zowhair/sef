@@ -6,91 +6,35 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Alumni" >
+                <x-main-center.main-center-left name="News and Updates" >
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
+                            @foreach($data as $row)
                             <div class="inner-content-main  row">
                                 <div class="post_img col-md-6  ">
                                     <div class="img_wrap">
                                         <img width="1200" height="800" alt=""
                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyloaded"
-                                                src="{{asset('img/new-update1.jpg')}}">
+                                                src="{{$row->img_url}}">
                                     </div>
                                 </div>
                                 <div class="single_post_text news-text col-md-6  ">
                                     <div class="meta3">
-                                        <a class="post__author" href="#"> Admin</a> <a class="date" href="#">March
-                                            31, 2021</a>
+                                        <a class="post__author" href="#"> {{$row->post_by}}</a> 
+                                        <a class="date" href="#">{{$row->date}}</a>
                                     </div>
                                     <h6>
-                                        JICA met with SEF higher management
+                                        {{$row->title}}
                                     </h6>
-
                                     <div class="desc" style="font-size: 14px;line-height: 1.5rem;">
-                                        The Managing Director SEF along with Deputy Managing Director (Operations) held
-                                        a meeting on 3rd Oct 2022, with Dr. Akiko Hanaya (Senior Education Advisor)
-                                        Japan International Cooperation Agency (JICA) at SEF Head Office. A brief
-                                        introduction of the SEF portfolio and the expansion of the portfolio were also
-                                        discussed.
+                                        {{$row->content}}
                                     </div>
 
                                     <a href="/#" class="readmore"> Read More </a>
                                 </div>
                             </div>
+                            @endforeach
                             
-                            <div class="inner-content-main row">
-                                <div class="post_img col-md-6 ">
-                                    <div class="img_wrap">
-                                        <img width="1200" height="800" alt=""
-                                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyloaded"
-                                                src="{{asset('img/new-update2.jpg')}}">
-                                    </div>
-                                </div>
-                                <div class="single_post_text news-text col-md-6  ">
-                                    <div class="meta3">
-                                        <a class="post__author" href="#"> Admin</a> <a class="date" href="#">March
-                                            31, 2021</a>
-                                    </div>
-                                    <h6>
-                                        21st Program Steering Committee meeting
-                                    </h6>
-
-                                    <div class="desc" style="font-size: 14px;line-height: 1.5rem;">
-                                        28th September, 2022, was the day when 21st Program Steering Committee meeting
-                                        of Adopt-a-School Program was organized to seek approval from the competent
-                                        forum the MD, SEF shared the recommendations of Program Screening Committee (was
-                                        held on 30th May 2022)
-                                    </div>
-
-                                    <a href="/#" class="readmore"> Read More </a>
-                                </div>
-                            </div>
-                            <div class="inner-content-main row">
-                                <div class="post_img col-md-6 ">
-                                    <div class="img_wrap">
-                                        <img width="1200" height="780" alt=""
-                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyloaded"
-                                             src="{{asset('img/news-update3.jpg')}}">
-                                    </div>
-                                </div>
-                                <div class="single_post_text news-text col-md-6  ">
-                                    <div class="meta3">
-                                        <a class="post__author" href="#"> Admin</a> <a class="date" href="#">March
-                                            31, 2021</a>
-                                    </div>
-                                    <h6>
-                                    Honorable FM Commerce met SEF higher management
-                                    </h6>
-
-                                    <div class="desc" style="font-size: 14px;line-height: 1.5rem;">
-                                        Honorable Federal Minister Commerce visited PSP Bulri Shah Karim TMK managed by
-                                        PEN organization. He visited classrooms and appreciated the efforts of SEF, PMIU
-                                        & PEN for providing quality education.
-                                    </div>
-
-                                    <a href="/#" class="readmore"> Read More </a>
-                                </div>
-                            </div>
                         </div>
                        
                     </x-slot>
