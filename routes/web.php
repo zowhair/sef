@@ -45,8 +45,8 @@ Route::post('/alumnis/update', [AlumniController::class, 'update']);
 // news and updates
 Route::resource('/news-update', NewsUpdatesController::class);
 Route::get('/news-update/delete/{id}', [NewsUpdatesController::class, 'destroy']);
-
-
+Route::get('/news-update/edit/{id}', [NewsUpdatesController::class, 'edit']);
+Route::post('/news-update/update', [NewsUpdatesController::class, 'update']);
 
 //sef website front end site
 

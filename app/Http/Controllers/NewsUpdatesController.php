@@ -76,7 +76,8 @@ class NewsUpdatesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data=DB::table('news_updates')->find($id);
+        return view('admin.news_updates.edit',compact('data','id'));
     }
 
     /**
@@ -86,9 +87,23 @@ class NewsUpdatesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $id=$request->id;
+        $newsUpdates=NewsUpdate::find($id);
+        $newsUpdates->title=$request->title;
+        $newsUpdates->date=$request->date;
+        $newsUpdates->content=$request->content;
+        if ($request->file !=null)
+        {
+            $img_url = time() . '.' . $request->file->extension();
+            $request->file->move(public_path('files'), $img_url);
+            $img_path = URL::route('files', $img_url);
+            $newsUpdates->img_url = $img_path;
+        }
+        $newsUpdates->update();
+        return redirect('/news-update/');
+
     }
 
     /**

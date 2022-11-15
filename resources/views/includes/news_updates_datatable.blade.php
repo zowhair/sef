@@ -32,7 +32,7 @@
                         </td>
                     @auth
                     <td>
-                        <a href="/alumnis/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
+                        <a href="/news-update/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
                         <a href="/news-update/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
                     </td>
                     @endauth
