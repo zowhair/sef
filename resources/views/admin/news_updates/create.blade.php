@@ -28,7 +28,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <input class="form-control" placeholder="Title" name="title"
+                                    <input class="form-control" placeholder="Title" name="title" required
                                            type="text" id="title">
                                 </div>
                             </div>
@@ -36,21 +36,32 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Date</label>
-                                    <input class="form-control" placeholder="Date" name="date"
+                                    <input class="form-control" placeholder="Date" name="date" required
                                            type="date" id="date">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            
+                            <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="title">Content</label>
-                                        <input class="form-control" placeholder="content text" name="content"
-                                               type="text" id="class_adm_in">
+                                        <textarea class="form-control" placeholder="content text"  rows="4" name="content" required
+                                               type="text" id="class_adm_in" ></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="title">Category</label>
+                                    <input class="form-control" placeholder="Categroy" name="category" 
+                                           type="text" id="date">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="file">Image</label>
-                                    <input class="form-control" name="file"
+                                    <label for="file">Image <br>
+                                        <span style="font-size:12px" id="msg">File size should be less then 5MB</span>
+                                    </label>
+                                    
+                                    <input class="form-control" name="file" required onchange="fileValide()"
                                            type="file" id="file">
                                    
                                 </div>
@@ -65,6 +76,25 @@
                         </div>
                 </form>
                 <!-- </div> -->
+                <script>
+                    function fileValide(){
+                        var inpFiles = document.getElementById('file');
+                        var msg = document.getElementById('msg');
+                        var fileSize=inpFiles.files[0].size;
+                            console.log(inpFiles.files[0].size);
+                            if(fileSize>=5000000){
+                                inpFiles.value="";
+                                inpFiles.style.border = "2px solid red";
+                                msg.style.color = "red";
+                            }
+                            else{
+                                inpFiles.style.border = "#ADD8E6";
+                                msg.style.color = "black";
+                            }
+                    }
+                    
+                    
+                </script>
             </div>
         </div>
         <!-- Page end  -->

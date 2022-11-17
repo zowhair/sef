@@ -15,6 +15,7 @@ class NewsUpdate extends Model
         'content',
         'date',
         'post_by',
+        'category',
         'img_url',
     ];
 }

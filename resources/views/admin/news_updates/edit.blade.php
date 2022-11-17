@@ -40,11 +40,18 @@
                                            type="date" id="date">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="title">Content</label>
-                                        <input class="form-control" placeholder="content text" name="content" value="{{$data->content}}"
-                                               type="text" id="class_adm_in">
+                                        <textarea class="form-control" placeholder="content text" name="content" 
+                                               type="text" id="class_adm_in" rows="4">{{$data->content}}</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="title">Category</label>
+                                    <input class="form-control" placeholder="Categroy" name="category" value="{{$data->category}}"
+                                           type="text" id="date">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -52,7 +59,6 @@
                                     <label for="file">Image</label>
                                     <input class="form-control" name="file" value="{{$data->img_url}}" 
                                            type="file" id="file">
-                                   
                                 </div>
                             </div>
                         </div>
@@ -65,6 +71,25 @@
                         </div>
                 </form>
                 <!-- </div> -->
+                <script>
+                    function fileValide(){
+                        var inpFiles = document.getElementById('file');
+                        var msg = document.getElementById('msg');
+                        var fileSize=inpFiles.files[0].size;
+                            console.log(inpFiles.files[0].size);
+                            if(fileSize>=5000000){
+                                inpFiles.value="";
+                                inpFiles.style.border = "2px solid red";
+                                msg.style.color = "red";
+                            }
+                            else{
+                                inpFiles.style.border = "#ADD8E6";
+                                msg.style.color = "black";
+                            }
+                    }
+                    
+                    
+                </script>
             </div>
         </div>
         <!-- Page end  -->

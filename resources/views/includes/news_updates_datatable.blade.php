@@ -6,6 +6,7 @@
                 <th>S.NO</th>
                 <th>Title</th>
                 <th>Date</th>
+                <th>Category</th>
                 <th>Content</th>
                 <th>Image</th>
                 @auth
@@ -24,6 +25,7 @@
                         ?></td>
                     <td>{{$row->title}}</td>
                     <td>{{$row->date}}</td>
+                    <td>{{$row->category}}</td>
                     <td>{{$row->content}}</td>
                     <td>
                         @if($row->img_url != null)
