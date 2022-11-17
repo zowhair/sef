@@ -5,6 +5,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\TenderController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\NewsUpdatesController;
+use App\Http\Controllers\NotificationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +49,9 @@ Route::resource('/news-update', NewsUpdatesController::class);
 Route::get('/news-update/delete/{id}', [NewsUpdatesController::class, 'destroy']);
 Route::get('/news-update/edit/{id}', [NewsUpdatesController::class, 'edit']);
 Route::post('/news-update/update', [NewsUpdatesController::class, 'update']);
+
+// notification
+Route::resource('/notifications', NotificationController::class);
 
 //sef website front end site
 

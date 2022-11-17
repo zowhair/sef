@@ -40,6 +40,7 @@ class NewsUpdatesController extends Controller
      */
     public function store(Request $request)
     {
+
         $user = Auth::user();
         $user->name;
         $img_url = time() . '.' . $request->file->extension();
@@ -50,6 +51,10 @@ class NewsUpdatesController extends Controller
         $newsUpdates->title = $request->input('title');
         $newsUpdates->date = $request->input('date');
         $newsUpdates->content = $request->input('content');
+        if($request->input('category') !=null)
+        {
+            $newsUpdates->category = $request->input('category');
+        }
         $newsUpdates->img_url = $img_path;
         $newsUpdates->post_by = $user->name;
 
@@ -94,6 +99,7 @@ class NewsUpdatesController extends Controller
         $newsUpdates->title=$request->title;
         $newsUpdates->date=$request->date;
         $newsUpdates->content=$request->content;
+        $newsUpdates->category = $request->category;
         if ($request->file !=null)
         {
             $img_url = time() . '.' . $request->file->extension();

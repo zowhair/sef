@@ -4,6 +4,7 @@ body {
 .far.fa, .far, .fas { 
     font-weight: 600 !important;
     font-size: 20px;
+    line-height: 0 !important;
 }
 /* Header Styling started */
 .header-top {
