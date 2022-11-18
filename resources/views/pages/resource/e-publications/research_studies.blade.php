@@ -12,19 +12,18 @@
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <div class="row">
+                            <div class="row"> 
+                            @foreach($data as $row)
                                 <div class="col-3 col-md-3">
                                     <div>
-                                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2022/06/thematic_iamge.png"
-                                            class="lazyload"
-                                            src="https://www.sef.org.pk/wp-content/uploads/2022/06/thematic_iamge.png">
+                                        <a href="{{$row->file_url}}" class="text-decoration-none "><img class="reserachImg" src="{{$row->image}}">
                                     </div>
                                     <div class="text-center mt-4">
-                                        <h6>Issues of Girls’ Education in Sindh</h6>
-                                        <p class="inner-content-text">A study conducted on the initiative of the Provincial Ombudsman Sindh – December 2020</p>
+                                        <h6>{{$row->title}}</h6></a>
+                                        <p class="inner-content-text">{{$row->decription}} <br>{{$row->date}}</p>
                                     </div>
                                 </div>
-                                
+                            @endforeach
                             </div>
                            
                         </div>

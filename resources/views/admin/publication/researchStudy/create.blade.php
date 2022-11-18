@@ -9,9 +9,9 @@
                 <div class="col-lg-12">
                     <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                         <div>
-                            <h4 class="mb-3">Add Notification</h4>
+                            <h4 class="mb-3">Add Research Study</h4>
                         </div>
-                        <a href="/notifications/" class="btn btn-primary add-list"><i
+                        <a href="/research-studies/" class="btn btn-primary add-list"><i
                                 class="fas fa-angle-left"> </i></a>
                     </div>
                 </div>
@@ -20,9 +20,10 @@
                 <div class="col-lg-12">
 
                     <!-- <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4"> -->
-                    <form action="{{url('/notifications')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{url('/research-studies')}}" method="POST" enctype="multipart/form-data">
 
                         @csrf
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -39,28 +40,33 @@
                                            type="date" id="date">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            
+                            <div class="col-md-8">
                                 <div class="form-group">
-                                    <label for="title">Department</label>
-                                        <input class="form-control" placeholder="department name" name="department" required
-                                               type="text" id="class_adm_in">
+                                    <label for="title">Decription</label>
+                                        <textarea class="form-control" placeholder="Decription about Research studies"  rows="3" name="decription" required
+                                               type="text" id="class_adm_in" ></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="title">Category</label>
-                                        <input class="form-control" placeholder="categories" name="category" required
-                                               type="text" id="class_adm_in">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="file">File
-                                    <br>
-                                        <span style="font-size:12px" id="msg">File size should be less then 5MB</span>
+                                    <label for="file">Image <br>
+                                        <span style="font-size:12px" id="msg">Image size should be less then 5MB</span>
                                     </label>
-                                    <input class="form-control" name="file" required onchange="fileValide()"
+                                    
+                                    <input class="form-control" name="img" required onchange="fileValide()"
                                            type="file" id="file">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="file">File <br>
+                                        <span style="font-size:12px" id="msg2">File size should be less then 5MB</span>
+                                    </label>
+                                    
+                                    <input class="form-control" name="file" required onchange="fileValide()"
+                                           type="file" id="file2">
                                    
                                 </div>
                             </div>
@@ -77,9 +83,11 @@
                 <script>
                     function fileValide(){
                         var inpFiles = document.getElementById('file');
+                        var inpFiles2 = document.getElementById('file2');
                         var msg = document.getElementById('msg');
+                        var msg2 = document.getElementById('msg2');
                         var fileSize=inpFiles.files[0].size;
-                            console.log(inpFiles.files[0].size);
+                            
                             if(fileSize>=5000000){
                                 inpFiles.value="";
                                 inpFiles.style.border = "2px solid red";
@@ -89,7 +97,20 @@
                                 inpFiles.style.border = "#ADD8E6";
                                 msg.style.color = "black";
                             }
+                        var fileSize2=inpFiles2.files[0].size;
+                            
+                            if(fileSize2>=5000000){
+                                inpFiles2.value="";
+                                inpFiles2.style.border = "2px solid red";
+                                msg2.style.color = "red";
+                            }
+                            else{
+                                inpFiles2.style.border = "#ADD8E6";
+                                msg2.style.color = "black";
+                            }
                     }
+                    
+                    
                 </script>
             </div>
         </div>

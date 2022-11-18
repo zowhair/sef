@@ -1,13 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use App\Models\Notification;
-use URL;
+use App\Models\ResearchStudy;
 use DB;
+use URL;
+use Illuminate\Http\Request;
 
-class NotificationController extends Controller
+class ResearchStudyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,9 @@ class NotificationController extends Controller
      */
     public function index()
     {
-        $data=Notification::all();
-        return view('admin.notification.index',compact('data'));
+        
+        $data=ResearchStudy::all();
+        return view('admin.publication.researchStudy.index',compact('data'));
     }
 
     /**
@@ -27,7 +27,7 @@ class NotificationController extends Controller
      */
     public function create()
     {
-        return view('admin.notification.create');
+        return view('admin.publication.researchStudy.create');
     }
 
     /**
@@ -38,19 +38,23 @@ class NotificationController extends Controller
      */
     public function store(Request $request)
     {
+       
+        $img_url = time() . '.' . $request->img->extension();
+        $request->img->move(public_path('files'), $img_url);
+        $img_path = URL::route('files', $img_url);
+
         $file_url = time() . '.' . $request->file->extension();
         $request->file->move(public_path('files'), $file_url);
         $file_path = URL::route('files', $file_url);
 
-        $notification = new Notification();
-        $notification->title = $request->input('title');
-        $notification->date = $request->input('date');
-        $notification->department = $request->input('department');
-        $notification->category = $request->input('category');
-        $notification->file_url = $file_path;
-
-        $notification->save();
-        return redirect('/notifications/');
+        $researchStudy = new ResearchStudy();
+        $researchStudy->title = $request->input('title');
+        $researchStudy->date = $request->input('date');
+        $researchStudy->decription = $request->input('decription');
+        $researchStudy->image = $img_path;
+        $researchStudy->file_url = $file_path;
+        $researchStudy->save();
+        return redirect('/research-studies/');
     }
 
     /**
@@ -72,8 +76,8 @@ class NotificationController extends Controller
      */
     public function edit($id)
     {
-        $data=DB::table('notifications')->find($id);
-        return view('admin.notification.edit',compact('data','id'));
+        $data=DB::table('research_studies')->find($id);
+        return view('admin.publication.researchStudy.edit',compact('data','id'));
     }
 
     /**
@@ -83,23 +87,29 @@ class NotificationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         $id=$request->id;
-        $notification=Notification::find($id);
-        $notification->title=$request->title;
-        $notification->date=$request->date;
-        $notification->department=$request->department;
-        $notification->category = $request->category;
+        $researchStudy=ResearchStudy::find($id);
+        $researchStudy->title=$request->title;
+        $researchStudy->date=$request->date;
+        $researchStudy->decription=$request->decription;
         if ($request->file !=null)
         {
             $file_url = time() . '.' . $request->file->extension();
             $request->file->move(public_path('files'), $file_url);
             $file_path = URL::route('files', $file_url);
-            $notification->file_url = $file_path;
+            $researchStudy->file_url = $file_path;
         }
-        $notification->update();
-        return redirect('/notifications/');
+        if ($request->img !=null)
+        {
+            $img_url = time() . '.' . $request->img->extension();
+            $request->img->move(public_path('files'), $img_url);
+            $img_path = URL::route('files', $img_url);
+            $researchStudy->image = $img_path;
+        }
+        $researchStudy->update();
+        return redirect('/research-studies/');
     }
 
     /**
@@ -110,7 +120,7 @@ class NotificationController extends Controller
      */
     public function destroy($id)
     {
-        DB::table('notifications')->where('id', $id)->delete();
+        DB::table('research_studies')->where('id', $id)->delete();
         return redirect()->back();
     }
 }

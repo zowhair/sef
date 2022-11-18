@@ -6,6 +6,8 @@ use App\Http\Controllers\TenderController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\NewsUpdatesController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\ResearchStudyController;
+
 
 
 /*
@@ -52,6 +54,15 @@ Route::post('/news-update/update', [NewsUpdatesController::class, 'update']);
 
 // notification
 Route::resource('/notifications', NotificationController::class);
+Route::get('/notifications/delete/{id}', [NotificationController::class, 'destroy']);
+Route::get('/notifications/edit/{id}', [NotificationController::class, 'edit']);
+Route::post('/notifications/update', [NotificationController::class, 'update']);
+
+// Research Studies
+Route::resource('/research-studies', ResearchStudyController::class);
+Route::get('/research-studies/delete/{id}', [ResearchStudyController::class, 'destroy']);
+Route::get('/research-studies/edit/{id}', [ResearchStudyController::class, 'edit']);
+Route::post('/research-studies/update', [ResearchStudyController::class, 'update']);
 
 //sef website front end site
 
