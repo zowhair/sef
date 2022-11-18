@@ -52,6 +52,9 @@ Route::post('/news-update/update', [NewsUpdatesController::class, 'update']);
 
 // notification
 Route::resource('/notifications', NotificationController::class);
+Route::get('/notifications/delete/{id}', [NotificationController::class, 'destroy']);
+Route::get('/notifications/edit/{id}', [NotificationController::class, 'edit']);
+Route::post('/notifications/update', [NotificationController::class, 'update']);
 
 //sef website front end site
 

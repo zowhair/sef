@@ -32,8 +32,8 @@
                     </td>
                     @auth
                     <td>
-                        <a href="/alumnis/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
-                        <a href="/alumnis/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                        <a href="/notifications/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
+                        <a href="/notifications/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
                     </td>
                     @endauth
                 </tr>

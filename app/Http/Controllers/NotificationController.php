@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Notification;
 use URL;
+use DB;
 
 class NotificationController extends Controller
 {
@@ -71,7 +72,8 @@ class NotificationController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data=DB::table('notifications')->find($id);
+        return view('admin.notification.edit',compact('data','id'));
     }
 
     /**
@@ -83,7 +85,21 @@ class NotificationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $id=$request->id;
+        $notification=Notification::find($id);
+        $notification->title=$request->title;
+        $notification->date=$request->date;
+        $notification->department=$request->department;
+        $notification->category = $request->category;
+        if ($request->file !=null)
+        {
+            $file_url = time() . '.' . $request->file->extension();
+            $request->file->move(public_path('files'), $file_url);
+            $file_path = URL::route('files', $file_url);
+            $notification->file_url = $file_path;
+        }
+        $notification->update();
+        return redirect('/notifications/');
     }
 
     /**
@@ -94,6 +110,7 @@ class NotificationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('notifications')->where('id', $id)->delete();
+        return redirect()->back();
     }
 }
