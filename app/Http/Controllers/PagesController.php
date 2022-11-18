@@ -8,6 +8,8 @@ use App\Models\Tender;
 use App\Models\Alumni;
 use App\Models\NewsUpdate;
 use App\Models\Notification;
+use App\Models\ResearchStudy;
+
 
 
 
@@ -106,7 +108,8 @@ class PagesController extends Controller
         return view('pages.resource.e-publications.news_letters');
     }
     public function researchPage(Request $request) {
-        return view('pages.resource.e-publications.research_studies');
+        $data=ResearchStudy::all();
+        return view('pages.resource.e-publications.research_studies',compact('data'));
     }
     public function sujaagPage(Request $request) {
         return view('pages.resource.e-publications.sujaag');
