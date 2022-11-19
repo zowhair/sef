@@ -211,7 +211,7 @@
                               </li>
                               <li id="menu-item-5274"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                                <a href="/sujaag" class=" dropdown-item">Sujaag</a>
+                                <a href="/sujaags" class=" dropdown-item">Sujaag</a>
                               </li>
                             </ul>
                           </li>
@@ -496,7 +496,7 @@
                     </li>
                     <li id="menu-item-5274"
                       class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                      <a href="/sujaag" class=" dropdown-item">Sujaag</a>
+                      <a href="/sujaags" class=" dropdown-item">Sujaag</a>
                     </li>
                   </ul>
                 </li>

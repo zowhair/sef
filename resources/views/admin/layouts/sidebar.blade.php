@@ -46,6 +46,16 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Research Study</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/sujaag">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Sujaag</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/newsletters">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Newsletters</span></a>
+    </li>
 
 
 </ul>

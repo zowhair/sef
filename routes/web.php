@@ -7,6 +7,9 @@ use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\NewsUpdatesController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
+use App\Http\Controllers\SujaagController;
+use App\Http\Controllers\NewsletterController;
+
 
 
 
@@ -64,6 +67,18 @@ Route::get('/research-studies/delete/{id}', [ResearchStudyController::class, 'de
 Route::get('/research-studies/edit/{id}', [ResearchStudyController::class, 'edit']);
 Route::post('/research-studies/update', [ResearchStudyController::class, 'update']);
 
+// sujaag
+Route::resource('/sujaag', SujaagController::class);
+Route::get('/sujaag/delete/{id}', [SujaagController::class, 'destroy']);
+Route::get('/sujaag/edit/{id}', [SujaagController::class, 'edit']);
+Route::post('/sujaag/update', [SujaagController::class, 'update']);
+
+// newsletter
+Route::resource('/newsletters', NewsletterController::class);
+Route::get('/newsletters/delete/{id}', [NewsletterController::class, 'destroy']);
+Route::get('/newsletters/edit/{id}', [NewsletterController::class, 'edit']);
+Route::post('/newsletters/update', [NewsletterController::class, 'update']);
+
 //sef website front end site
 
 Route::get('/', [PagesController::class, 'home']);
@@ -98,7 +113,7 @@ Route::get('/alumni', [PagesController::class, 'alumniPage']);
 Route::get('/anunal_report', [PagesController::class, 'anunalPage']);
 Route::get('/news_letters', [PagesController::class, 'newsPage']);
 Route::get('/research_studies', [PagesController::class, 'researchPage']);
-Route::get('/sujaag', [PagesController::class, 'sujaagPage']);
+Route::get('/sujaags', [PagesController::class, 'sujaagPage']);
 
 // e-publications end
 Route::get('/notification', [PagesController::class, 'notificationPage']);
