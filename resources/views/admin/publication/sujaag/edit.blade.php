@@ -9,9 +9,9 @@
                 <div class="col-lg-12">
                     <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                         <div>
-                            <h4 class="mb-3">Update Research Study</h4>
+                            <h4 class="mb-3">Update Sujaag</h4>
                         </div>
-                        <a href="/research-studies/" class="btn btn-primary add-list"><i
+                        <a href="/sujaag/" class="btn btn-primary add-list"><i
                                 class="fas fa-angle-left"> </i></a>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="col-lg-12">
 
                     <!-- <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4"> -->
-                    <form action="{{url('/research-studies/update')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{url('/sujaag/update')}}" method="POST" enctype="multipart/form-data">
 
                         @csrf
                         <input type="hidden" name="id" value="{{$id}}">

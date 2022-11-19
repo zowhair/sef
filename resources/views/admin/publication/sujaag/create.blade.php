@@ -9,9 +9,9 @@
                 <div class="col-lg-12">
                     <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                         <div>
-                            <h4 class="mb-3">Update Research Study</h4>
+                            <h4 class="mb-3">Add Research Study</h4>
                         </div>
-                        <a href="/research-studies/" class="btn btn-primary add-list"><i
+                        <a href="/sujaag/" class="btn btn-primary add-list"><i
                                 class="fas fa-angle-left"> </i></a>
                     </div>
                 </div>
@@ -20,15 +20,15 @@
                 <div class="col-lg-12">
 
                     <!-- <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4"> -->
-                    <form action="{{url('/research-studies/update')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{url('/sujaag')}}" method="POST" enctype="multipart/form-data">
 
                         @csrf
-                        <input type="hidden" name="id" value="{{$id}}">
+
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <input class="form-control" placeholder="Title" name="title" required value="{{$data->title}}"
+                                    <input class="form-control" placeholder="Title" name="title" required
                                            type="text" id="title">
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Date</label>
-                                    <input class="form-control" placeholder="Date" name="date" required value="{{$data->date}}"
+                                    <input class="form-control" placeholder="Date" name="date" required
                                            type="date" id="date">
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                 <div class="form-group">
                                     <label for="title">Decription</label>
                                         <textarea class="form-control" placeholder="Decription about Research studies"  rows="3" name="decription" required
-                                               type="text" id="class_adm_in" >{{$data->decription}}</textarea>
+                                               type="text" id="class_adm_in" ></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -54,7 +54,7 @@
                                         <span style="font-size:12px" id="msg">Image size should be less then 5MB</span>
                                     </label>
                                     
-                                    <input class="form-control" name="img"  onchange="fileValide()" value="{{$data->image}}"
+                                    <input class="form-control" name="img" required onchange="fileValide()"
                                            type="file" id="file">
                                    
                                 </div>
@@ -65,7 +65,7 @@
                                         <span style="font-size:12px" id="msg2">File size should be less then 5MB</span>
                                     </label>
                                     
-                                    <input class="form-control" name="file"  onchange="fileValide()" value="{{$data->file_url}}"
+                                    <input class="form-control" name="file" required onchange="fileValide()"
                                            type="file" id="file2">
                                    
                                 </div>
@@ -74,7 +74,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary pull-right" id="submit_user_button">
-                                    Update
+                                    Save
                                 </button>
                             </div>
                         </div>
