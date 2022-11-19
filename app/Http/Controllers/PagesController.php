@@ -141,6 +141,9 @@ class PagesController extends Controller
     public function organogramPage(Request $request) {
         return view('pages.about.organogram');
     }
+    public function headOfficePage(Request $request) {
+        return view('pages.about.management_team.head_office');
+    }
     // about end
     
 }

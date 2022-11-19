@@ -34,7 +34,7 @@ Route::get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
-Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [Apfp\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
 Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
 //tender
 Route::resource('/tenders', TenderController::class);
@@ -126,5 +126,7 @@ Route::get('/school-data', [PagesController::class, 'schoolDataPage']);
 Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
+Route::get('/head-office', [PagesController::class, 'headOfficePage']);
+
 
 
