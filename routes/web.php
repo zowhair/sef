@@ -8,6 +8,7 @@ use App\Http\Controllers\NewsUpdatesController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
+use App\Http\Controllers\NewsletterController;
 
 
 
@@ -71,6 +72,12 @@ Route::resource('/sujaag', SujaagController::class);
 Route::get('/sujaag/delete/{id}', [SujaagController::class, 'destroy']);
 Route::get('/sujaag/edit/{id}', [SujaagController::class, 'edit']);
 Route::post('/sujaag/update', [SujaagController::class, 'update']);
+
+// newsletter
+Route::resource('/newsletters', NewsletterController::class);
+Route::get('/newsletters/delete/{id}', [NewsletterController::class, 'destroy']);
+Route::get('/newsletters/edit/{id}', [NewsletterController::class, 'edit']);
+Route::post('/newsletters/update', [NewsletterController::class, 'update']);
 
 //sef website front end site
 

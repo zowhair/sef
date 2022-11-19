@@ -12,9 +12,21 @@
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> </h3>
-                            <p> 
-                            </p>
+                            <div class="row">
+                                @foreach($data as $row)
+                                <div class="col-4 col-md-4 d-flex">
+                                    <div class="newsletter-icon ">
+                                        <i class="fa fa-newspaper" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <a href="{{$row->file_url}}" class="text-decoration-none ">
+                                        <h6>{{$row->title}}</h6></a>
+                                        <p class="inner-content-text">{{$row->decription}}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                @endforeach    
+                            </div>
                         </div>
                        
                     </x-slot>

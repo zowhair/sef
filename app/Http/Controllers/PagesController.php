@@ -10,6 +10,8 @@ use App\Models\NewsUpdate;
 use App\Models\Notification;
 use App\Models\ResearchStudy;
 use App\Models\Sujaag;
+use App\Models\Newsletter;
+
 
 class PagesController extends Controller
 {
@@ -103,7 +105,8 @@ class PagesController extends Controller
         return view('pages.resource.e-publications.anunal_report');
     }
     public function newsPage(Request $request) {
-        return view('pages.resource.e-publications.news_letters');
+        $data=Newsletter::all();
+        return view('pages.resource.e-publications.news_letters',compact('data'));
     }
     public function researchPage(Request $request) {
         $data=ResearchStudy::all();
