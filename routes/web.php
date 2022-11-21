@@ -127,6 +127,8 @@ Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
 Route::get('/head-office', [PagesController::class, 'headOfficePage']);
+Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
+Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 
 
 

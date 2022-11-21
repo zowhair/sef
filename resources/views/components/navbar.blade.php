@@ -81,15 +81,15 @@
                             <ul class="dropdown-menu">
                               <li id="menu-item-5289"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                <a href=""
+                                <a href="/head-office"
                                   class=" dropdown-item">Head Office</a>
                               <li id="menu-item-5274"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                                <a href=""
+                                <a href="/regional-office"
                                   class=" dropdown-item">Regional Office</a>
                               <li id="menu-item-5282"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5282 nav-item">
-                                <a href=""
+                                <a href="/district-office"
                                   class=" dropdown-item">District Office</a>
                               </li>
                             </ul>
@@ -374,13 +374,13 @@
                   <a href="#">Management Team</a>
                   <ul class="sub-menu">
                     <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
-                      <a href="">Head Office </a>
+                      <a href="/head-office">Head Office </a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
-                      <a href="">Regional Office</a>
+                      <a href="/regional-office">Regional Office</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
-                      <a href="">District Office</a>
+                      <a href="/district-office">District Office</a>
                     </li>
                   </ul>
                 </li>

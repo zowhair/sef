@@ -1,6 +1,5 @@
 @extends('layout.app')
 @extends('layout.page-inner-section')
-
 @section('content')
 <x-nav />
 <main>
