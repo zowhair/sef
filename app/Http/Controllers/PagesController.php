@@ -143,4 +143,10 @@ class PagesController extends Controller
     }
     // about end
     
+    // message start
+    public function messageMinisterPage(Request $request) {
+        return view('pages.about.message.message_of_minister');
+    }
+    // message end
+    
 }

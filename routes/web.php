@@ -127,4 +127,5 @@ Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
 
-
+// message
+Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    

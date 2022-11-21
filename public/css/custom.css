@@ -1116,7 +1116,13 @@ font-size: small;
     padding: 5%;
     margin-right:8px ;
 }
-
+/* message page start*/
+.lazyloadImage{
+    max-width: 100%;
+    width: 30rem;
+    height: auto;
+}
+/* message page end */
   
   
   
