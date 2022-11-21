@@ -877,6 +877,42 @@ img {
     {
         width:60%;
     }
+    .name{
+        text-align: center;
+    }
+    .designation{
+        text-align: center;
+        font-family: 0.875rem;
+    }
+    .card-img-top{
+        display: flex;
+        width: 62%;
+        padding-top: 32px;
+        margin: 0 auto;
+
+    }
+    /* .card{
+        width: 18rem;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        max-width: 300px;
+        text-align: center;
+        font-family: arial;
+    } */
+    .sub-title{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .box-content{
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+    }
+    .main-content-div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
     @media screen and (min-width: 1300px){
         .map-container{
         height:40rem;
