@@ -11,6 +11,7 @@ use App\Models\Notification;
 use App\Models\ResearchStudy;
 use App\Models\Sujaag;
 use App\Models\Newsletter;
+use App\Models\AnnualReport;
 
 
 class PagesController extends Controller
@@ -102,7 +103,8 @@ class PagesController extends Controller
     // scholarship pages end
     // e-publication pages start
     public function anunalPage(Request $request) {
-        return view('pages.resource.e-publications.anunal_report');
+        $data=AnnualReport::all();
+        return view('pages.resource.e-publications.anunal_report',compact('data'));
     }
     public function newsPage(Request $request) {
         $data=Newsletter::all();
