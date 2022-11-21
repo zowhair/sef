@@ -9,6 +9,7 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\AnnualReportController;
 
 
 
@@ -78,6 +79,12 @@ Route::resource('/newsletters', NewsletterController::class);
 Route::get('/newsletters/delete/{id}', [NewsletterController::class, 'destroy']);
 Route::get('/newsletters/edit/{id}', [NewsletterController::class, 'edit']);
 Route::post('/newsletters/update', [NewsletterController::class, 'update']);
+
+// annual Report
+Route::resource('/annual-report', AnnualReportController::class);
+Route::get('/annual-report/delete/{id}', [AnnualReportController::class, 'destroy']);
+Route::get('/annual-report/edit/{id}', [AnnualReportController::class, 'edit']);
+Route::post('/annual-report/update', [AnnualReportController::class, 'update']);
 
 //sef website front end site
 
