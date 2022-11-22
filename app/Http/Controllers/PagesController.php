@@ -12,7 +12,7 @@ use App\Models\ResearchStudy;
 use App\Models\Sujaag;
 use App\Models\Newsletter;
 use App\Models\AnnualReport;
-
+use App\Models\Department;
 
 class PagesController extends Controller
 {
@@ -62,7 +62,8 @@ class PagesController extends Controller
     // program pages end
     // department pages start
     public function CommunicationAndResearchPage(Request $request) {
-        return view('pages.about.department.communication-and-research');
+        $data=Department::all()->where('page_name','Communication and Research');
+        return view('pages.about.department.communication-and-research',compact('data'));
     }
     public function financeAuditPage(Request $request) {
         return view('pages.about.department.finance-and-audit');

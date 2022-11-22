@@ -10,6 +10,8 @@ use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\AnnualReportController;
+use App\Http\Controllers\DepartmentController;
+
 
 
 
@@ -35,7 +37,7 @@ Route::get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
-Route::get('/dashboard', [Apfp\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
 Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
 //tender
 Route::resource('/tenders', TenderController::class);
@@ -85,6 +87,9 @@ Route::resource('/annual-report', AnnualReportController::class);
 Route::get('/annual-report/delete/{id}', [AnnualReportController::class, 'destroy']);
 Route::get('/annual-report/edit/{id}', [AnnualReportController::class, 'edit']);
 Route::post('/annual-report/update', [AnnualReportController::class, 'update']);
+
+//department
+Route::resource('/department', DepartmentController::class);
 
 //sef website front end site
 
