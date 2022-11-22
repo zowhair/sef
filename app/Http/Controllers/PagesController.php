@@ -167,4 +167,4 @@ class PagesController extends Controller
     }
     // message end
 
-
+}
