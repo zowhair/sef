@@ -138,4 +138,5 @@ Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
 Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 
 
-
+// message
+Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    

@@ -152,5 +152,12 @@ class PagesController extends Controller
     public function districtOfficePage(Request $request) {
         return view('pages.about.management_team.district_office');
     }
-    // about en
+    // about end
+    
+    // message start
+    public function messageMinisterPage(Request $request) {
+        return view('pages.about.message.message_of_minister');
     }
+    // message end
+
+
