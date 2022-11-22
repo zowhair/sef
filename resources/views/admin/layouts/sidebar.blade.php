@@ -25,7 +25,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Tender</span></a>
     </li>
-
+    <li class="nav-item">
+        <a class="nav-link" href="/department">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Department</span></a>
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="/alumnis">
             <i class="fas fa-fw fa-table"></i>
