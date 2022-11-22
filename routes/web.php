@@ -9,6 +9,7 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\AnnualReportController;
 
 
 
@@ -34,7 +35,7 @@ Route::get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('login');
-Route::get('/dashboard', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [Apfp\Http\Controllers\Admin\AdminController::class, 'index'])->name('dashboard');
 Route::post("/logout", [App\Http\Controllers\Admin\AdminController::class, 'logout'])->name("logout");
 //tender
 Route::resource('/tenders', TenderController::class);
@@ -78,6 +79,12 @@ Route::resource('/newsletters', NewsletterController::class);
 Route::get('/newsletters/delete/{id}', [NewsletterController::class, 'destroy']);
 Route::get('/newsletters/edit/{id}', [NewsletterController::class, 'edit']);
 Route::post('/newsletters/update', [NewsletterController::class, 'update']);
+
+// annual Report
+Route::resource('/annual-report', AnnualReportController::class);
+Route::get('/annual-report/delete/{id}', [AnnualReportController::class, 'destroy']);
+Route::get('/annual-report/edit/{id}', [AnnualReportController::class, 'edit']);
+Route::post('/annual-report/update', [AnnualReportController::class, 'update']);
 
 //sef website front end site
 
@@ -127,6 +134,10 @@ Route::get('/school-data', [PagesController::class, 'schoolDataPage']);
 Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
+Route::get('/head-office', [PagesController::class, 'headOfficePage']);
+Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
+Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
+
 
 // message
 Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    

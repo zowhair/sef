@@ -11,6 +11,7 @@ use App\Models\Notification;
 use App\Models\ResearchStudy;
 use App\Models\Sujaag;
 use App\Models\Newsletter;
+use App\Models\AnnualReport;
 
 
 class PagesController extends Controller
@@ -102,7 +103,8 @@ class PagesController extends Controller
     // scholarship pages end
     // e-publication pages start
     public function anunalPage(Request $request) {
-        return view('pages.resource.e-publications.anunal_report');
+        $data=AnnualReport::all();
+        return view('pages.resource.e-publications.anunal_report',compact('data'));
     }
     public function newsPage(Request $request) {
         $data=Newsletter::all();
@@ -141,6 +143,15 @@ class PagesController extends Controller
     public function organogramPage(Request $request) {
         return view('pages.about.organogram');
     }
+    public function headOfficePage(Request $request) {
+        return view('pages.about.management_team.head_office');
+    }
+    public function regionalOfficePage(Request $request) {
+        return view('pages.about.management_team.regional_office');
+    }
+    public function districtOfficePage(Request $request) {
+        return view('pages.about.management_team.district_office');
+    }
     // about end
     
     // message start
@@ -154,5 +165,5 @@ class PagesController extends Controller
         return view('pages.about.message.message_of_managing_director');
     }
     // message end
-    
-}
+
+
