@@ -110,6 +110,7 @@ Route::get('/annoncements', [PagesController::class, 'annoncementsPage']);
 Route::get('/alumni', [PagesController::class, 'alumniPage']);
 // scholarship pages end
 // e-publications start
+
 Route::get('/anunal_report', [PagesController::class, 'anunalPage']);
 Route::get('/news_letters', [PagesController::class, 'newsPage']);
 Route::get('/research_studies', [PagesController::class, 'researchPage']);
@@ -129,3 +130,5 @@ Route::get('/organogram', [PagesController::class, 'organogramPage']);
 
 // message
 Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    
+Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
+Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    

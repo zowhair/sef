@@ -6,57 +6,35 @@
 <main>
     <div class="container">
         <div class="row">
-            <x-main-center.main-center-left name="MESSAGE OF HONORABLE CHIEF MINISTER, SINDH">
-                <!-- <div class='child-row'> -->
+            <x-main-center.main-center-left name="MESSAGE OF PROVINCIAL MINISTER FOR EDUCATION AND LITERACY, GOS">
                 <x-slot name="banner">
                     <div class='child-row d-flex'>
-                        <div class="image-div">
+                        <div class="image-div2">
                             <img data-src="https://www.sef.org.pk/wp-content/uploads/2021/06/cm-sindh.png"
                                 class="lazyloadImage"
-                                src="https://www.sef.org.pk/wp-content/uploads/2021/06/cm-sindh.png">
+                                src="https://www.sef.org.pk/wp-content/uploads/2018/08/sardar-shah.jpg">
                         </div>
                         <div>
                             <p class="message-content-p d-flex">
-                                The Government of the Sindh firmly believes that quality education is the basic
-                                right of
-                                every citizen and is an essential component to meet the challenges of the
-                                rapidly
-                                changing scenario of the overall development around the globe.
-                                The Government of Sindh is keenly concerned to widely address the issues of the
-                                education sector by owning the slogan i.e. “Education for All”, aiming to meet
-                                the
-                                learning needs of all children, youth. The Government of Sindh in pursuance of
-                                this
-                                commitment enacted the “Sindh Right of Children to Free and Compulsory Education
-                                Act,
-                                2013” fulfilling its promise with the people of this province.
-                                The Sindh Education Foundation, a major arm of the Government of Sindh for
-                                Public
-                                Private Partnerships in the education sector, is playing a vital role in
-                                assuring
-                                the
-                                access to quality education throughout the province in a credible manner for
-                                formal
-                                and
-                                non-formal education for children, youth and adults. The portfolio of the
-                                Foundation
-                                is
-                                greatly expanding this year with almost a thousand new schools in targeted areas
-                                all
-                                across the province, especially the underserved communities, deep rural pockets
-                                and
-                                far-flung difficult to reach areas. Hopefully, these schools will be eventually
-                                able
-                                to
-                                educate more than 250,000 children with focus to bring down the number of
-                                out-of-school
-                                children in Sindh which has been one of the biggest challenges faced by
-                                Pakistan.
+                                The Sindh Education Foundation is pivotal part of the Ministry of Education & Literacy,
+                                Sindh. In the recent years, the Foundation exhibited a vivid progress in ensuring the
+                                access of the quality education in the remote areas of the Sindh through the Foundations
+                                Public-Private Partnership framework.
+
+                                The PPP framework of the Foundation has successfully evolved in the educational canvas
+                                of Sindh and has produced and nourished human resources in form of the students,
+                                teachers, partners, communities and other stakeholders to raise the modern and
+                                competitive process of instituting a progressive and dynamic education sector that
+                                ultimately is attaining the objectives and the goals of the province in pursuance of the
+                                commitments of the Govt. of Sindh under the 18th Amendment of the Constitution of
+                                Pakistan that states that “The State shall provide free and compulsory education to all
+                                children of the age of five to sixteen years in such manner as may be determined by the
+                                law." as declared in the Article 25-A.
                             </p>
                         </div>
                     </div>
                     <div class='last-content'>
-                        <p>Mr.Syed Murad Ali Shah,</p>
+                        <p>Mr.Sayed Sardar Ali Shah,</p>
                         <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
                     </div>
                 </x-slot>
@@ -69,7 +47,6 @@
                         </x-slot>
                     </p>
                 </div>
-                <!-- </div> -->
             </x-main-center.main-center-left>
             <div class="col-4 main-center-section-right">
                 <x-main-center.main-center-right-top name="Department">
