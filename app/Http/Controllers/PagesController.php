@@ -158,6 +158,12 @@ class PagesController extends Controller
     public function messageMinisterPage(Request $request) {
         return view('pages.about.message.message_of_minister');
     }
+    public function messageProvincialPage(Request $request) {
+        return view('pages.about.message.message_of_provincial_minister');
+    }
+    public function messageDirectorPage(Request $request) {
+        return view('pages.about.message.message_of_managing_director');
+    }
     // message end
 
 

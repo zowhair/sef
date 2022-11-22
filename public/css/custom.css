@@ -1155,13 +1155,28 @@ font-size: small;
 /* message page start*/
 .lazyloadImage{
     max-width: 100%;
-    width: 30rem;
+    width: 25rem;
     height: auto;
 }
-/* message page end */
-  
-  
-  
-  
-  
+.image-div{
+    max-width: 100%;
+    height: auto;
+    width: 350rem;  
+    padding: 0rem 1rem 1rem 0rem; 
+}
+.image-div2{
+    max-width: 100%;
+    height: auto;
+    width: 250rem;  
+    padding: 0rem 1rem 1rem 0rem; 
+}
+.message-content-p{
+    text-align: justify;
+}
+.last-content{
+    font-weight: bold;
+    opacity:0.6;
+    margin-left: 15.5rem;
+}
 
+/* message page end */

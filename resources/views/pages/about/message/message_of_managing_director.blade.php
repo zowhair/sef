@@ -13,51 +13,37 @@
                         <div class="image-div">
                             <img data-src="https://www.sef.org.pk/wp-content/uploads/2021/06/cm-sindh.png"
                                 class="lazyloadImage"
-                                src="https://www.sef.org.pk/wp-content/uploads/2021/06/cm-sindh.png">
+                                src="https://www.sef.org.pk/wp-content/uploads/2021/06/md-sef.jpg">
                         </div>
                         <div>
                             <p class="message-content-p d-flex">
-                                The Government of the Sindh firmly believes that quality education is the basic
-                                right of
-                                every citizen and is an essential component to meet the challenges of the
-                                rapidly
-                                changing scenario of the overall development around the globe.
-                                The Government of Sindh is keenly concerned to widely address the issues of the
-                                education sector by owning the slogan i.e. “Education for All”, aiming to meet
-                                the
-                                learning needs of all children, youth. The Government of Sindh in pursuance of
-                                this
-                                commitment enacted the “Sindh Right of Children to Free and Compulsory Education
-                                Act,
-                                2013” fulfilling its promise with the people of this province.
-                                The Sindh Education Foundation, a major arm of the Government of Sindh for
-                                Public
-                                Private Partnerships in the education sector, is playing a vital role in
-                                assuring
-                                the
-                                access to quality education throughout the province in a credible manner for
-                                formal
-                                and
-                                non-formal education for children, youth and adults. The portfolio of the
-                                Foundation
-                                is
-                                greatly expanding this year with almost a thousand new schools in targeted areas
-                                all
-                                across the province, especially the underserved communities, deep rural pockets
-                                and
-                                far-flung difficult to reach areas. Hopefully, these schools will be eventually
-                                able
-                                to
-                                educate more than 250,000 children with focus to bring down the number of
-                                out-of-school
-                                children in Sindh which has been one of the biggest challenges faced by
-                                Pakistan.
+                                The Sindh Education Foundation with support of the Govt. of Sindh strongly aims to enact
+                                and spread the quality education in all corners of the province with modern, latest and
+                                scalable approach. The Foundation responsibly recognizes the challenge of the access of
+                                the education in terms of catering the out of school children and ensuring the quality
+                                of education in the existing publicly owned educational facilities.
+
+                                In the recent Covid pandemic scenario, including all other sector, the education sector
+                                is also impacted, yet, Foundation is determined to address the loss by imparting the
+                                smart learning and teaching methods. In this current year, 2021, Foundation in pursuance
+                                of its mission and the commitments of the honorable Chief Minister, Govt. of Sindh
+                                selected around 1000 new sites for opening new schools to educate the approximately
+                                250,000 out of school children. Besides, the regular FAS program, Foundation is trusted
+                                by the Government of Sindh to functionalize the comprehensive English medium School
+                                through its PPP modality to set a benchmark with a sustainable and scalable approach.
+
+                                It is pertinent to mention that these interventions along with the education also boost
+                                the economic activity in form of engaging entrepreneurs, hiring of teachers, other staff
+                                and construction of schools will certainly generate an economic activity for the
+                                locality with province wide impact.
                             </p>
                         </div>
                     </div>
                     <div class='last-content'>
-                        <p>Mr.Syed Murad Ali Shah,</p>
-                        <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
+                        <p>Mr. Abdul Kabir Kazi,
+                        </p>
+                        <p>Managing Director, Sindh Education Foundation, Govt. of Sindh
+                        </p>
                     </div>
                 </x-slot>
                 <div class='content-row'>
