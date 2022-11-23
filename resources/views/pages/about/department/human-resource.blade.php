@@ -6,28 +6,29 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Human Resource Department" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2020/03/HR.jpg"
-                                 class="lazyload"
-                                 src="https://www.sef.org.pk/wp-content/uploads/2020/03/HR.jpg">
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> INTRODUCTION</h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            It is believed that Human Resource Department is responsible for framing and amendment of the SEF (Conduct of Business) Rules, amendment of Sindh Education Foundation Act 1992, the rules except of financial and recruitment rules made under the Act. HRD also focuses on management of people within companies, emphasizing on policies and systems. HRD also deals with the management of employees’ records, profiles, making of identity cards, matters relating to appointment, promotion, retirement, leave, seniority, transfer/posting and such other service matters.
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
                                     <li>
-                                    <a href="/communication-and-research">Communication, Publication & Research</a>
+                                        <a href="/communication-and-research">Communication, Publication & Research</a>
                                         <div class="border_black"></div>
                                     </li>
                                     <li>

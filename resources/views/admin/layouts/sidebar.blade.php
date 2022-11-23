@@ -25,7 +25,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Tender</span></a>
     </li>
-
+    <li class="nav-item">
+        <a class="nav-link" href="/department">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Department</span></a>
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="/alumnis">
             <i class="fas fa-fw fa-table"></i>
@@ -58,6 +62,16 @@
             <span>Notification</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="/annual-report">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Annual Report</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/newsletters">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Newsletters</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="/research-studies">
             <i class="fas fa-fw fa-table"></i>
             <span>Research Study</span></a>
@@ -67,12 +81,8 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Sujaag</span></a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/newsletters">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Newsletters</span></a>
-    </li>
-
+    
+    
 
 </ul>
 <!-- End of Sidebar -->

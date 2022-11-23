@@ -14,6 +14,8 @@ use App\Models\ResearchStudy;
 use App\Models\Sujaag;
 use App\Models\Newsletter;
 use DB;
+use App\Models\AnnualReport;
+use App\Models\Department;
 
 
 class PagesController extends Controller
@@ -82,7 +84,7 @@ class PagesController extends Controller
         return view('pages.program.install');
     }
     // program pages end
-    // department pages start
+
     public function CommunicationAndResearchPage(Request $request)
     {
         return view('pages.about.department.communication-and-research');
@@ -121,6 +123,38 @@ class PagesController extends Controller
     public function monotoringEvaluationPage(Request $request)
     {
         return view('pages.about.department.monitoring-and-evaluation-cell');
+}
+    public function CommunicationAndResearchPage(Request $request) {
+        $data=Department::all()->where('page_name','Communication and Research');
+        return view('pages.about.department.communication-and-research',compact('data'));
+    }
+    public function financeAuditPage(Request $request) {
+        $data=Department::all()->where('page_name','Finance and Audit');
+        return view('pages.about.department.finance-and-audit',compact('data'));
+    }
+    public function generalAdministratorPage(Request $request) {
+        $data=Department::all()->where('page_name','General Administration');
+        return view('pages.about.department.general-administrator',compact('data'));
+    }
+    public function humanResourcePage(Request $request) {
+        $data=Department::all()->where('page_name','Human Resource');
+        return view('pages.about.department.human-resource',compact('data'));
+    }
+    public function informationTechPage(Request $request) {
+        $data=Department::all()->where('page_name','Information Technology');
+        return view('pages.about.department.information-tech',compact('data'));
+    }
+    public function planingPage(Request $request) {
+        $data=Department::all()->where('page_name','Planning And Programs');
+        return view('pages.about.department.planing-and-program',compact('data'));
+    }
+    public function trainingPage(Request $request) {
+        $data=Department::all()->where('page_name','Training and Assessment');
+        return view('pages.about.department.training-and-assessment',compact('data'));
+    }
+    public function monotoringEvaluationPage(Request $request) {
+        $data=Department::all()->where('page_name','Monitoring and Evaluation Cell');
+        return view('pages.about.department.monitoring-and-evaluation-cell',compact('data'));
     }
     // department pages end
     // scholarship pages start
@@ -152,9 +186,15 @@ class PagesController extends Controller
     }
     // scholarship pages end
     // e-publication pages start
+
     public function anunalPage(Request $request)
     {
         return view('pages.resource.e-publications.anunal_report');
+}
+    public function anunalPage(Request $request) {
+        $data=AnnualReport::all();
+        return view('pages.resource.e-publications.anunal_report',compact('data'));
+
     }
 
     public function newsPage(Request $request)
@@ -213,6 +253,27 @@ class PagesController extends Controller
     {
         return view('pages.about.organogram');
     }
+    public function headOfficePage(Request $request) {
+        return view('pages.about.management_team.head_office');
+    }
+    public function regionalOfficePage(Request $request) {
+        return view('pages.about.management_team.regional_office');
+    }
+    public function districtOfficePage(Request $request) {
+        return view('pages.about.management_team.district_office');
+    }
     // about end
+    
+    // message start
+    public function messageMinisterPage(Request $request) {
+        return view('pages.about.message.message_of_minister');
+    }
+    public function messageProvincialPage(Request $request) {
+        return view('pages.about.message.message_of_provincial_minister');
+    }
+    public function messageDirectorPage(Request $request) {
+        return view('pages.about.message.message_of_managing_director');
+    }
+
 
 }
