@@ -6,26 +6,29 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Monitoring and Evaluation (M&E) Cell" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                       
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> </h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            Monitoring and Evaluation (M&E)-A Robust Cell at SEF is a powerful public management tool which plays an instrumental role in bringing planned outcomes and impact of the Foundation interventions. The Cell mainly tracks and measure progress, efficiency and effectiveness through systematic and impartial data collection on several key performance and compliance indicators, tools and processes, if a program has been implemented according to the plan and is having the desired results. Not limited to, the Cell also determines whether the organization is using its resources efficiently and effectively. The vibrant Cell comprises of 21 skilled professional team with diversified experiences, progressive and highly operational under the supportive supervision and visionary leadership of the Managing Director, SEF.
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
                                     <li>
-                                        <a href="/communication-and-research">Communication, Publication & Research </a>
+                                        <a href="/communication-and-research">Communication, Publication & Research</a>
                                         <div class="border_black"></div>
                                     </li>
                                     <li>

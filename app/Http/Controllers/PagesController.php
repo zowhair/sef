@@ -66,25 +66,32 @@ class PagesController extends Controller
         return view('pages.about.department.communication-and-research',compact('data'));
     }
     public function financeAuditPage(Request $request) {
-        return view('pages.about.department.finance-and-audit');
+        $data=Department::all()->where('page_name','Finance and Audit');
+        return view('pages.about.department.finance-and-audit',compact('data'));
     }
     public function generalAdministratorPage(Request $request) {
-        return view('pages.about.department.general-administrator');
+        $data=Department::all()->where('page_name','General Administration');
+        return view('pages.about.department.general-administrator',compact('data'));
     }
     public function humanResourcePage(Request $request) {
-        return view('pages.about.department.human-resource');
+        $data=Department::all()->where('page_name','Human Resource');
+        return view('pages.about.department.human-resource',compact('data'));
     }
     public function informationTechPage(Request $request) {
-        return view('pages.about.department.information-tech');
+        $data=Department::all()->where('page_name','Information Technology');
+        return view('pages.about.department.information-tech',compact('data'));
     }
     public function planingPage(Request $request) {
-        return view('pages.about.department.planing-and-program');
+        $data=Department::all()->where('page_name','Planning And Programs');
+        return view('pages.about.department.planing-and-program',compact('data'));
     }
     public function trainingPage(Request $request) {
-        return view('pages.about.department.training-and-assessment');
+        $data=Department::all()->where('page_name','Training and Assessment');
+        return view('pages.about.department.training-and-assessment',compact('data'));
     }
     public function monotoringEvaluationPage(Request $request) {
-        return view('pages.about.department.monitoring-and-evaluation-cell');
+        $data=Department::all()->where('page_name','Monitoring and Evaluation Cell');
+        return view('pages.about.department.monitoring-and-evaluation-cell',compact('data'));
     }
     // department pages end
     // scholarship pages start

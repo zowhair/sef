@@ -90,7 +90,9 @@ Route::post('/annual-report/update', [AnnualReportController::class, 'update']);
 
 //department
 Route::resource('/department', DepartmentController::class);
-
+Route::get('/department/delete/{id}', [DepartmentController::class, 'destroy']);
+Route::get('/department/edit/{id}', [DepartmentController::class, 'edit']);
+Route::post('/department/update', [DepartmentController::class, 'update']);
 //sef website front end site
 
 Route::get('/', [PagesController::class, 'home']);

@@ -6,28 +6,29 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Programs & Planning Department" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2020/03/Planning.jpg"
-                                 class="lazyload"
-                                 src="https://www.sef.org.pk/wp-content/uploads/2020/03/Planning.jpg">
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> INTRODUCTION</h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            Programs & Planning Department of Sindh Education Foundation (SEF), Govt. of Sindh plays vital role in the development of Policy and Protocols relating to the programs designing and planning sustainable programs based on development models, Processing all development schemes, programs and proposals submitted by other Departments and making recommendations to the competent authorities thereon as well. The P&P is also in with Liaison and coordination with the Donors & stakeholders and see matters related to subsidy except disbursement.
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
-                            <li>
-                                        <a href="/communication-and-research">Communication, Publication & Research </a>
+                                    <li>
+                                        <a href="/communication-and-research">Communication, Publication & Research</a>
                                         <div class="border_black"></div>
                                     </li>
                                     <li>
