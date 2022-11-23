@@ -9,9 +9,10 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ScholarshipController;
+use App\Http\Controllers\ScholarshipGalleryController;
 use App\Http\Controllers\AnnualReportController;
 use App\Http\Controllers\DepartmentController;
-
 
 
 
@@ -146,7 +147,19 @@ Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
 Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 
 
+Route::resource('/scholarships', ScholarshipController::class);
+Route::get('/scholarships/delete/{id}', [ScholarshipController::class, 'destroy']);
+Route::get('/scholarships/edit/{id}', [ScholarshipController::class, 'edit']);
+Route::post('/scholarships/update', [ScholarshipController::class, 'update']);
+
+
+Route::resource('/galleries',ScholarshipGalleryController::class);
+Route::get('/galleries/delete/{id}', [ScholarshipGalleryController::class, 'destroy']);
+Route::get('/galleries/edit/{id}', [ScholarshipGalleryController::class, 'edit']);
+Route::post('/galleries/update', [ScholarshipGalleryController::class, 'update']);
+
 // message
 Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    
 Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
 Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    
+
