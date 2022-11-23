@@ -9,7 +9,8 @@
                 <div class="col-lg-12">
                     <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4">
                         <div>
-                            <h4 class="mb-3">Add Department Pages</h4>
+                            <h4 class="mb-3">Update Department  </h4>
+                            <p> {{$data->page_title}} </p>
                         </div>
                         <a href="/department/" class="btn btn-primary add-list"><i
                                 class="fas fa-angle-left"> </i></a>
@@ -20,15 +21,15 @@
                 <div class="col-lg-12">
 
                     <!-- <div class="d-flex flex-wrap flex-wrap align-items-center justify-content-between mb-4"> -->
-                    <form action="{{url('/department')}}" method="POST" enctype="multipart/form-data">
-
+                    <form action="{{url('/department/update')}}" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" value="{{$id}}" name="id">
                         @csrf
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <input class="form-control" placeholder="Page Title" name="page_title" required
+                                    <input class="form-control" placeholder="Page Title" name="page_title" value="{{$data->page_title}}"
                                            type="text" id="title">
                                 </div>
                             </div>
@@ -36,7 +37,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="title">Sub Title</label>
-                                    <input class="form-control" placeholder="Sub Title" name="sub_title" 
+                                    <input class="form-control" placeholder="Sub Title" name="sub_title" value="{{$data->sub_title}}"
                                            type="text" id="date">
                                 </div>
                             </div>
@@ -44,22 +45,15 @@
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="title">Decription</label>
-                                        <textarea class="form-control" placeholder="content of decription"  rows="4" name="decription" required
-                                               type="text" id="class_adm_in" ></textarea>
+                                        <textarea class="form-control" placeholder="content of decription"  rows="4" name="decription" 
+                                               type="text" id="class_adm_in" >{{$data->decription}}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                 <label for="select">Select the page</label>
                                     <select class="form-select" aria-label="Default select example" name="page_name">
-                                        <option value="Communication and Research">Communication and Research</option>
-                                        <option value="Finance and Audit">Finance and Audit</option>
-                                        <option value="General Administration">General Administration</option>
-                                        <option value="Human Resource">Human Resource</option>
-                                        <option value="Information Technology">Information Technology</option>
-                                        <option value="Planning And Programs">Planning And Programs</option>
-                                        <option value="Training and Assessment">Training and Assessment</option>
-                                        <option value="Monitoring and Evaluation Cell">Monitoring and Evaluation Cell</option>
+                                        <option  value="{{$data->page_name}}">{{$data->page_name}}</option>
                                     </select>
                                 </div>
                             </div>
@@ -68,7 +62,7 @@
                                     <label for="file">Image <br>
                                     </label>
                                     
-                                    <input class="form-control" name="file" required onchange="fileValide()"
+                                    <input class="form-control" name="file" value="{{$data->bannar_img}}" onchange="fileValide()"
                                            type="file" id="file">
                                            <span style="font-size:12px" id="msg">File size should be less then 2MB</span>
                                    

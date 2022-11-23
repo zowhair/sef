@@ -6,28 +6,29 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Training and Assessment Department" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2020/03/Training.jpg"
-                                 class="lazyload"
-                                 src="https://www.sef.org.pk/wp-content/uploads/2020/03/Training.jpg">
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> INTRODUCTION</h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            Assessment and that of high quality is imperative for the success of the goals set by the Government of Pakistan for Educational Reforms. Keeping this view in mind of having good quality assessment, the Sindh Education Foundation, Govt. of Sindh has setup its very own Assessment Unit to assess the students’ learning outcomes of its partner schools. The major role of the Assessment Unit of SEF is to assess the students of all the schools working under its supervision and guidance. The Assessment Unit works dynamically from designing to the execution and conducts quality examinations both in English and Sindhi based on the National Curriculum given by the Ministry of Education (M&E).
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
                                     <li>
-                                        <a href="/communication-and-research">Communication, Publication & Research </a>
+                                        <a href="/communication-and-research">Communication, Publication & Research</a>
                                         <div class="border_black"></div>
                                     </li>
                                     <li>

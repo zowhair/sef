@@ -79,7 +79,8 @@ class DepartmentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data=DB::table('departments')->find($id);
+        return view('admin.department.edit',compact('data','id'));
     }
 
     /**
@@ -89,9 +90,34 @@ class DepartmentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        if($request->file != null)
+        {
+            $img_url = time() . '.' . $request->file->extension();
+            $request->file->move(public_path('files'), $img_url);
+            $img_path = URL::route('files', $img_url);
+            $department->bannar_img = $img_path;
+
+        }
+        
+        
+        $id=$request->id;
+        $department =Department::find($id);
+        $department->page_title = $request->input('page_title');
+        if($request->input('sub_title')!=null){
+            $department->sub_title = $request->input('sub_title');
+        }
+        else
+        {
+            $department->sub_title = "";
+
+        }
+
+        $department->page_name = $request->input('page_name');
+        $department->decription = $request->input('decription');
+        $department->update();
+        return redirect('/department/');
     }
 
     /**
@@ -102,6 +128,7 @@ class DepartmentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('departments')->where('id', $id)->delete();
+        return redirect()->back();
     }
 }

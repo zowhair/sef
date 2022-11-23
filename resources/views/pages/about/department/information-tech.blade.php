@@ -6,47 +6,29 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Information Technology (IT) Department" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2020/03/IT.jpg"
-                                 class="lazyload"
-                                 src="https://www.sef.org.pk/wp-content/uploads/2020/03/IT.jpg">
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> INTRODUCTION</h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            At SEF, the Information Technology (IT)
-                            Department deals with the Development
-                            and Maintenance of Management
-                            Information System; Education Management
-                            Information System; Financial Management
-                            Information System; and also Human
-                            Resources Management System
-                            simultaneously. IT also extend support
-                            in terms of providing technical
-                            services, Issues and Challenges in
-                            Internal Networking, Monitoring and
-                            Evaluation of assignments/projects
-                            relating to IT.
-
-                            The IT Department is also engaged in
-                            assisting daily routines tasks such as
-                            to resolve hardware, software and
-                            connectivity issues, System Maintenance,
-                            Server and Storage, Computer Usages
-                            Policy etc.
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
                                     <li>
-                                    <a href="/communication-and-research">Communication, Publication & Research</a>
+                                        <a href="/communication-and-research">Communication, Publication & Research</a>
                                         <div class="border_black"></div>
                                     </li>
                                     <li>
@@ -100,4 +82,4 @@
         <!-- footer along with script tags -->
         @include('includes.footer')
     </main>
-@stop 
+@stop
