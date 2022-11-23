@@ -124,7 +124,7 @@
                         <ul class="dropdown-menu">
                           <li id="menu-item-5264"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
-  
+
                             <a href="/altp" class=" dropdown-item">AALTP</a>
                           <li id="menu-item-5265"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -192,7 +192,7 @@
                           <li id="menu-item-5264"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
                             <a href="/care-for-life" class=" dropdown-item">Care for Life Education</a>
-  
+
                           <li id="menu-item-5277"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Publications</a>
@@ -278,19 +278,19 @@
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5292 nav-item">
                         <a href="../career/" class="nav-link">Careers</a>
                       </li>
-  
+
                       <li id="menu-item-5292"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5292 nav-item">
                         <a href="../contact/" class="nav-link">Contact Us</a>
                       </li>
-  
+
                     </ul>
                   </div>
                 </div>
               </div>
             </nav>
-  
-  
+
+
           </div>
         </div>
       </div>
@@ -308,105 +308,198 @@
       <div class="offcanvas__menu__inner__content">
         <nav class="offcanvas__navigation">
           <ul>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-3222">
-              <a href="/">Home</a>
-  
-            </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3152">
-              <a href="#">About Us</a>
-              <ul class="sub-menu">
-                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                  <a href="#">Introduction</a>
-  
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                  <a href="#">Education FrameWork</a>
-  
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                  <a href="#">Organogram</a>
-  
-                </li>
-                <li id="menu-item-5293"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
-                  <a href="#">Department</a>
+
+              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-3222">
+                  <a href="#">Home</a>
                   <ul class="sub-menu">
-                    <li id="menu-item-5294"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                      <a href="/communication-and-research" class=" dropdown-item">Communication and Research</a>
-                    <li id="menu-item-7367"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                      <a href="/finance-and-audit" class=" dropdown-item">Finance and Audit</a>
-                    <li id="menu-item-7420"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                      <a href="/general-administrator" class=" dropdown-item">General Administration</a>
-                    </li>
-                    <li id="menu-item-7421"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
-                      <a href="/human-resource" class=" dropdown-item">Human Resource</a>
-                    </li>
-                    <li id="menu-item-5296"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                      <a href="/information-tech" class=" dropdown-item">Informaton Technology</a>
-                    </li>
-                    <li id="menu-item-5296"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                      <a href="/planing-and-program" class=" dropdown-item">Planning And Programs</a>
-                    </li>
-                    <li id="menu-item-5296"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                      <a href="/training-and-assessment" class=" dropdown-item">Training and Assessment</a>
-                    </li>
-                    <li id="menu-item-5277"
-                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
-                      <a href="#">Unit and Cells</a>
-                      <ul class="sub-menu">
-                        <li id="menu-item-5289"
-                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                          <a href="/monitoring-and-evaluation-cell" class=" dropdown-item">Monitoring and Evaluation Cell</a>
-                        </li>
-                      </ul>
-                    </li>
-  
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Introduction</a>
+
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Education FrameWork</a>
+
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Organogram</a>
+
+                      </li>
+                      <li id="menu-item-5293"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
+                          <a href="#">Department</a>
+                          <ul class="sub-menu">
+                              <li id="menu-item-5294"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
+                                  <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
+                              <li id="menu-item-7367"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
+                                  <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
+                              <li id="menu-item-7420"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
+                                  <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
+                              </li>
+                              <li id="menu-item-7421"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
+                                  <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
+                              </li>
+                              <li id="menu-item-5277"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
+                                  <a href="#">Unit and Cells</a>
+                                  <ul class="sub-menu">
+                                      <li id="menu-item-5289"
+                                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
+                                          <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                                             class=" dropdown-item">Monitoring and Evaluation Cell</a>
+                                      </li>
+                                  </ul>
+                              </li>
+
+                          </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
+                          <a href="#">Management Team</a>
+                          <ul class="sub-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
+                                  <a href="">Head Office </a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
+                                  <a href="">Regional Office</a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
+                                  <a href="">District Office</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">BOD</a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Finance Committe</a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
+                          <a href="#">Message</a>
+                          <ul class="sub-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
+                                  <a href="">Message of Honable Minister Sindh</a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
+                                  <a href="">Message of Managing Director Sindh</a>
+                              </li>
+
+                          </ul>
+                      </li>
+
                   </ul>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
-                  <a href="#">Management Team</a>
+              </li>
+
+
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
+                  <a href="#">About Us</a>
                   <ul class="sub-menu">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
-                      <a href="/head-office">Head Office </a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
-                      <a href="/regional-office">Regional Office</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
-                      <a href="/district-office">District Office</a>
-                    </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Introduction</a>
+
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Education FrameWork</a>
+
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Organogram</a>
+
+                      </li>
+                      <li id="menu-item-5293"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
+                          <a href="#">Department</a>
+                          <ul class="sub-menu">
+                              <li id="menu-item-5294"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
+                                  <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
+                              <li id="menu-item-7367"
+                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
+                                  <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
+                              <li id="menu-item-7420"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
+                                  <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
+                              </li>
+                              <li id="menu-item-7421"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
+                                  <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
+                              </li>
+                              <li id="menu-item-5296"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
+                                  <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
+                              </li>
+                              <li id="menu-item-5277"
+                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
+                                  <a href="#">Unit and Cells</a>
+                                  <ul class="sub-menu">
+                                      <li id="menu-item-5289"
+                                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
+                                          <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
+                                             class=" dropdown-item">Monitoring and Evaluation Cell</a>
+                                      </li>
+                                  </ul>
+                              </li>
+
+                          </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
+                          <a href="#">Management Team</a>
+                          <ul class="sub-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
+                                  <a href="">Head Office </a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
+                                  <a href="">Regional Office</a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
+                                  <a href="">District Office</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">BOD</a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                          <a href="#">Finance Committe</a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
+                          <a href="#">Message</a>
+                          <ul class="sub-menu">
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
+                                  <a href="">Message of Honable Minister Sindh</a>
+                              </li>
+                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
+                                  <a href="">Message of Managing Director Sindh</a>
+                              </li>
+
+                          </ul>
+                      </li>
+
                   </ul>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                  <a href="#">BOD</a>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                  <a href="#">Finance Committe</a>
-                </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
-                  <a href="#">Message</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
-                      <a href="">Message of Honable Minister Sindh</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
-                      <a href="">Message of Managing Director Sindh</a>
-                    </li>
-  
-                  </ul>
-                </li>
-  
-              </ul>
-            </li>
-  
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
               <a href="#">Programs</a>
               <ul class="sub-menu">
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264">
@@ -424,7 +517,7 @@
                     <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
                       <a href="/teach-for-change">Teach For Change</a>
                     </li>
-  
+
                   </ul>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5268">
@@ -445,7 +538,7 @@
                 <li id="menu-item-5264"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
                   <a href="/tender" class=" dropdown-item">Tender</a>
-  
+
               </ul>
             </li>
             <li id="menu-item-3151"
@@ -462,7 +555,7 @@
                 <li id="menu-item-5265"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
                   <a href="/annoncements" class=" dropdown-item">Announcemnets</a>
-  
+
                 </li>
                 <li id="menu-item-5265"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -527,9 +620,9 @@
                 </li>
                 <li id="menu-item-5265"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
-  
+
                   <a href="/notification" class=" dropdown-item">Notification</a>
-  
+
                 </li>
                 <li id="menu-item-5265"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5265 nav-item">
@@ -576,19 +669,19 @@
           </div>
           <p>Do am he horrible distance marriage so throughout. Afraid assure square so happenmr an before.
             His many same been well can high that.</p>
-  
+
           <div class="contact-info">
-  
+
             <div class="single_contact">
               <a href="../contact/"> <i class="fas fa-phone-volume"> </i>
                 On Your Mobile</a>
             </div>
-  
+
             <div class="single_contact">
               <a href="../contact/"> <i class="fas fa-microphone"> </i> On
                 Smart Speakers</a>
             </div>
-  
+
             <div class="single_contact">
               <a href="../contact/"> <i class="fas fa-envelope"> </i>
                 Contact Newsprk</a>
@@ -600,4 +693,3 @@
   </div>
   <!-- Offcanvas Menu End -->
   </div>
-  
