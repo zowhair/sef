@@ -9,6 +9,8 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ScholarshipController;
+use App\Http\Controllers\ScholarshipGalleryController;
 
 
 
@@ -127,4 +129,16 @@ Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
 
+//scholarship
 
+Route::resource('/scholarships', ScholarshipController::class);
+Route::get('/scholarships/delete/{id}', [ScholarshipController::class, 'destroy']);
+Route::get('/scholarships/edit/{id}', [ScholarshipController::class, 'edit']);
+Route::post('/scholarships/update', [ScholarshipController::class, 'update']);
+
+//gallery
+
+Route::resource('/galleries',ScholarshipGalleryController::class);
+Route::get('/galleries/delete/{id}', [ScholarshipGalleryController::class, 'destroy']);
+Route::get('/galleries/edit/{id}', [ScholarshipGalleryController::class, 'edit']);
+Route::post('/galleries/update', [ScholarshipGalleryController::class, 'update']);

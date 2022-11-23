@@ -32,6 +32,22 @@
             <span>Alumni</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+           aria-expanded="true" aria-controls="collapseThree">
+            <i class="fab fa-slideshare"></i>&nbsp;
+            <span>Scholarship</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+
+                    <a class="collapse-item"  href="/scholarships">Scholarship</a>
+
+                    <a class="collapse-item"  href="/galleries">Gallary</a>
+
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="/news-update">
             <i class="fas fa-fw fa-table"></i>
             <span>News Updates</span></a>
