@@ -1152,8 +1152,9 @@ font-size: small;
     padding: 5%;
     margin-right:8px ;
 }
-
-  
+.save-btn{
+    text-align-last: right;
+}
   
   
   

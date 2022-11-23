@@ -37,15 +37,18 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Department</a>
                             <ul class="dropdown-menu">
+                              
+                              @foreach($category as $row)
                               <li id="menu-item-5294"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                                <a href="/communication-and-research" class=" dropdown-item">Communication and Research</a>
-                              <li id="menu-item-7367"
+                                <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                                @endforeach
+                              <!-- <li id="menu-item-7367"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                                <a href="/finance-and-audit" class=" dropdown-item">Finance and Audit</a>
+                                <a href="/department/Finance and Audit" class=" dropdown-item">Finance and Audit</a>
                               <li id="menu-item-7420"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                                <a href="/general-administrator" class=" dropdown-item">General Administration</a>
+                                <a href="/department/General Administration" class=" dropdown-item">General Administration</a>
                               </li>
                               <li id="menu-item-7421"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
@@ -62,7 +65,7 @@
                               <li id="menu-item-5296"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
                                 <a href="/training-and-assessment" class=" dropdown-item">Training and Assessment</a>
-                              </li>
+                              </li> -->
                               <li id="menu-item-5277"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                                 <a href="#" class=" dropdown-item">Unit and Cells</a>

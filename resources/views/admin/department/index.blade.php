@@ -10,6 +10,8 @@
                         <div>
                             <h4 class="mb-3"> Department Pages</h4>
                         </div>
+                        <a href="/department-category" class="btn btn-primary add-list"><i
+                                class="ri-file-user-fill"></i>Add Category</a>
                         <a href="/department/create" class="btn btn-primary add-list"><i
                                 class="ri-file-user-fill"></i>Add Department Pages</a>
                     </div>

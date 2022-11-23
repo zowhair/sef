@@ -13,6 +13,7 @@ use App\Models\Sujaag;
 use App\Models\Newsletter;
 use App\Models\AnnualReport;
 use App\Models\Department;
+use App\Models\DepartmentCategory;
 
 class PagesController extends Controller
 {
@@ -28,7 +29,8 @@ class PagesController extends Controller
     }
     public function home(Request $request) {
         $data=NewsUpdate::all();
-        return view('pages.home',compact('data'));
+        $category=DepartmentCategory::all();
+        return view('pages.home',compact('data','category'));
     }
     public function contactPage(Request $request) {
         return view('pages.contact');
@@ -60,35 +62,7 @@ class PagesController extends Controller
         return view('pages.program.install');
     }
     // program pages end
-    // department pages start
-    public function CommunicationAndResearchPage(Request $request) {
-        $data=Department::all()->where('page_name','Communication and Research');
-        return view('pages.about.department.communication-and-research',compact('data'));
-    }
-    public function financeAuditPage(Request $request) {
-        $data=Department::all()->where('page_name','Finance and Audit');
-        return view('pages.about.department.finance-and-audit',compact('data'));
-    }
-    public function generalAdministratorPage(Request $request) {
-        $data=Department::all()->where('page_name','General Administration');
-        return view('pages.about.department.general-administrator',compact('data'));
-    }
-    public function humanResourcePage(Request $request) {
-        $data=Department::all()->where('page_name','Human Resource');
-        return view('pages.about.department.human-resource',compact('data'));
-    }
-    public function informationTechPage(Request $request) {
-        $data=Department::all()->where('page_name','Information Technology');
-        return view('pages.about.department.information-tech',compact('data'));
-    }
-    public function planingPage(Request $request) {
-        $data=Department::all()->where('page_name','Planning And Programs');
-        return view('pages.about.department.planing-and-program',compact('data'));
-    }
-    public function trainingPage(Request $request) {
-        $data=Department::all()->where('page_name','Training and Assessment');
-        return view('pages.about.department.training-and-assessment',compact('data'));
-    }
+
     public function monotoringEvaluationPage(Request $request) {
         $data=Department::all()->where('page_name','Monitoring and Evaluation Cell');
         return view('pages.about.department.monitoring-and-evaluation-cell',compact('data'));

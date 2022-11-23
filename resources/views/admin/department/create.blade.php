@@ -52,14 +52,9 @@
                                 <div class="form-group">
                                 <label for="select">Select the page</label>
                                     <select class="form-select" aria-label="Default select example" name="page_name">
-                                        <option value="Communication and Research">Communication and Research</option>
-                                        <option value="Finance and Audit">Finance and Audit</option>
-                                        <option value="General Administration">General Administration</option>
-                                        <option value="Human Resource">Human Resource</option>
-                                        <option value="Information Technology">Information Technology</option>
-                                        <option value="Planning And Programs">Planning And Programs</option>
-                                        <option value="Training and Assessment">Training and Assessment</option>
-                                        <option value="Monitoring and Evaluation Cell">Monitoring and Evaluation Cell</option>
+                                        @foreach($data as $row)
+                                        <option value="{{$row->id}}">{{$row->title}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
