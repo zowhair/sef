@@ -43,7 +43,7 @@
                     </x-slot>
                     <x-slot name="gallary">
                         <div class="gallary">
-                            @include('pages.scholarship.image_gallary',['data'=>$scholorshipGalleries]);
+                            @include('pages.scholarship.image_gallary',['data'=>$scholorshipGalleries])
                         </div>
                     </x-slot>
                     <x-slot name="faq">
