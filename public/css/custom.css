@@ -877,6 +877,42 @@ img {
     {
         width:60%;
     }
+    .name{
+        text-align: center;
+    }
+    .designation{
+        text-align: center;
+        font-family: 0.875rem;
+    }
+    .card-img-top{
+        display: flex;
+        width: 62%;
+        padding-top: 32px;
+        margin: 0 auto;
+
+    }
+    /* .card{
+        width: 18rem;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        max-width: 300px;
+        text-align: center;
+        font-family: arial;
+    } */
+    .sub-title{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .box-content{
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+    }
+    .main-content-div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        /* justify-content: center; */
+    }
     @media screen and (min-width: 1300px){
         .map-container{
         height:40rem;
@@ -1116,10 +1152,31 @@ font-size: small;
     padding: 5%;
     margin-right:8px ;
 }
+/* message page start*/
+.lazyloadImage{
+    max-width: 100%;
+    width: 25rem;
+    height: auto;
+}
+.image-div{
+    max-width: 100%;
+    height: auto;
+    width: 350rem;  
+    padding: 0rem 1rem 1rem 0rem; 
+}
+.image-div2{
+    max-width: 100%;
+    height: auto;
+    width: 250rem;  
+    padding: 0rem 1rem 1rem 0rem; 
+}
+.message-content-p{
+    text-align: justify;
+}
+.last-content{
+    font-weight: bold;
+    opacity:0.6;
+    margin-left: 15.5rem;
+}
 
-  
-  
-  
-  
-  
-
+/* message page end */

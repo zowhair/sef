@@ -11,6 +11,8 @@ use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ScholarshipController;
 use App\Http\Controllers\ScholarshipGalleryController;
+use App\Http\Controllers\AnnualReportController;
+use App\Http\Controllers\DepartmentController;
 
 
 
@@ -81,6 +83,17 @@ Route::get('/newsletters/delete/{id}', [NewsletterController::class, 'destroy'])
 Route::get('/newsletters/edit/{id}', [NewsletterController::class, 'edit']);
 Route::post('/newsletters/update', [NewsletterController::class, 'update']);
 
+// annual Report
+Route::resource('/annual-report', AnnualReportController::class);
+Route::get('/annual-report/delete/{id}', [AnnualReportController::class, 'destroy']);
+Route::get('/annual-report/edit/{id}', [AnnualReportController::class, 'edit']);
+Route::post('/annual-report/update', [AnnualReportController::class, 'update']);
+
+//department
+Route::resource('/department', DepartmentController::class);
+Route::get('/department/delete/{id}', [DepartmentController::class, 'destroy']);
+Route::get('/department/edit/{id}', [DepartmentController::class, 'edit']);
+Route::post('/department/update', [DepartmentController::class, 'update']);
 //sef website front end site
 
 Route::get('/', [PagesController::class, 'home']);
@@ -112,6 +125,7 @@ Route::get('/annoncements', [PagesController::class, 'annoncementsPage']);
 Route::get('/alumni', [PagesController::class, 'alumniPage']);
 // scholarship pages end
 // e-publications start
+
 Route::get('/anunal_report', [PagesController::class, 'anunalPage']);
 Route::get('/news_letters', [PagesController::class, 'newsPage']);
 Route::get('/research_studies', [PagesController::class, 'researchPage']);
@@ -128,17 +142,24 @@ Route::get('/school-data', [PagesController::class, 'schoolDataPage']);
 Route::get('/introduction', [PagesController::class, 'aboutIntroPage']);
 Route::get('/educational_framework', [PagesController::class, 'educationPage']);
 Route::get('/organogram', [PagesController::class, 'organogramPage']);
+Route::get('/head-office', [PagesController::class, 'headOfficePage']);
+Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
+Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 
-//scholarship
 
 Route::resource('/scholarships', ScholarshipController::class);
 Route::get('/scholarships/delete/{id}', [ScholarshipController::class, 'destroy']);
 Route::get('/scholarships/edit/{id}', [ScholarshipController::class, 'edit']);
 Route::post('/scholarships/update', [ScholarshipController::class, 'update']);
 
-//gallery
 
 Route::resource('/galleries',ScholarshipGalleryController::class);
 Route::get('/galleries/delete/{id}', [ScholarshipGalleryController::class, 'destroy']);
 Route::get('/galleries/edit/{id}', [ScholarshipGalleryController::class, 'edit']);
 Route::post('/galleries/update', [ScholarshipGalleryController::class, 'update']);
+
+// message
+Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    
+Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
+Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    
+

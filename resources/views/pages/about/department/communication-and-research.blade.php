@@ -6,21 +6,23 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Department" >
+            @foreach($data as $row)
+                <x-main-center.main-center-left name="{{$row->page_title}}" >
                     <x-slot name="banner">
-                        <img data-src="https://www.sef.org.pk/wp-content/uploads/2020/02/Image-for-website-02.jpg" class="lazyload"
-                                 src="https://www.sef.org.pk/wp-content/uploads/2020/02/Image-for-website-02.jpg">
+                        <img data-src="{{$row->bannar_img}}" class="lazyload"
+                                 src="{{$row->bannar_img}}">
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div">
-                            <h3> INTRODUCTION</h3>
+                            <h3> {{$row->sub_title}}</h3>
                             <p> 
-                            The CPR Department is front face of the Foundation which is responsible for image building among the general public and also projection of the Foundation’s interventions and achievements at regional and national level through media. The department also oversees matters relating to research, development and dissemination of promotional/learning material, production of books, posters, newsletters and other material relating to the evens. Development of documentaries, preparing and releasing advertisements, events and campaigns, social media comes under the department’s roles.
+                            {{$row->decription}}
                             </p>
                         </div>
                        
                     </x-slot>
                 </x-main-center.main-center-left>
+            @endforeach
                 <div class="col-4 main-center-section-right">
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
