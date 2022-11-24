@@ -37,13 +37,13 @@
                                 and construction of schools will certainly generate an economic activity for the
                                 locality with province wide impact.
                             </p>
+                            <div class='last-content'>
+                                <p>Mr. Abdul Kabir Kazi,
+                                </p>
+                                <p>Managing Director, Sindh Education Foundation, Govt. of Sindh
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class='last-content'>
-                        <p>Mr. Abdul Kabir Kazi,
-                        </p>
-                        <p>Managing Director, Sindh Education Foundation, Govt. of Sindh
-                        </p>
                     </div>
                 </x-slot>
                 <div class='content-row'>

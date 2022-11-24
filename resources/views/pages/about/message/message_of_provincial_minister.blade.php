@@ -31,11 +31,11 @@
                                 children of the age of five to sixteen years in such manner as may be determined by the
                                 law." as declared in the Article 25-A.
                             </p>
+                            <div class='last-content'>
+                                <p>Mr.Sayed Sardar Ali Shah,</p>
+                                <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class='last-content'>
-                        <p>Mr.Sayed Sardar Ali Shah,</p>
-                        <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
                     </div>
                 </x-slot>
                 <div class='content-row'>

@@ -153,7 +153,6 @@ class PagesController extends Controller
         return view('pages.about.management_team.district_office');
     }
     // about end
-    
     // message start
     public function messageMinisterPage(Request $request) {
         return view('pages.about.message.message_of_minister');
@@ -165,5 +164,4 @@ class PagesController extends Controller
         return view('pages.about.message.message_of_managing_director');
     }
     // message end
-
-
+}
