@@ -53,11 +53,11 @@
                                 children in Sindh which has been one of the biggest challenges faced by
                                 Pakistan.
                             </p>
+                            <div class='last-content'>
+                                <p>Mr.Syed Murad Ali Shah,</p>
+                                <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class='last-content'>
-                        <p>Mr.Syed Murad Ali Shah,</p>
-                        <p>Chief Minister, Sindh / Chairman, SEF Board of Governors</p>
                     </div>
                 </x-slot>
                 <div class='content-row'>
