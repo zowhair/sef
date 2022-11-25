@@ -13,6 +13,8 @@ use App\Http\Controllers\ScholarshipController;
 use App\Http\Controllers\ScholarshipGalleryController;
 use App\Http\Controllers\AnnualReportController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\PartnerInstitutionController;
+
 
 
 
@@ -163,3 +165,8 @@ Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage
 Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
 Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    
 
+//partner institution
+Route::resource('/partner-institutions',PartnerInstitutionController::class);
+Route::get('/partner-institutions/delete/{id}', [PartnerInstitutionController::class, 'destroy']);
+Route::get('/partner-institutions/edit/{id}', [PartnerInstitutionController::class, 'edit']);
+Route::post('/partner-institutions/update', [PartnerInstitutionController::class, 'update']);

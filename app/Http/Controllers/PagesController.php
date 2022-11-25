@@ -16,7 +16,7 @@ use App\Models\Newsletter;
 use DB;
 use App\Models\AnnualReport;
 use App\Models\Department;
-
+use App\Models\PartnerInstitution;
 
 class PagesController extends Controller
 {
@@ -145,7 +145,9 @@ class PagesController extends Controller
 
     public function partnerPage(Request $request)
     {
-        return view('pages.scholarship.partner-institution');
+        $partnerInstitutions=PartnerInstitution::all();
+        return view('pages.scholarship.partner-institution', compact('partnerInstitutions'));
+
     }
 
     public function annoncementsPage(Request $request)

@@ -48,6 +48,8 @@
 
                     <a class="collapse-item"  href="/galleries">Gallary</a>
 
+                    <a class="collapse-item"  href="/partner-institutions">Partner institutions</a>
+
             </div>
         </div>
     </li>
