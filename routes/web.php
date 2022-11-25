@@ -142,4 +142,9 @@ Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 // message
 Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    
 Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
-Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    
+Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);
+
+// Program > initatives
+Route::get('/teach-for-change', [PagesController::class, 'programInitiativeTeachForChangePage']);  
+
+//
