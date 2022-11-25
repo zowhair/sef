@@ -2,7 +2,7 @@
 @extends('layout.page-inner-section')
 
 @section('content')
-    <x-nav :category="$category" />
+    <x-nav  />
     <main>
         <div class="container">
             <div class="row">

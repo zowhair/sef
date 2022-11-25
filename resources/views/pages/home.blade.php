@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-    <x-nav :category="$category"/>
+    <x-nav />
     <main>
         
         <x-main-carousel :data="$data"/>

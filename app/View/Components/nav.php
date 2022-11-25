@@ -3,7 +3,8 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
-
+// use App\Models\Department;
+use App\Models\DepartmentCategory;
 class nav extends Component
 {
     /**
@@ -13,10 +14,10 @@ class nav extends Component
      */
     public $cat="";
    
-    public function __construct($category )
+    public function __construct( )
     {
-        
-            $this->cat = $category;
+        $data=DepartmentCategory::all();
+            $this->cat = $data;
 
       
     }
@@ -29,6 +30,6 @@ class nav extends Component
     public function render()
     {
         
-        return view('components.nav');
+        return view('components.navbar');
     }
 }

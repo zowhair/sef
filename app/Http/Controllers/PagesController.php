@@ -29,8 +29,7 @@ class PagesController extends Controller
     }
     public function home(Request $request) {
         $data=NewsUpdate::all();
-        $category=DepartmentCategory::all();
-        return view('pages.home',compact('data','category'));
+        return view('pages.home',compact('data'));
     }
     public function contactPage(Request $request) {
         return view('pages.contact');

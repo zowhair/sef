@@ -26,7 +26,11 @@
                     <td>{{$row->page_title}}</td>
                     <td>{{$row->sub_title}}</td>
                     <td>{{$row->decription}}</td>
-                    <td>{{$row->page_name}}</td>
+                    @foreach($category as $rows)
+                        @if($rows->id==$row->page_name)
+                        <td>{{$rows->title}}</td>
+                        @endif
+                    @endforeach
                     <td>
                         @if($row->bannar_img != null)
                         <img src="{{$row->bannar_img}}" class="newsUpdate" alt="" width="5" height="5">
