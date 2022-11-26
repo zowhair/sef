@@ -2,7 +2,7 @@
 @extends('layout.page-inner-section')
 
 @section('content')
-    <x-nav />
+    <x-nav  />
     <main>
         <div class="container">
             <div class="row">
@@ -27,38 +27,12 @@
                     <x-main-center.main-center-right-top name="Department">
                         <x-slot name="links">
                             <ul>
+                                @foreach($category as $rows)
                                     <li>
-                                        <a href="/communication-and-research">Communication, Publication & Research</a>
+                                        <a href="/department/{{$rows->id}}">{{$rows->title}} </a>
                                         <div class="border_black"></div>
                                     </li>
-                                    <li>
-                                        <a href="/finance-and-audit">Finance and Audit</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/general-administrator">General Administration</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/human-resource">Human Resource</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/information-tech">Information Technology</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/planing-and-program">Planning And Programs</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/training-and-assessment">Training and Assessment</a>
-                                        <div class="border_black"></div>
-                                    </li>
-                                    <li>
-                                        <a href="/monitoring-and-evaluation-cell">Monitoring and Evaluation Cell</a>
-                                        <div class="border_black"></div>
-                                    </li>
+                                @endforeach
                             </ul>
                         </x-slot>
                     </x-main-center.main-center-right-top>

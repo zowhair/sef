@@ -31,6 +31,11 @@
             <span>Department</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="/publication">
+            <i class="fas fa-fw fa-table"></i>
+            <span>E-Publications</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="/alumnis">
             <i class="fas fa-fw fa-table"></i>
             <span>Alumni</span></a>

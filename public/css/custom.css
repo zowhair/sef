@@ -1152,6 +1152,14 @@ font-size: small;
     padding: 5%;
     margin-right:8px ;
 }
+
+.save-btn{
+    text-align-last: right;
+}
+.publicaition-page{
+    flex-direction: column !important;
+}  
+  
 /* message page start*/
 .lazyloadImage{
     max-width: 100%;
@@ -1178,5 +1186,3 @@ font-size: small;
     opacity:0.6;
     margin-left: 15.5rem;
 }
-
-/* message page end */

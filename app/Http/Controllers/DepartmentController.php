@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Department;
+use App\Models\DepartmentCategory;
+
 use DB;
 use URL;
 class DepartmentController extends Controller
@@ -16,7 +18,8 @@ class DepartmentController extends Controller
     public function index()
     {
         $data=Department::all();
-        return view('admin.department.index',compact('data'));
+        $category=DepartmentCategory::all();
+        return view('admin.department.index',compact('data','category'));
     }
 
     /**
@@ -26,7 +29,8 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        return view('admin.department.create');
+        $data=DepartmentCategory::all();
+        return view('admin.department.create',compact('data'));
     }
 
     /**
@@ -68,7 +72,9 @@ class DepartmentController extends Controller
      */
     public function show($id)
     {
-        //
+        $category=DepartmentCategory::all();
+        $data=Department::all()->where('page_name',$id);
+        return view('admin.department.home',compact('data','category'));
     }
 
     /**
@@ -129,6 +135,23 @@ class DepartmentController extends Controller
     public function destroy($id)
     {
         DB::table('departments')->where('id', $id)->delete();
+        return redirect()->back();
+    }
+    public function category()
+    {
+        $data=DepartmentCategory::all();
+        return view('admin.department.category',compact('data'));
+    }
+    public function add(Request $request)
+    {
+        $category = new DepartmentCategory();
+        $category->title = $request->input('title');
+        $category->save();
+        return redirect('/department-category/');
+    }
+    public function delete($id)
+    {
+        DB::table('department_categories')->where('id', $id)->delete();
         return redirect()->back();
     }
 }
