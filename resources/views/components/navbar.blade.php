@@ -168,24 +168,12 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Publications</a>
                             <ul class="dropdown-menu">
-                            @foreach($publication as $row)
-                              <li id="menu-item-5289"
-                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
-                              </li>
+                              @foreach($publication as $row)
+                                <li id="menu-item-5289"
+                                  class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
+                                  <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                                </li>
                               @endforeach
-                              <!-- <li id="menu-item-5274"
-                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                                <a href="/news_letters" class=" dropdown-item">Newsletter</a>
-                              </li>
-                              <li id="menu-item-5274"
-                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                                <a href="/research_studies" class=" dropdown-item">Research Studies</a>
-                              </li>
-                              <li id="menu-item-5274"
-                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                                <a href="/sujaags" class=" dropdown-item">Sujaag</a>
-                              </li> -->
                             </ul>
                           </li>
                           <li id="menu-item-5277"
@@ -283,195 +271,70 @@
           <ul>
 
               <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-3222">
-                  <a href="#">Home</a>
-                  <ul class="sub-menu">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Introduction</a>
-
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Education FrameWork</a>
-
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Organogram</a>
-
-                      </li>
-                      <li id="menu-item-5293"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
-                          <a href="#">Department</a>
-                          <ul class="sub-menu">
-                              <li id="menu-item-5294"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                                  <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
-                              <li id="menu-item-7367"
-                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                                  <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
-                              <li id="menu-item-7420"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                                  <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
-                              </li>
-                              <li id="menu-item-7421"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
-                                  <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
-                              </li>
-                              <li id="menu-item-5277"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
-                                  <a href="#">Unit and Cells</a>
-                                  <ul class="sub-menu">
-                                      <li id="menu-item-5289"
-                                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                          <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
-                                             class=" dropdown-item">Monitoring and Evaluation Cell</a>
-                                      </li>
-                                  </ul>
-                              </li>
-
-                          </ul>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
-                          <a href="#">Management Team</a>
-                          <ul class="sub-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
-                                  <a href="">Head Office </a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
-                                  <a href="">Regional Office</a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
-                                  <a href="">District Office</a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">BOD</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Finance Committe</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
-                          <a href="#">Message</a>
-                          <ul class="sub-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
-                                  <a href="">Message of Honable Minister Sindh</a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
-                                  <a href="">Message of Managing Director Sindh</a>
-                              </li>
-
-                          </ul>
-                      </li>
-
-                  </ul>
+                <a href="/">Home</a>
               </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3152">
+                <a href="#">About Us</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                    <a href="#">Introduction</a>
 
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                    <a href="#">Education FrameWork</a>
 
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
-                  <a href="#">About Us</a>
-                  <ul class="sub-menu">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Introduction</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                    <a href="#">Organogram</a>
 
+                  </li>
+                  <li id="menu-item-5293"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
+                    <a href="#">Department</a>
+                    <ul class="sub-menu">
+                      @foreach($cat as $row)
+                        <li id="menu-item-5294"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
+                          <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                        </li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
+                    <a href="#">Management Team</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
+                        <a href="/head-office">Head Office </a>
                       </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Education FrameWork</a>
-
+                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
+                        <a href="/regional-office">Regional Office</a>
                       </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Organogram</a>
-
+                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
+                        <a href="/district-office">District Office</a>
                       </li>
-                      <li id="menu-item-5293"
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
-                          <a href="#">Department</a>
-                          <ul class="sub-menu">
-                              <li id="menu-item-5294"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                                  <a href="../author/admin/" class=" dropdown-item">Communication and Research</a>
-                              <li id="menu-item-7367"
-                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7367 nav-item">
-                                  <a href="../shop/" class=" dropdown-item">Finance and Audit</a>
-                              <li id="menu-item-7420"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7420 nav-item">
-                                  <a href="../home-7/shop/" class=" dropdown-item">General Administration</a>
-                              </li>
-                              <li id="menu-item-7421"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7421 nav-item">
-                                  <a href="../home-6/shop/" class=" dropdown-item">Human Resource</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Informaton Technology</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Planning And Programs</a>
-                              </li>
-                              <li id="menu-item-5296"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5296 nav-item">
-                                  <a href="../2020/06/" class=" dropdown-item">Training and Assessment</a>
-                              </li>
-                              <li id="menu-item-5277"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 ">
-                                  <a href="#">Unit and Cells</a>
-                                  <ul class="sub-menu">
-                                      <li id="menu-item-5289"
-                                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                          <a href="../improve-your-mood-by-saving-money-this-international-happiness-day-with-our-top-tips-2/"
-                                             class=" dropdown-item">Monitoring and Evaluation Cell</a>
-                                      </li>
-                                  </ul>
-                              </li>
-
-                          </ul>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                    <a href="#">BOD</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
+                    <a href="#">Finance Committe</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
+                    <a href="#">Message</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
+                        <a href="">Message of Honable Minister Sindh</a>
                       </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
-                          <a href="#">Management Team</a>
-                          <ul class="sub-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5281">
-                                  <a href="">Head Office </a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5272">
-                                  <a href="">Regional Office</a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5291">
-                                  <a href="">District Office</a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">BOD</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5275">
-                          <a href="#">Finance Committe</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277">
-                          <a href="#">Message</a>
-                          <ul class="sub-menu">
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289">
-                                  <a href="">Message of Honable Minister Sindh</a>
-                              </li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
-                                  <a href="">Message of Managing Director Sindh</a>
-                              </li>
-
-                          </ul>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274">
+                        <a href="">Message of Managing Director Sindh</a>
                       </li>
 
-                  </ul>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+              
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
               <a href="#">Programs</a>
               <ul class="sub-menu">
@@ -539,7 +402,7 @@
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151  ">
               <a href="#">Resources</a>
               <ul class="sub-menu">
-                <li id="menu-item-5264"
+                <li id="menu-item-5264">
                   <a href="../category/business/" class=" dropdown-item">Act and Rules</a>
                 <li id="menu-item-5264"
                   class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5264 nav-item">
@@ -548,22 +411,12 @@
                   class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277  ">
                   <a href="#" class=" dropdown-item">E-Publications</a>
                   <ul class="sub-menu">
-                    <li id="menu-item-5289"
-                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                      <a href="/anunal_report" class=" dropdown-item">Anunnal Report</a>
-                    </li>
-                    <li id="menu-item-5274"
-                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                      <a href="news_letters" class=" dropdown-item">Newsletter</a>
-                    </li>
-                    <li id="menu-item-5274"
-                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                      <a href="/research_studies" class=" dropdown-item">Research Studies</a>
-                    </li>
-                    <li id="menu-item-5274"
-                      class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
-                      <a href="/sujaags" class=" dropdown-item">Sujaag</a>
-                    </li>
+                    @foreach($publication as $row)
+                      <li id="menu-item-5289"
+                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
+                        <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                      </li>
+                    @endforeach
                   </ul>
                 </li>
                 <li
