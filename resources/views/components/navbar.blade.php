@@ -44,16 +44,6 @@
                                 <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
                                 @endforeach
                               
-                              <!-- <li id="menu-item-5277"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
-                                <a href="#" class=" dropdown-item">Unit and Cells</a>
-                                <ul class="dropdown-menu">
-                                  <li id="menu-item-5289"
-                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                    <a href="/monitoring-and-evaluation-cell" class=" dropdown-item">Monitoring and Evaluation Cell</a>
-                                  </li>
-                                </ul>
-                              </li> -->
                             </ul>
                           </li>
                           <li id="menu-item-5277"
@@ -178,11 +168,13 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Publications</a>
                             <ul class="dropdown-menu">
+                            @foreach($publication as $row)
                               <li id="menu-item-5289"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                <a href="/anunal_report" class=" dropdown-item">Anunnal Report</a>
+                                <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
                               </li>
-                              <li id="menu-item-5274"
+                              @endforeach
+                              <!-- <li id="menu-item-5274"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
                                 <a href="/news_letters" class=" dropdown-item">Newsletter</a>
                               </li>
@@ -193,7 +185,7 @@
                               <li id="menu-item-5274"
                                 class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5274 nav-item">
                                 <a href="/sujaags" class=" dropdown-item">Sujaag</a>
-                              </li>
+                              </li> -->
                             </ul>
                           </li>
                           <li id="menu-item-5277"

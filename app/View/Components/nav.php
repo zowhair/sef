@@ -5,6 +5,8 @@ namespace App\View\Components;
 use Illuminate\View\Component;
 // use App\Models\Department;
 use App\Models\DepartmentCategory;
+use App\Models\PublicationCategory;
+
 class nav extends Component
 {
     /**
@@ -13,13 +15,16 @@ class nav extends Component
      * @return void
      */
     public $cat="";
+    public $publication="";
    
     public function __construct( )
     {
         $data=DepartmentCategory::all();
-            $this->cat = $data;
+        $data2=PublicationCategory::all();
 
-      
+            $this->cat = $data;
+            $this->publication = $data2;
+            
     }
 
     /**

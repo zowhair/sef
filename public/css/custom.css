@@ -1155,7 +1155,9 @@ font-size: small;
 .save-btn{
     text-align-last: right;
 }
-  
+.publicaition-page{
+    flex-direction: column !important;
+}  
   
   
   

@@ -7,6 +7,7 @@
                 <th>Title</th>
                 <th>Date</th>
                 <th>Decription</th>
+                <th>Page Name</th>
                 <th>Image</th>
                 <th>File</th>
                 @auth
@@ -26,6 +27,11 @@
                     <td>{{$row->title}}</td>
                     <td>{{$row->date}}</td>
                     <td>{{$row->decription}}</td>
+                    @foreach($category as $rows)
+                        @if($rows->id==$row->page_name)
+                        <td>{{$rows->title}}</td>
+                        @endif
+                    @endforeach
                     <td>
                         @if($row->image != null)
                         <img src="{{$row->image}}" class="newsUpdate" alt="" width="5" height="5">
@@ -38,8 +44,8 @@
                         </td>
                     @auth
                     <td>
-                        <a href="/research-studies/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
-                        <a href="/research-studies/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+                        <a href="/publication/edit/{{$row->id}}"><i class="fa fa-edit" aria-hidden="true"></i> </a>
+                        <a href="/publication/delete/{{$row->id}}"><i class="fa fa-trash" aria-hidden="true"></i> </a>
                     </td>
                     @endauth
                 </tr>

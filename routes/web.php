@@ -11,6 +11,7 @@ use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\AnnualReportController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\PublicationController;
 
 
 /*
@@ -96,6 +97,16 @@ Route::get('/department-category', [DepartmentController::class, 'category']);
 Route::get('/department-category/delete/{id}', [DepartmentController::class, 'delete']);
 Route::post('/department-category/add', [DepartmentController::class, 'add']);
 
+//Publication
+Route::resource('/publication', PublicationController::class);
+Route::get('/publication/delete/{id}', [PublicationController::class, 'destroy']);
+Route::get('/publication/edit/{id}', [PublicationController::class, 'edit']);
+Route::post('/publication/update', [PublicationController::class, 'update']);
+
+//publication category
+Route::get('/publication-category', [PublicationController::class, 'category']);
+Route::get('/publication-category/delete/{id}', [PublicationController::class, 'delete']);
+Route::post('/publication-category/add', [PublicationController::class, 'add']);
 
 //sef website front end site
 
