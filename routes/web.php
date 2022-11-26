@@ -9,9 +9,12 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\ResearchStudyController;
 use App\Http\Controllers\SujaagController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ScholarshipController;
+use App\Http\Controllers\ScholarshipGalleryController;
 use App\Http\Controllers\AnnualReportController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\PublicationController;
+use App\Http\Controllers\PartnerInstitutionController;
 
 
 /*
@@ -132,6 +135,7 @@ Route::get('/annoncements', [PagesController::class, 'annoncementsPage']);
 Route::get('/alumni', [PagesController::class, 'alumniPage']);
 // scholarship pages end
 // e-publications start
+
 Route::get('/anunal_report', [PagesController::class, 'anunalPage']);
 Route::get('/news_letters', [PagesController::class, 'newsPage']);
 Route::get('/research_studies', [PagesController::class, 'researchPage']);
@@ -153,4 +157,24 @@ Route::get('/regional-office', [PagesController::class, 'regionalOfficePage']);
 Route::get('/district-office', [PagesController::class, 'districtOfficePage']);
 
 
+Route::resource('/scholarships', ScholarshipController::class);
+Route::get('/scholarships/delete/{id}', [ScholarshipController::class, 'destroy']);
+Route::get('/scholarships/edit/{id}', [ScholarshipController::class, 'edit']);
+Route::post('/scholarships/update', [ScholarshipController::class, 'update']);
 
+
+Route::resource('/galleries',ScholarshipGalleryController::class);
+Route::get('/galleries/delete/{id}', [ScholarshipGalleryController::class, 'destroy']);
+Route::get('/galleries/edit/{id}', [ScholarshipGalleryController::class, 'edit']);
+Route::post('/galleries/update', [ScholarshipGalleryController::class, 'update']);
+
+// message
+Route::get('/message-of-minister', [PagesController::class, 'messageMinisterPage']);    
+Route::get('/message-of-provincial-minister', [PagesController::class, 'messageProvincialPage']);    
+Route::get('/message-of-managing-director', [PagesController::class, 'messageDirectorPage']);    
+
+//partner institution
+Route::resource('/partner-institutions',PartnerInstitutionController::class);
+Route::get('/partner-institutions/delete/{id}', [PartnerInstitutionController::class, 'destroy']);
+Route::get('/partner-institutions/edit/{id}', [PartnerInstitutionController::class, 'edit']);
+Route::post('/partner-institutions/update', [PartnerInstitutionController::class, 'update']);
