@@ -30,7 +30,7 @@ class PublicationController extends Controller
     {
         $data=PublicationCategory::all();
         return view('admin.publication.create',compact('data'));
-        
+
     }
 
     /**
@@ -73,8 +73,10 @@ class PublicationController extends Controller
     public function show($id)
     {
         $category=PublicationCategory::all();
+        $publication_category=PublicationCategory::find($id);
+
         $data=Publication::all()->where('page_name',$id);
-        return view('admin.publication.home',compact('data','category'));
+        return view('admin.publication.home',compact('data','category','publication_category'));
     }
 
     /**

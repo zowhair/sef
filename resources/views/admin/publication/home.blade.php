@@ -6,13 +6,13 @@
     <main>
         <div class="container">
             <div class="row">
-                <x-main-center.main-center-left name="Reseach Studies" >
+                <x-main-center.main-center-left name="{{$publication_category->title}}" >
                     <x-slot name="banner">
-                    
+
                     </x-slot>
                     <x-slot name="maincontent">
                         <div  class="main-content-div publicaition-page">
-                            <div class="row"> 
+                            <div class="row">
                                 @foreach($data as $row)
                                     @if($row->image != null)
                                     <div class="col-3 col-md-3">
@@ -39,9 +39,9 @@
                                     @endif
                                 @endforeach
                             </div>
-                           
+
                         </div>
-                       
+
                     </x-slot>
                 </x-main-center.main-center-left>
                 <div class="col-4 main-center-section-right">
