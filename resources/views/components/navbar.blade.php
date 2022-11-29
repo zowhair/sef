@@ -37,13 +37,13 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Department</a>
                             <ul class="dropdown-menu">
-                              
+
                               @foreach($cat as $row)
                               <li id="menu-item-5294"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
                                 <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
                                 @endforeach
-                              
+
                             </ul>
                           </li>
                           <li id="menu-item-5277"
@@ -242,7 +242,7 @@
 
                       <li id="menu-item-5292"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5292 nav-item">
-                        <a href="../contact/" class="nav-link">Contact Us</a>
+                        <a href="/contact-us" class="nav-link">Contact Us</a>
                       </li>
 
                     </ul>
@@ -334,7 +334,7 @@
                   </li>
                 </ul>
               </li>
-              
+
               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3151">
               <a href="#">Programs</a>
               <ul class="sub-menu">
@@ -483,7 +483,7 @@
               <a href="../">Careers</a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7431">
-              <a href="../">Contact Us</a>
+              <a href="/contact-us">Contact Us</a>
             </li>
           </ul>
         </nav>

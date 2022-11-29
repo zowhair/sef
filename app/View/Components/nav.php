@@ -16,7 +16,7 @@ class nav extends Component
      */
     public $cat="";
     public $publication="";
-   
+
     public function __construct( )
     {
         $data=DepartmentCategory::all();
@@ -24,7 +24,7 @@ class nav extends Component
 
             $this->cat = $data;
             $this->publication = $data2;
-            
+
     }
 
     /**
@@ -34,7 +34,7 @@ class nav extends Component
      */
     public function render()
     {
-        
+
         return view('components.navbar');
     }
 }
