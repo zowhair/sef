@@ -1,6 +1,5 @@
 <div class="theme-1 white_bg">
     <!--::::: MENU AREA START  :::::::-->
-        {{dd($cat))}}
 
     <div class="main-menu">
       <div class="main-nav clearfix  ">
