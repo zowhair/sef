@@ -8,12 +8,7 @@
       $pub_count = $pub_count ?? '';
 
     ?>
-    {{--
-{{ $cat = $cat ?? '' }}
-{{ $publication = $publication ?? ''}}
-{{ $cat_count = $cat_count ?? ''}}
-{{ $pub_count = $pub_count ?? ''}}
---}}
+
     <div class="main-menu">
       <div class="main-nav clearfix  ">
         <div class="container">
@@ -264,8 +259,6 @@
                 </div>
               </div>
             </nav>
-
-
           </div>
         </div>
       </div>
