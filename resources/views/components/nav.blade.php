@@ -7,6 +7,6 @@
         <!-- navigation bar -->
     <nav>
         <!-- @include('components.navbar')  -->
-        <x-navbar  :cat="$cat ?? ''"  :publication="$publication ?? ''" />
+        <x-navbar  :cat="$cat ?? ''"  :publication="$publication ?? ''" :cat_count="$cat_count ?? ''" :pub_count="$pub_count ?? ''"/>
     </nav>
 </header>

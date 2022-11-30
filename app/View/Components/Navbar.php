@@ -13,13 +13,16 @@ class Navbar extends Component
      */
     public $cat="";
     public $publication="";
+    public $cat_count = "";
     public function __construct($cat, $publication)
     {
-	    $data=DepartmentCategory::all();
+	    $data=DepartmentCategory::get();
         $data2=PublicationCategory::all();
 
         $this->cat = $data;
         $this->publication = $data2;
+        $this->cat_count = count($data);
+        $this->pub_count = count($data2);
     }
 
     /**

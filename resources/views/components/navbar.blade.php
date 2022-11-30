@@ -1,8 +1,19 @@
 <div class="theme-1 white_bg">
     <!--::::: MENU AREA START  :::::::-->
-  {{ $pub  = $publication ?? '' }}
-  {{ $category = $cat ?? '' }}
+    <?php 
 
+      $cat = $cat ?? '';
+      $publication = $publication ?? '';
+      $cat_count = $cat_count ?? '';
+      $pub_count = $pub_count ?? '';
+
+    ?>
+    {{--
+{{ $cat = $cat ?? '' }}
+{{ $publication = $publication ?? ''}}
+{{ $cat_count = $cat_count ?? ''}}
+{{ $pub_count = $pub_count ?? ''}}
+--}}
     <div class="main-menu">
       <div class="main-nav clearfix  ">
         <div class="container">
@@ -40,11 +51,12 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Department</a>
                             <ul class="dropdown-menu">
-                              @foreach($category as $row)
+
+                              @for($i=0; $i<$cat_count; $i++)
                               <li id="menu-item-5294"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                                <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
-                                @endforeach
+                                <a href="/department/{{$cat[$i]->id}}" class=" dropdown-item">{{$cat[$i]->title}}</a>
+                                @endfor
 
                             </ul>
                           </li>
@@ -170,13 +182,12 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Publications</a>
                             <ul class="dropdown-menu">
-
-                              @foreach($publication as $row)
+                              @for($i=0; $i< $pub_count; $i++)
                                 <li id="menu-item-5289"
                                   class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                                  <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                                  <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$publication[$i]->title}}</a>
                                 </li>
-                              @endforeach
+                              @endfor
                             </ul>
                           </li>
                           <li id="menu-item-5277"
@@ -295,12 +306,12 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
                     <a href="#">Department</a>
                     <ul class="sub-menu">
-                      @foreach($category as $row)
+                      @for($i=0; $i<$cat_count; $i++)
                         <li id="menu-item-5294"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
-                          <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                          <a href="/department/{{$cat[$i]->id}}" class=" dropdown-item">{{$cat[$i]->title}}</a>
                         </li>
-                      @endforeach
+                      @endfor
                     </ul>
                   </li>
                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5276">
@@ -414,12 +425,12 @@
                   class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277  ">
                   <a href="#" class=" dropdown-item">E-Publications</a>
                   <ul class="sub-menu">
-                    @foreach($pub as $row)
+                    @for($i=0; $i< $pub_count; $i++)
                       <li id="menu-item-5289"
                         class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
-                        <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
+                        <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$publication[$i]->title}}</a>
                       </li>
-                    @endforeach
+                    @endfor
                   </ul>
                 </li>
                 <li
