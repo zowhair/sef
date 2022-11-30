@@ -1,5 +1,7 @@
 <div class="theme-1 white_bg">
     <!--::::: MENU AREA START  :::::::-->
+  {{ $pub  = $publication ?? '' }}
+  {{ $category = $cat ?? '' }}
 
     <div class="main-menu">
       <div class="main-nav clearfix  ">
@@ -38,8 +40,7 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Department</a>
                             <ul class="dropdown-menu">
-
-                              @foreach($cat as $row)
+                              @foreach($category as $row)
                               <li id="menu-item-5294"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
                                 <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
@@ -169,6 +170,7 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277 nav-item dropdown-submenu ">
                             <a href="#" class=" dropdown-item">Publications</a>
                             <ul class="dropdown-menu">
+
                               @foreach($publication as $row)
                                 <li id="menu-item-5289"
                                   class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
@@ -293,7 +295,7 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5293">
                     <a href="#">Department</a>
                     <ul class="sub-menu">
-                      @foreach($cat as $row)
+                      @foreach($category as $row)
                         <li id="menu-item-5294"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5294 nav-item">
                           <a href="/department/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
@@ -412,7 +414,7 @@
                   class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5277  ">
                   <a href="#" class=" dropdown-item">E-Publications</a>
                   <ul class="sub-menu">
-                    @foreach($publication as $row)
+                    @foreach($pub as $row)
                       <li id="menu-item-5289"
                         class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5289 nav-item">
                         <a href="/publication/{{$row->id}}" class=" dropdown-item">{{$row->title}}</a>
