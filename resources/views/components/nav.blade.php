@@ -6,6 +6,7 @@
         @include('components.mid-nav')
         <!-- navigation bar -->
     <nav>
-        @include('components.navbar') 
+        <!-- @include('components.navbar')  -->
+        <x-navbar  :cat="$cat ?? ''"  :publication="$publication ?? ''" />
     </nav>
 </header>
