@@ -178,3 +178,9 @@ Route::resource('/partner-institutions',PartnerInstitutionController::class);
 Route::get('/partner-institutions/delete/{id}', [PartnerInstitutionController::class, 'destroy']);
 Route::get('/partner-institutions/edit/{id}', [PartnerInstitutionController::class, 'edit']);
 Route::post('/partner-institutions/update', [PartnerInstitutionController::class, 'update']);
+
+//contact us page
+
+Route::get('contact-us',function () {
+    return view('/pages.contact_us.contact_us');
+});
